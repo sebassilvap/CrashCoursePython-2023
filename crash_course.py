@@ -1648,9 +1648,17 @@ while True:
 
 
 
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 26) pares / impares / múltiplos
+print('\n\n26) pares / impares / múltiplos\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+
+
+
+
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 26) print avanzado + string format
-print('\n\n\n26) print avanzado + string format\n')
+# 27) print avanzado + string format
+print('\n\n\n27) print avanzado + string format\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 # ------------------------
@@ -1728,8 +1736,8 @@ print('Me gusta el pastel de {comida} con una {bebida}'.format(
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 27) String Format + Números
-print('\n\n27) String Format + Números\n')
+# 28) String Format + Números
+print('\n\n28) String Format + Números\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 # ------------------------------
@@ -1792,8 +1800,8 @@ print( f'El valor = {num:<15.2f} | Es un flotante.' )
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 28) String Format + Texto
-print('\n\n\n28) String Format + Texto\n')
+# 29) String Format + Texto
+print('\n\n\n29) String Format + Texto\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 pais = 'ECUADOR'
@@ -1810,8 +1818,8 @@ print( f'Mi país {pais:^10.3}, es un país muy hermoso' ) # con f'String'
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 29) Librería / Módulo random
-print('\n\n\n29) Librería / Módulo random\n')
+# 30) Librería / Módulo random
+print('\n\n\n30) Librería / Módulo random\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 # -------------------
@@ -1904,8 +1912,8 @@ print( heroes_copy )
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 30) Condicional Anidado
-print('\n\n\n30) Condicional Anidado\n')
+# 31) Condicional Anidado
+print('\n\n\n31) Condicional Anidado\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 """
@@ -1969,8 +1977,8 @@ while True:
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 31) Listas Multidimensionales
-print('\n\n\n31) Listas Multidimensionales\n')
+# 32) Listas Multidimensionales
+print('\n\n\n32) Listas Multidimensionales\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - Una lista puede contener otras listas
 
@@ -2001,8 +2009,8 @@ print( matriz[2][1] ) # 8
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 32) Bucles Anidados
-print('\n\n\n32) Bucles Anidados\n')
+# 33) Bucles Anidados
+print('\n\n\n33) Bucles Anidados\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 # ---------------------------
@@ -2081,8 +2089,8 @@ for i in matriz:
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 33) Mutabilidad / Inmutabilidad
-print('\n\n33) Mutabilidad / Inmutabilidad\n')
+# 34) Mutabilidad / Inmutabilidad
+print('\n\n34) Mutabilidad / Inmutabilidad\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - Mutabilidad => que puede cambiar
 # - Inmutabilidad => que no puede cambiar
@@ -2164,8 +2172,8 @@ print( lista_3, hex(id(lista_3)) )
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 34) keyword is
-print('\n\n34) keyword is\n')
+# 35) keyword is
+print('\n\n35) keyword is\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 #   ==  | True: si 2 variables tienen el mismo valor
 #   is  | True: mismo valor y dirección en la memoria
@@ -2191,8 +2199,8 @@ print( 'lista_3', hex(id(lista_3)) ) # lista_3 0x1acc3447bc0
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 35) Tuplas
-print('\n\n35) Tuplas\n')
+# 36) Tuplas
+print('\n\n36) Tuplas\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - parecidos a las listas
 # - son ordenadas
@@ -2288,8 +2296,8 @@ for elemento in tupla:
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 36) Sets / Conjuntos
-print('\n\n36) Sets / Conjuntos\n')
+# 37) Sets / Conjuntos
+print('\n\n37) Sets / Conjuntos\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - elementos únicos / conjuntos
 # - colección desordenada
@@ -2500,8 +2508,8 @@ print(s2)
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 37) Diccionarios
-print('\n\n37) Diccionarios\n')
+# 38) Diccionarios
+print('\n\n38) Diccionarios\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - estructura de clave y valor (key-value pair)
 # - python 3.6 < -- DESORDENADOS
@@ -2788,8 +2796,8 @@ for k, v in heroes.items():
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 38) Casting entre Colecciones
-print('\n\n38) Casting entre Colecciones\n')
+# 39) Casting entre Colecciones
+print('\n\n39) Casting entre Colecciones\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 # --------------
@@ -2863,8 +2871,8 @@ print(dict_3) # {'M': 1.5, 'N': 2.5, 'O': 3.5}
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 39) Funciones
-print('\n\n39) Funciones\n')
+# 40) Funciones
+print('\n\n40) Funciones\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 # ----------------
@@ -3066,8 +3074,8 @@ ingredientes_pasta('spagethi', 'pesto', condimento='pimienta', carne='bolitas de
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 40) Funciones Recursivas
-print('\n\n40) Funciones Recurvivas\n')
+# 41) Funciones Recursivas
+print('\n\n41) Funciones Recurvivas\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - función que se llama a sí misma
 # - cualquier cosa que se pueda hacer con una función recursiva
@@ -3133,8 +3141,8 @@ print( factorial_2(3) ) # 6
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 41) Scope de Variables
-print('\n\n41) Scope de Variables\n')
+# 42) Scope de Variables
+print('\n\n42) Scope de Variables\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 # ---------------
@@ -3219,8 +3227,8 @@ print(a) # 50
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 42) Funciones *args
-print('\n\n42) Funciones *args\n')
+# 43) Funciones *args
+print('\n\n43) Funciones *args\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - función con argumentos arbitrarios
 # - número indefinido de parámetros
@@ -3268,8 +3276,8 @@ print( promedio(10,18,15,20) ) # 15.75
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 43) Funciones **kwargs
-print('\n\n43) Funciones **kwargs\n')
+# 44) Funciones **kwargs
+print('\n\n44) Funciones **kwargs\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - función con argumentos arbitrarios asociados a clave
 # - número indeterminado de parámetros
@@ -3323,8 +3331,8 @@ describir_persona(
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 44) Función Lambda
-print('\n\n44) Función Lambda\n')
+# 45) Función Lambda
+print('\n\n45) Función Lambda\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - función anónima
 # - N argumentos => 1 sola expresión
@@ -3392,8 +3400,8 @@ print(mult_5_20) # 100
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 45) Funciones como Variables
-print('\n\n45) Funciones como Variables\n')
+# 46) Funciones como Variables
+print('\n\n46) Funciones como Variables\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - todo en Python puede ser variable
 # - en Python todo es un objeto (POO)
@@ -3424,8 +3432,8 @@ imprimir('hola mundo') # hola mundo
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 46) sorted / map / filter / reduce
-print('\n\n46) sorted / map / filter / reduce\n')
+# 47) sorted / map / filter / reduce
+print('\n\n47) sorted / map / filter / reduce\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - Funciones muy muy útiles para tratamiento de datos
 # - Su fundamento se aplica en otros lenguajes de programación
@@ -3441,8 +3449,8 @@ print('\n\n46) sorted / map / filter / reduce\n')
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 47) sorted()
-print('\n\n47) sorted()\n')
+# 48) sorted()
+print('\n\n48) sorted()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - las mismas nociones que .sort() de listas
 # - la diferencia es que no modifica la lista
@@ -3475,8 +3483,8 @@ print( 'orden_mas_menos =', orden_mas_menos ) # orden_mas_menos = ['investigacio
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 48) map()
-print('\n\n48) map()\n')
+# 49) map()
+print('\n\n49) map()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - map( funcion , elementos_iterables )
 # - transforma una colección por medio de una función
@@ -3548,8 +3556,8 @@ print(nota_final_2) # [16.4, 16.9, 16.3]
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 49) filter()
-print('\n\n49) filter()\n')
+# 50) filter()
+print('\n\n50) filter()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - filter( funcion , elemento_iterable )
 # - la función debe retornar True / False => de acuerdo al criterio de filtrado
@@ -3591,8 +3599,8 @@ print(calificaciones_bajas) # [13, 14, 10, 14, 11]
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 50) reduce()
-print('\n\n50) reduce()\n')
+# 51) reduce()
+print('\n\n51) reduce()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - reduce ( función , elemento_iterable )
 # - OJO: para usarlo hay que importar la librería functools !!!
@@ -3627,7 +3635,6 @@ gastos = [
     ['Andrea', 50.48 , 16.87],
 ]
 
-
 gastos_administrativos_totales = functools.reduce(
     lambda x , y : x + y, # función de suma reduce
     
@@ -3653,13 +3660,627 @@ print(gastos_combustible_totales, 'USD') # 96.29 USD
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 51) List Comprehension
-print('\n\n51) List Comprehension\n')
+# 52) List Comprehension
+print('\n\n52) List Comprehension\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - manera corta/dinámica/inteligente de crear una lista
+# - se lo puede realizar por medio de 3 sintaxis:
+
+"""
+    A) lista = [ expresión + bucle FOR en un iterable ]
+    B) lista = [ expresión + bucle FOR en un iterable + condicional IF ]
+    C) lista = [ expresión + condicional IF/ELSE + bucle FOR en un ITERABLE ]
+"""
+
+# ----------------------------------------------------
+# A) lista = [ expresión + bucle FOR en un iterable ]
+# ----------------------------------------------------
+valores = [10, -50, 62, -5, 22, 15, -9]
+resultado_1 = [ 2*x - 5 for x in valores ]
+print(resultado_1) # [15, -105, 119, -15, 39, 25, -23] => también se podría usar map
+
+resultado_2 = [ math.sqrt(x) for x in range(1,11) ]
+print(resultado_2) # [1.0, 1.4142135623730951, 1.7320508075688772, 2.0, 2.23606797749979, 2.449489742783178, 2.6457513110645907, 2.8284271247461903, 3.0, 3.1622776601683795]
+
+
+# ---------------------------------------------------------------------
+# B) lista = [ expresión + bucle FOR en un iterable + condicional IF ]
+# ---------------------------------------------------------------------
+valores = [10, -50, 62, -5, 22, 15, -9]
+resultado = [ 2.5*y - 5/y for y in valores if y > 0 ]
+print(resultado) # [24.5, 154.91935483870967, 54.77272727272727, 37.166666666666664]
+
+
+# --------------------------------------------------------------------------
+# C) lista = [ expresión + condicional IF/ELSE + bucle FOR en un ITERABLE ]
+# --------------------------------------------------------------------------
+valores = [10, -50, 62, -5, 22, 15, -9]
+resultado = [ 'positivo' if z > 0 else 'negativo' for z in valores ]
+print(resultado) # ['positivo', 'negativo', 'positivo', 'negativo', 'positivo', 'positivo', 'negativo']
+
 
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 52) Dictionary Comprehension
-print('\n\n52) Dictionary Comprehension\n')
+# 53) Dictionary Comprehension
+print('\n\n53) Dictionary Comprehension\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - manera corta/dinámica/inteligente de crear un diccionario
+# - a partir de otro diccionario
+# - se lo puede realizar por medio de 4 sintaxis:
+
+"""
+    A) dict = {KEY: expresión + bucle FOR (KEY, VALUE) + in + ITERABLE}
+    B) dict = {KEY: expresión + bucle FOR (KEY, VALUE) + in + ITERABLE + condicional IF}
+    C) dict = {KEY: condicional IF/ELSE + bucle FOR (KEY, VALUE) + in + ITERABLE}
+    D) dict = {KEY: función(VALOR) + bucle FOR (KEY, VALUE) + in + ITERABLE}
+"""
+
+notas = {
+    'Daniel' : 16,
+    'Pedro' : 14,
+    'Sebastián' : 13,
+    'Santiago' : 19,
+    'Eduardo' : 11,
+    'Rodrigo' : 20,
+    'Francisco' : 12,
+    'María' : 14,
+}
+
+# --------------------------------------------------------------------
+# A) dict = {KEY: expresión + bucle FOR (KEY, VALUE) + in + ITERABLE}
+# --------------------------------------------------------------------
+notas_100 = { key : (value / 20 * 100) for (key, value) in notas.items() }
+print(notas_100)
+# {'Daniel': 80.0, 'Pedro': 70.0, 'Sebastián': 65.0, 'Santiago': 95.0, 'Eduardo': 55.00000000000001, 'Rodrigo': 100.0, 'Francisco': 60.0, 'María': 70.0}
+
+# ==> key / value, no es importante el nombre!, pero si el orden!
+notas_100 = { clave : float('{:.2f}'.format(valor / 20 * 100)) for (clave, valor) in notas.items() }
+print(notas_100)
+# {'Daniel': 80.0, 'Pedro': 70.0, 'Sebastián': 65.0, 'Santiago': 95.0, 'Eduardo': 55.0, 'Rodrigo': 100.0, 'Francisco': 60.0, 'María': 70.0}
+
+
+# -------------------------------------------------------------------------------------
+# B) dict = {KEY: expresión + bucle FOR (KEY, VALUE) + in + ITERABLE + condicional IF}
+# -------------------------------------------------------------------------------------
+estudiantes_aprobados = { clave : valor for (clave, valor) in notas.items() if valor > 14 }
+estudiantes_no_aprobados = { clave : valor for (clave, valor) in notas.items() if valor <= 14 }
+
+print(estudiantes_aprobados) # {'Daniel': 16, 'Santiago': 19, 'Rodrigo': 20}
+print(estudiantes_no_aprobados) # {'Pedro': 14, 'Sebastián': 13, 'Eduardo': 11, 'Francisco': 12, 'María': 14}
+
+
+# ------------------------------------------------------------------------------
+# C) dict = {KEY: condicional IF/ELSE + bucle FOR (KEY, VALUE) + in + ITERABLE}
+# ------------------------------------------------------------------------------
+aprobado_reprobado = { clave : ('aprobado' if valor > 14 else 'reprobado') for (clave, valor) in notas.items() }
+print(aprobado_reprobado)
+# {'Daniel': 'aprobado', 'Pedro': 'reprobado', 'Sebastián': 'reprobado', 'Santiago': 'aprobado', 'Eduardo': 'reprobado', 'Rodrigo': 'aprobado', 'Francisco': 'reprobado', 'María': 'reprobado'}
+
+
+# -------------------------------------------------------------------------
+# D) dict = {KEY: función(VALOR) + bucle FOR (KEY, VALUE) + in + ITERABLE}
+# -------------------------------------------------------------------------
+def check_estudiante(nota):
+    if nota > 14 and nota <= 20:
+        return 'Aprobado'
+    elif nota == 14:
+        return 'Supletorio'
+    elif nota >= 12 and nota < 14:
+        return 'Pierde el Cupo'
+    elif nota >= 0 and nota < 12:
+        return 'Pierde el Año'
+    else:
+        return 'ERROR - Nota'
+# end def
+
+analisis_estudiante = { clave : check_estudiante(valor) for(clave, valor) in notas.items() }
+
+print(analisis_estudiante)
+# {'Daniel': 'Aprobado', 'Pedro': 'Supletorio', 'Sebastián': 'Pierde el Cupo', 'Santiago': 'Aprobado', 'Eduardo': 'Pierde el Año', 'Rodrigo': 'Aprobado', 'Francisco': 'Pierde el Cupo', 'María': 'Supletorio'}
+
+
+
+
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 54) Función Interna - zip
+print('\n\n54) Función Interna - zip\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - empaca 2 o + iterables en un objeto tipo zip
+# - el iterable de menor tamaño decide el tamaño del zip
+# - básicamente se unen los valores en una tupla
+
+# ---------------
+# Ejemplo Básico
+# ---------------
+l1 = ['A', 'B', 'C']
+l2 = [100, 200, 300]
+
+zip_l1_l2 = zip(l1, l2)
+print(zip_l1_l2) # <zip object at 0x0000017728147440>
+
+# ==> más sentido transformarlo a un iterable conocido
+resultado_zip = list(zip_l1_l2)
+print(resultado_zip) # [('A', 100), ('B', 200), ('C', 300)]
+
+# --------------------------------------------------------
+# N iterables / el de menor tamaño decide el tamaño final
+# --------------------------------------------------------
+iter_1 = ['A', 'B', 'C']
+iter_2 = [100, 200, 300]
+iter_3 = ('USA', 'ECU', 'DEU', 'JPN')
+
+resultado_zip = zip(iter_1, iter_2, iter_3)
+resultado_final = tuple( resultado_zip )
+
+print( resultado_final ) # (('A', 100, 'USA'), ('B', 200, 'ECU'), ('C', 300, 'DEU'))
+
+
+
+
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 55) Librería Time
+print('\n\n55) Librería Time\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - una opción para trabajar fecha y hora en Python => PERO no la más recomendable
+# - crea fechas en función de la hora cero (EPOCH)
+# - la hora cero (EPOCH) de la computadora se considera el 1 de enero de 1970
+# - útil para crear estampas de tiempo y sleep !!!
+# - para fechas / horas => veremos la librería datetime !!!
+
+# ------------------------------
+# importación de librería time
+# ------------------------------
+import time
+
+# -----------
+# punto cero
+# -----------
+print( time.ctime(0) ) # Thu Jan  1 01:00:00 1970
+
+# ------------------------------------
+# milisegundos a partir del tiempo 0
+# ------------------------------------
+# - desde el punto 0
+# - hasta el preciso momento de ejecución de este script
+print( time.time() ) # 1701018544.838476
+
+# -------------
+# fecha actual
+# -------------
+# - en el preciso momento de ejecución del script
+print( time.ctime( time.time() ) ) # Sun Nov 26 18:10:21 2023
+
+# ---------------------------------------
+# aplicación útil => estampas de tiempo
+# ---------------------------------------
+# - crear una identificación única para algún dato
+lista_estudiantes = [
+    'Carlos', 'Ana', 'Diego', 'Ximena', 'Adri', 'Sebas', 'Marcelo'
+]
+
+identificacion_unica = []
+
+for estudiante in lista_estudiantes:
+    identificacion_unica.append( round(time.time() * random.random()) )
+# end for
+
+#print(identificacion_unica)
+
+id_estudiante = zip(identificacion_unica , lista_estudiantes)
+tupla_id_estudiante = tuple(id_estudiante)
+
+for elemento in tupla_id_estudiante:
+    print(elemento)
+# end for
+
+# -------------
+# time.sleep()
+# -------------
+"""
+contador = 5
+
+while contador > 0:
+    print( 'Quedan {} segundos para año nuevo!'.format(contador) )
+    contador -= 1
+    time.sleep(1)
+else:
+    print('Feliz año nuevo!!!')
+# end while
+"""
+
+
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 56) Librería datetime
+print('\n\n56) Librería datetime\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - la librería / módulo adecuado para trabajar hora y fecha
+
+# ---------------------------------------------
+# importación de la librería / módulo datetime
+# ---------------------------------------------
+import datetime
+
+# -------------
+# fecha actual
+# -------------
+# - al momento de ejecución del script !!
+# - retorna un objeto del tipo "datetime.datetime"
+fecha_actual = datetime.datetime.now()
+print( fecha_actual , type(fecha_actual) ) # 2023-11-26 19:42:44.708292 <class 'datetime.datetime'>
+
+# -----------------------------------
+# acceso a los elementos de datetime
+# -----------------------------------
+# - OJO: no son métodos
+# - son atributos / propiedades del objeto (teoría de POO)
+# - en pocas palabras => no usar los paréntesis al final
+
+"""
+Elemento de Acceso          |  Manera de Acceder
+-----------------------------------------------------------
+acceder al año              |  fecha_datetime.year 
+acceder al mes              |  fecha_datetime.month 
+acceder al día              |  fecha_datetime.day 
+acceder a la hora           |  fecha_datetime.hour
+acceder a los minutos       |  fecha_datetime.minute
+acceder a los segundos      |  fecha_datetime.second
+acceder a los microsegundos |  fecha_datetime.microsecond
+"""
+
+print(fecha_actual.year) # 2023
+print(fecha_actual.month) # 11
+print(fecha_actual.hour) # 19
+
+# ------------------------------
+# creando fechas personalizadas
+# ------------------------------
+# - de 2 maneras
+#   a) tupla de 3 valores (año, mes, día)
+#   b) tupla de 6 valores (año, mes, día, hora, minutos, segundos)
+
+fecha_1 = datetime.datetime(2001,7,20)
+fecha_2 = datetime.datetime(2025,12,19,19,51,25)
+
+print(fecha_1) # 2001-07-20 00:00:00
+print(fecha_2) # 2025-12-19 19:51:25
+
+# -----------------------------
+# formato personalizado fácil
+# -----------------------------
+# - hay muchas maneras de complicarse aquí
+# - pero como breve introducción aprenderemos una manera muy fácil
+
+fecha_actual = datetime.datetime.now()
+print(fecha_actual)
+
+formato_personalizado = '{}/{}/{} - {}h:{}m:{}s'.format(
+    fecha_actual.year,
+    fecha_actual.month,
+    fecha_actual.day,
+    fecha_actual.hour,
+    fecha_actual.minute,
+    fecha_actual.second
+)
+
+print(formato_personalizado) # 2023/11/26 - 19h:53m:39s
+
+# ---------------------
+# reloj en tiempo real
+# ---------------------
+"""
+def imprimir_reloj_tiempo_real():
+    hoy = datetime.datetime.now()
+    print('{}/{}/{} - {}h:{}m:{}s'.format(
+        hoy.year,
+        hoy.month,
+        hoy.day,
+        hoy.hour,
+        hoy.minute,
+        hoy.second
+    ))
+# end def
+
+while True:
+    imprimir_reloj_tiempo_real()
+    time.sleep(1)
+# end while
+"""
+
+
+
+
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 57) keywords as / from
+print('\n\n57) keyword as / from\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - as   ==> para redefinir el nombre de una librería módulo
+# - from ==> para importar algo específico de un módulo
+
+"""
+import random as r
+import datetime as dt
+
+print( r.random() ) # 0.7889372068450233
+print( dt.datetime.now() ) # 2023-11-26 20:03:57.858369
+
+from math import cos
+print( cos(3.1416 / 3) ) # 0.4999978792725457
+
+from math import pi as constante_pi, sin as seno, cos as coseno
+print( coseno( constante_pi / 6 ) ) # 0.8660254037844387
+print( seno( constante_pi / 6 ) ) # 0.49999999999999994
+"""
+
+
+
+
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 58) Operador Walrus :=
+print('\n\n58) Operador Walrus :=\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - a partir de python 3.8 >
+# - asignador de expresión
+# - asignar variables dentro de alguna función / expresión
+
+# ---------------
+# Ejemplo Básico
+# ---------------
+nombre = 'Sebas'
+print( nombre ) # Sebas
+
+print( nombre_completo := 'Sebas Silva' )
+print( nombre_completo )
+
+# ---------------------
+# Ejemplo más complejo
+# ---------------------
+
+# ==> sin walrus :=
+"""
+ingredientes = []
+opcion_user = ''
+
+print('Lista de Ingredientes para una Receta:')
+while opcion_user != 'salir':
+    opcion_user = input('Ingrese un Ingrediente : ')
+    ingredientes.append(opcion_user)
+else:
+    ingredientes.pop()
+
+print( ingredientes )
+"""
+
+# ==> con walrus :=
+"""
+ingredientes = []
+
+print('Lista de Ingredientes para una Receta:')
+while ( opcion_user := input('Ingrese un Ingrediente : ') ) != 'salir':
+    ingredientes.append(opcion_user)
+# end while
+
+print(ingredientes)
+"""
+
+
+
+
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 59) Gestión de Errores => try-except
+print('\n\n59) Gestión de Errores => try-except\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - errores en programación hay básicamente 2
+#   a) errores de sintaxis => algo escribimos mal (lo detecta el editor de código)
+#   b) errores de ejecución => todo bien escrito, pero algo usamos mal
+# - ambos paran la ejecución del programa
+# - try-except => para capturar el error y gestionarlo
+# - raise => para definir un error personalizado
+
+# ------------------
+# Error de Sintaxis
+# ------------------
+print('hola')
+#pint('hola') # NameError: name 'pint' is not defined. Did you mean: 'print'?
+
+# -------------------
+# Error de Ejecución
+# -------------------
+lista = ['a','b','c']
+print( lista[0] )
+#print( lista[5] ) # IndexError: list index out of range
+
+#resultado = 5/0 # ZeroDivisionError: division by zero
+
+print('si llego aquí no hay error')
+
+# ------------------
+# try-except Básico
+# ------------------
+# - try => alberga el código peligroso que puede causar error
+# - except => presenta el error sin parar la ejecución del programa
+print()
+
+try:
+    print( 5/0 )
+except:
+    print('ERROR - algo salió mal')
+# end try-except
+
+print('si llego aquí el error no ha parado el programa')
+
+# ------------------
+# Mostrando el error
+# ------------------
+# - usando Exception y un alias
+print()
+
+try:
+    print( 5/0 )
+except Exception as e:
+    print('ERROR - algo salió mal |', e)
+# end try-except
+
+print('si llego aquí el error no ha parado el programa')
+
+# ---------------------------------------------
+# Estructura Completa: try-except-else-finally
+# ---------------------------------------------
+"""
+try:     aquí va el código que tiene el riesgo de producir error
+except:  bloque que se ejecuta en caso de error sin interrumpir el flujo del programa
+else:    bloque que se ejecuta cuando no se da error
+finally: bloque que se ejecuta SIEMPRE, haya error o no
+"""
+
+def dividir(a,b):
+    try:
+        resultado = a/b
+    except Exception as e:
+        print( 'ERROR | Lo siento, pero algo salió mal |', e )
+    else:
+        print( 'Operación con ÉXITO | RESULTADO => {}/{} = {:.2f}'.format(a,b,resultado) )
+    finally:
+        print( 'FIN DEL MÉTODO DIVIDIR' )
+    # end try-except
+# end def
+
+print('\nTEST')
+dividir(5,0)
+dividir(5,2)
+dividir(5,'a')
+
+# -----------------
+# type(e).__name__
+# -----------------
+# - devuelve el tipo del error
+
+def dividir(a,b):
+    try:
+        resultado = a/b
+    except Exception as e:
+        print( 'ERROR | Lo siento, pero algo salió mal |', e, '|', type(e).__name__ )
+    else:
+        print( 'Operación con ÉXITO | RESULTADO => {}/{} = {:.2f}'.format(a,b,resultado) )
+    finally:
+        print( 'FIN DEL MÉTODO DIVIDIR' )
+    # end try-except
+# end def
+
+print('\nTEST')
+dividir(5,0) # ZeroDivisionError
+dividir(5,2)
+dividir(5,'a') # TypeError
+
+# ---------------------------------
+# Capturar Excepciones Específicas
+# ---------------------------------
+
+def dividir(a,b):
+    try:
+        resultado = a/b
+    except TypeError as e:
+        print( type(e).__name__ , '||' , e  )
+        print('ERROR - Por favor ingrese un número !')
+    except ZeroDivisionError as e:
+        print( type(e).__name__ , '||' , e  )
+        print('ERROR - La división para CERO no existe !')
+    except Exception as e: # de manera general
+        print( type(e).__name__ , '||' , e  )
+        print('ERROR - La división no es posible...')
+    else:
+        print( 'Operación con ÉXITO | RESULTADO => {}/{} = {:.2f}'.format(a,b,resultado) )
+    finally:
+        print( 'FIN DEL MÉTODO DIVIDIR' )
+    # end try-except
+# end def
+
+print('\nTEST')
+dividir(5,0) # ZeroDivisionError
+dividir(5,2)
+dividir(5,'a') # TypeError
+
+# --------------------------------
+# Generar Errores Personalizados
+# --------------------------------
+# - raise => invocamos un error
+# - OJO: debemos capturarlo, caso contrario, se para la ejecución del programa
+
+
+# ==> definición de una función sencilla
+def saludar(nombre):
+    print('Hola', nombre)
+# end def
+
+saludar('Carlos') # Hola Carlos
+saludar('123') # Hola 123
+
+
+# ==> prohibiendo al usuario poner números en el nombre
+def saludar(nombre):
+    if nombre.isalpha():
+        print('Hola', nombre)
+    else:
+        print('ERROR')
+# end def
+
+print('\nTEST')
+saludar('Carlos') # Hola Carlos
+saludar('123') # ERROR
+saludar('') # ERROR
+
+
+# ==> utilizando raise
+def saludar(nombre):
+    if nombre.isalpha():
+        print('Hola', nombre)
+    else:
+        raise Exception('ERROR - El nombre solo puede contener letras')
+# end def
+
+saludar('Carlos') # Hola Carlos
+#saludar('123') # Exception: ERROR - El nombre solo puede contener letras 
+#saludar('') # ERROR
+
+
+# ==> raise + try-except
+def saludar(nombre):
+    try:
+        if nombre.isalpha():
+            print('Hola', nombre)
+        else:
+            raise Exception('ERROR - El nombre solo puede contener letras')
+    except Exception as e: # el mensaje que definimos arriba !
+        print( type(e).__name__, '||', e )
+# end def
+
+print('\nTEST')
+saludar('Carlos') # Hola Carlos
+saludar('123') # Exception || ERROR - El nombre solo puede contener letras
+saludar('') # Exception || ERROR - El nombre solo puede contener letra
+
+
+
+
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 60) Breve Introducción a numpy
+print('\n\n60) Breve Introducción a numpy\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+
+# -----------------
+# ¿Por qué numpy?
+# -----------------
+lista_1 = [10, 20, 30]
+lista_2 = [5, 6, 7]
+
+resultado = lista_1 + lista_2
+print(resultado) # [10, 20, 30, 5, 6, 7]
+
+
+
+
+
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 61) Breve Introducción a Matplot
+print('\n\n61) Breve Introducción a Matplot\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
