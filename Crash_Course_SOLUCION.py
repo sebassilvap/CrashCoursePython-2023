@@ -1,9 +1,8 @@
-# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# PYTHON CRASH COURSE
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# PYTHON CRASH COURSE LEGACY
 # por @sebas.silva.p
-# 11/2023
-# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-
+# Diciembre 2023
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 
 
@@ -33,6 +32,7 @@ líneas
 print('\n\n\n2) print()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - función interna para imprimir en consola
+# - función interna en python => built-in function
 
 print("Hola Mundo")
 print('Hola Mundo') # comilla simple o doble
@@ -104,8 +104,8 @@ print(c) # Python
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 4) Estándar en Nombres de Variables
-print('\n\n\n4) Estándar en Nombres de Variables\n')
+# 4) Reglas para Nombres de Variables
+print('\n\n\n4) Reglas para Nombres de Variables\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - En programación se maneja 2 estándares:
 #   (a) cammelCase => nombreEstudiante
@@ -229,6 +229,13 @@ print( var_int , type(var_int) ) # 100 <class 'int'>
 print( var_float , type(var_float) ) # 100.0 <class 'float'>
 print( var_bool , type(var_bool) ) # True <class 'bool'>
 
+num_int = 5
+num_float = float(num_int)
+
+print( num_int , type(num_int) ) # 5 <class 'int'>
+print( num_float , type(num_float) ) # 5.0 <class 'float'>
+
+
 # -------------------------
 # Todo es CASTEABLE a bool
 # -------------------------
@@ -264,8 +271,8 @@ print( none_1 , '=>' , bool(none_1) ) # None => False
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 7) función interna => isinstance()
-print('\n\n7) función interna => isinstance()\n')
+# 7) Función Interna => isinstance()
+print('\n\n7) Función Interna => isinstance()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - función complemento de type()
 # - verificar si una variable / dato es de un tipo
@@ -285,14 +292,16 @@ print( isinstance(b, int) ) # True
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 8) Función Internal - help()
-print('\n\n8) Función Internal - help()\n')
+# 8) Función Interna => help()
+print('\n\n8) Función Interna => help()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - funciones internas de python (built-in functions)
 # - no necesitan importación / instalación
 # - están ahí desde que se instala python
 # - ej: print() / type() / int() / float() / etc...
 # - help() => biblioteca offline de Python
+
+# - Tema de funciones internas:
 # - https://www.w3schools.com/python/python_ref_functions.asp
 
 
@@ -421,6 +430,12 @@ print('\tpython\t\tjava') # python 1 tab => 4 espacios
 print('Me gusta "Python", es chévere!')
 print("Me gusta \"Python\", es chévere!")
 print('Me gusta \'Python\', es chévere!')
+
+# \b => retroceso
+print('Hola\bAmigos') # HolAmigos
+
+# para poner el backslash
+print('hola\\mundo') # hola\mundo
 
 
 
@@ -765,7 +780,6 @@ print( num_1, '|' , round(num_1) ) # 3.2 | 3
 print( num_2, '|' , round(num_2) ) # 3.5 | 4
 print( num_3, '|' , round(num_3) ) # 3.9 | 4
 
-
 # ---------------------------
 # abs() / valor absoluto
 # ---------------------------
@@ -793,7 +807,6 @@ print( sum(lista_1), max(lista_1), min(lista_1) ) # 27.400000000000002 20 -5
 # ==> librería math
 # https://www.w3schools.com/python/python_math.asp
 
-
 # --------------------------
 # Importación de un módulo
 # --------------------------
@@ -804,7 +817,6 @@ import math
 # ------------
 print( math.e ) # 2.718281828459045
 print( math.pi ) # 3.141592653589793
-
 
 # ------------------------
 # Representación numérica
@@ -898,6 +910,7 @@ print( eval(expr_2) ) # -7.5
 # 17) input => entrada de datos
 print('\n\n\n17) input => entrada de datos\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - OJO: todo lo que viene del input viene como string <str>
 
 # -----------
 # SIN input
@@ -1015,6 +1028,7 @@ print( True and True and True and True ) # True
 print( True and True and False and True ) # False
 
 print('\nTabla OR')
+# => basta que tengamos 1 True, resultado es True
 print( True or False ) # True
 print( False or True ) # True
 print( False or False ) # False
@@ -1649,16 +1663,77 @@ while True:
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 26) pares / impares / múltiplos
-print('\n\n26) pares / impares / múltiplos\n')
+# 26) Pares / Impares / Múltiplos
+print('\n\n26) Pares / Impares / Múltiplos\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - Recordemos un poco de la primaria
+# - Las partes de una división:
+
+#   Dividendo  |____ Divisor
+#     Residuo        Cociente
+
+# Cociente = Dividendo / Divisor
+# Residuo / Resto = Dividendo % Divisor => Operador de Módulo
+
+# - Si un número es par => divisible para 2 => resto = 0
+
+#   4 |__ 2
+#   0     2
+
+# - Si un número es impar => NO divisible para 2 => resto = 1
+
+#   5 |__ 2
+#   1     2
+
+# - Un múltiplo => el número es divisble para este número => resto = 0
+# - EJ: 6, 9, 12 múltiplos de 3
+
+#   12 |__ 3
+#   0      4
+
+# => esto puede ser de ayuda en la programación
+
+# ------
+# EJ 1
+# ------
+lista_estudiantes = [
+    'goku', 'krilin', 'piccolo', 'vegeta', 'majin boo', 'yamcha'
+]
+
+estudiantes_pares = []
+estudiantes_impares = []
+
+for index, estudiante in enumerate(lista_estudiantes):
+    if (index + 1) % 2 == 0:
+        estudiantes_pares.append(estudiante)
+    else:
+        estudiantes_impares.append(estudiante)
+# end for
+
+print('PARES =', estudiantes_pares)
+print('IMPARES =', estudiantes_impares)
+
+
+# ------
+# EJ 2
+# ------
+# - múltiplos de 4 en números del 1 al 100
+
+multiplos_4 = []
+
+for x in range(1,101):
+    if x % 4 == 0:
+        multiplos_4.append(x)
+# end for
+
+print('Múltiplos de 4 =', multiplos_4)
 
 
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 27) print avanzado + string format
-print('\n\n\n27) print avanzado + string format\n')
+# 27) Print Avanzado + String Format
+print('\n\n\n27) Print Avanzado + String Format\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 # ------------------------
@@ -1911,6 +1986,7 @@ print( heroes_copy )
 
 
 
+
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # 31) Condicional Anidado
 print('\n\n\n31) Condicional Anidado\n')
@@ -1976,6 +2052,7 @@ while True:
 
 
 
+
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # 32) Listas Multidimensionales
 print('\n\n\n32) Listas Multidimensionales\n')
@@ -1985,6 +2062,9 @@ print('\n\n\n32) Listas Multidimensionales\n')
 # ---------------------------------------------
 # Representación de una lista multidimensional
 # ---------------------------------------------
+# - esto nos recuerda a una matriz de números
+# - ejemplo: matriz de 3 filas y 3 columnas
+
 matriz = [
     [1,2,3],
     [4,5,6],
@@ -2168,6 +2248,7 @@ lista_3.pop()
 
 print( lista_1, hex(id(lista_1)) )
 print( lista_3, hex(id(lista_3)) )
+
 
 
 
@@ -2974,13 +3055,11 @@ def restar(a,b):
     return a-b
 # end def
 
-
 print( a , b ) # 0 20
 print( multiplicar(a, b) ) # 200
 print( multiplicar(7, 2) ) # 14
 print( restar(a, b) ) # -10
 print( restar(7, 2) ) # 5
-
 
 # ---------------------------------------
 # pass => definir función y trabar luego
@@ -3226,6 +3305,7 @@ print(a) # 50
 
 
 
+
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # 43) Funciones *args
 print('\n\n43) Funciones *args\n')
@@ -3399,6 +3479,7 @@ print(mult_5_20) # 100
 
 
 
+
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # 46) Funciones como Variables
 print('\n\n46) Funciones como Variables\n')
@@ -3431,9 +3512,134 @@ imprimir('hola mundo') # hola mundo
 
 
 
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 47) Funciones de Orden Superior (High Order Functions)
+print('\n\n47) Funciones de Orden Superior (High Order Functions)\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - Una función de orden superior puede ser 1 de las 2 siguientes:
+#   a) Cuando acepta otra función como ARGUMENTO
+#   b) Cuando retorna una 2da función definida en la 1era
+
+# ----------------------------------------------
+# a) Cuando acepta otra función como ARGUMENTO
+# ----------------------------------------------
+
+# ===> funciones normales
+def gritando(msg):
+    return msg.upper()
+# end def
+
+def en_voz_baja(msg):
+    return msg.lower()
+# end def
+
+
+# ===> función de alto grado (high order function)
+def saludar(funcion):
+    saludo = funcion('Hola mi Estimado! Saludos!')
+    print(saludo)
+# end def
+
+
+# ===> Ejecutando high order function
+# - las funciones-argumento se pasan como firma, sin ejecutar !!
+
+saludar(gritando) # HOLA MI ESTIMADO! SALUDOS!
+saludar(en_voz_baja) # hola mi estimado! saludos!
+
+
+# ------------------------------------------------------
+# b) Cuando retorna una 2da función definida en la 1era
+# ------------------------------------------------------
+# - EJ: una fórmula sencilla de la física
+#   velocidad = distancia / tiempo
+
+
+# ===> como función normal
+def velocidad(distancia, tiempo):
+    return distancia / tiempo
+# end def
+
+d = 10 # 10 metros
+t = 60 # 60 segundos
+
+print( velocidad(d,t) ) # 0.16666666666666666 m/s
+
+
+# ===> como high order function
+def distancia(d):
+    def tiempo(t):
+        return d/t
+    # end def
+    return tiempo
+# end def
+
+calculo_velocidad_distancia = distancia(10)
+calculo_velocidad_distacia_tiempo = calculo_velocidad_distancia(60)
+
+print(calculo_velocidad_distancia) # <function distancia.<locals>.tiempo at 0x00000227E1D6F060>
+print(calculo_velocidad_distacia_tiempo) # 0.16666666666666666
+
+# otra manera:
+resultado = distancia(10)(60) # (d)(t)
+print(resultado) # 0.16666666666666666
+
+
+
+
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 48) Decoradores
+print('\n\n48) Decoradores\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - patrón de diseño
+# - añadir nueva funcionalidad a un elemento / sin modificar la estructura
+
+# ---------------
+# SIN decorador
+# ---------------
+def saludo_sin_decorador():
+    print('Hola, un abrazo!')
+# end def
+
+saludo_sin_decorador() # Hola, un abrazo!
+
+# --------------
+# CON decorador
+# --------------
+
+# ==> función decoradora
+def funcion_decoradora(funcion):
+    
+    def funcion_wrapper():
+        print('Hola!!!')
+        funcion()
+        print('Cuídate mucho!!!')
+    # end def
+    
+    return funcion_wrapper
+# end def
+
+# ==> función con decorador
+@funcion_decoradora
+def saludo_con_decorador():
+    print('Qué increíble que es programar...')
+# end def
+
+# ==> invocando
+saludo_con_decorador()
+
+"""
+Hola!!!
+Qué increíble que es programar...
+Cuídate mucho!!!
+"""
+    
+
+
+
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 47) sorted / map / filter / reduce
-print('\n\n47) sorted / map / filter / reduce\n')
+# 49) sorted / map / filter / reduce
+print('\n\n49) sorted / map / filter / reduce\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - Funciones muy muy útiles para tratamiento de datos
 # - Su fundamento se aplica en otros lenguajes de programación
@@ -3449,8 +3655,8 @@ print('\n\n47) sorted / map / filter / reduce\n')
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 48) sorted()
-print('\n\n48) sorted()\n')
+# 50) sorted()
+print('\n\n50) sorted()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - las mismas nociones que .sort() de listas
 # - la diferencia es que no modifica la lista
@@ -3483,8 +3689,8 @@ print( 'orden_mas_menos =', orden_mas_menos ) # orden_mas_menos = ['investigacio
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 49) map()
-print('\n\n49) map()\n')
+# 51) map()
+print('\n\n51) map()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - map( funcion , elementos_iterables )
 # - transforma una colección por medio de una función
@@ -3556,8 +3762,8 @@ print(nota_final_2) # [16.4, 16.9, 16.3]
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 50) filter()
-print('\n\n50) filter()\n')
+# 52) filter()
+print('\n\n52) filter()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - filter( funcion , elemento_iterable )
 # - la función debe retornar True / False => de acuerdo al criterio de filtrado
@@ -3599,8 +3805,8 @@ print(calificaciones_bajas) # [13, 14, 10, 14, 11]
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 51) reduce()
-print('\n\n51) reduce()\n')
+# 53) reduce()
+print('\n\n53) reduce()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - reduce ( función , elemento_iterable )
 # - OJO: para usarlo hay que importar la librería functools !!!
@@ -3660,8 +3866,8 @@ print(gastos_combustible_totales, 'USD') # 96.29 USD
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 52) List Comprehension
-print('\n\n52) List Comprehension\n')
+# 54) List Comprehension
+print('\n\n54) List Comprehension\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - manera corta/dinámica/inteligente de crear una lista
 # - se lo puede realizar por medio de 3 sintaxis:
@@ -3702,8 +3908,8 @@ print(resultado) # ['positivo', 'negativo', 'positivo', 'negativo', 'positivo', 
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 53) Dictionary Comprehension
-print('\n\n53) Dictionary Comprehension\n')
+# 55) Dictionary Comprehension
+print('\n\n55) Dictionary Comprehension\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - manera corta/dinámica/inteligente de crear un diccionario
 # - a partir de otro diccionario
@@ -3783,8 +3989,8 @@ print(analisis_estudiante)
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 54) Función Interna - zip
-print('\n\n54) Función Interna - zip\n')
+# 56) Función Interna - zip
+print('\n\n56) Función Interna - zip\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - empaca 2 o + iterables en un objeto tipo zip
 # - el iterable de menor tamaño decide el tamaño del zip
@@ -3819,8 +4025,8 @@ print( resultado_final ) # (('A', 100, 'USA'), ('B', 200, 'ECU'), ('C', 300, 'DE
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 55) Librería Time
-print('\n\n55) Librería Time\n')
+# 57) Librería Time
+print('\n\n57) Librería Time\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - una opción para trabajar fecha y hora en Python => PERO no la más recomendable
 # - crea fechas en función de la hora cero (EPOCH)
@@ -3890,9 +4096,10 @@ else:
 """
 
 
+
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 56) Librería datetime
-print('\n\n56) Librería datetime\n')
+# 58) Librería datetime
+print('\n\n58) Librería datetime\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - la librería / módulo adecuado para trabajar hora y fecha
 
@@ -3990,10 +4197,10 @@ while True:
 
 
 
-# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 57) keywords as / from
-print('\n\n57) keyword as / from\n')
-# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 59) keywords as / from
+print('\n\n59) keyword as / from\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - as   ==> para redefinir el nombre de una librería módulo
 # - from ==> para importar algo específico de un módulo
 
@@ -4016,8 +4223,8 @@ print( seno( constante_pi / 6 ) ) # 0.49999999999999994
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 58) Operador Walrus :=
-print('\n\n58) Operador Walrus :=\n')
+# 60) Operador Walrus :=
+print('\n\n60) Operador Walrus :=\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - a partir de python 3.8 >
 # - asignador de expresión
@@ -4067,8 +4274,8 @@ print(ingredientes)
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 59) Gestión de Errores => try-except
-print('\n\n59) Gestión de Errores => try-except\n')
+# 61) Gestión de Errores => try-except
+print('\n\n61) Gestión de Errores => try-except\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - errores en programación hay básicamente 2
 #   a) errores de sintaxis => algo escribimos mal (lo detecta el editor de código)
@@ -4263,24 +4470,424 @@ saludar('') # Exception || ERROR - El nombre solo puede contener letra
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 60) Breve Introducción a numpy
-print('\n\n60) Breve Introducción a numpy\n')
+# 62) Breve Introducción a numpy
+print('\n\n62) Breve Introducción a numpy\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
 # -----------------
 # ¿Por qué numpy?
 # -----------------
-lista_1 = [10, 20, 30]
-lista_2 = [5, 6, 7]
+lista_1 = [5, 3, 7]
+lista_2 = [2, 4, 1]
 
 resultado = lista_1 + lista_2
-print(resultado) # [10, 20, 30, 5, 6, 7]
+print(resultado) # [5, 3, 7, 2, 4, 1]
+
+
+# -----------------------------------------------------
+# ¿Hay alguna manera de hacer operaciones aritméticas?
+# -----------------------------------------------------
+
+# ==> utilizando for
+suma_listas = []
+for index, numero in enumerate(lista_1):
+    suma_listas.append( lista_1[index] + lista_2[index] )
+# end for
+
+print(suma_listas) # [7, 7, 8]
+
+# ==> utilizando while
+resta_listas = []
+index = 0
+while index < len(lista_1):
+    resta_listas.append( lista_1[index] - lista_2[index] )
+    index += 1
+# end while
+
+print(resta_listas) # [3, -1, 6]
+
+
+# --------------------------------------------------
+# ¿Existe otra manera más fácil? => librería numpy
+# --------------------------------------------------
+
+# ==> importando la librería numpy
+# - instalar primero: pip install numpy
+# - verificar si está instalado: pip list + buscar numpy
+# - Replit ya tiene instalado por defecto
+
+import numpy as np   #! RECORDAR ESTA LÍNEA
+
+
+# ==> averiguando versión en terminal
+print( np.__version__ ) # 1.26.2
+
+
+# ==> creando un array con numpy
+lista_1 = np.array([5, 3, 7])
+lista_2 = np.array([2, 4, 1])
+
+print( lista_1 , type(lista_1), len(lista_1) ) # [5 3 7] <class 'numpy.ndarray'> 3
+print( lista_2 , type(lista_2), len(lista_2) ) # [2 4 1] <class 'numpy.ndarray'> 3
+
+
+# ==> creando array de numpy con variable de lista
+lista_1 = [5, 3, 7]
+lista_2 = [2, 4, 1]
+
+lista_1 = np.array(lista_1)
+lista_2 = np.array(lista_2)
+
+print( lista_1 , type(lista_1), len(lista_1) ) # [5 3 7] <class 'numpy.ndarray'> 3
+print( lista_2 , type(lista_2), len(lista_2) ) # [2 4 1] <class 'numpy.ndarray'> 3
+
+
+# ==> operaciones aritméticas de listas con numpy
+suma_listas = lista_1 + lista_2
+resta_listas = lista_1 - lista_2
+producto_listas = lista_1 * lista_2
+division_listas = lista_1 * lista_2
+modulo_listas = lista_1 % lista_2
+potencia_listas = lista_1 ** lista_2
+
+print( suma_listas ) # [7 7 8]
+print( resta_listas ) # [ 3 -1  6]
+print( producto_listas ) # [10 12  7]
+print( division_listas ) # [10 12  7]
+print( modulo_listas ) # [1 3 0]
+print( potencia_listas ) # [25 81  7]
+
+
+# ==> operaciones escalar & array
+lista = np.array([2, 4, 1])
+r1 = 2 * lista
+r2 = 10 / lista
+
+print(r1) # [4 8 2]
+print(r2) # [ 5.   2.5 10. ]
+
+
+# ==> funciones normales con numpy
+def funcion_x(x):
+    return 2*x - 5 + x**2
+# end def
+
+r1 = funcion_x(2)
+r2 = funcion_x(4)
+r3 = funcion_x(1)
+print(r1, r2, r3) # 3 19 -2
+
+r = funcion_x(lista)
+print(r) # [ 3 19 -2]
+
+
+# ==> libería math & array
+r1 = math.sin(2)
+r2 = math.sin(4)
+r3 = math.sin(1)
+print(r1, r2, r3) # 0.9092974268256817 -0.7568024953079282 0.8414709848078965
+
+#r = math.sin(lista) # TypeError: only length-1 arrays can be converted to Python scalars
+
+
+# ==> funciones aritméticas numpy
+# https://numpy.org/doc/stable/reference/routines.math.html
+
+array_seno = np.sin(lista)
+array_coseno = np.cos(lista)
+array_tangente = np.tan(lista)
+array_log_e = np.log(lista)
+array_log_10 = np.log10(lista)
+
+print( array_seno ) # [ 0.90929743 -0.7568025   0.84147098]
+print( array_coseno ) # [-0.41614684 -0.65364362  0.54030231]
+print( array_tangente ) # [-2.18503986  1.15782128  1.55740772]
+print( array_log_e ) # [0.69314718 1.38629436 0.        ]
+print( array_log_10 ) # [0.30103    0.60205999 0.        ]
+
+
+# ==> linspace
+# - generar una distribución estándar de números desde un inicio a un final
+distribucion_1_100_10 = np.linspace(1.0, 100.0, num=10)
+print(distribucion_1_100_10) # [  1.  12.  23.  34.  45.  56.  67.  78.  89. 100.]
+
+distribucion_500_1000_50 = np.linspace(50.0, 1000.0, num=50)
+print(distribucion_500_1000_50)
 
 
 
 
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 63) Breve Introducción a Matplotlib
+print('\n\n63) Breve Introducción a Matplotlib\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
-# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 61) Breve Introducción a Matplot
-print('\n\n61) Breve Introducción a Matplot\n')
-# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# ---------------------
+# ¿Por qué matplotlib?
+# ---------------------
+# - una librería externa de python, súper útil
+# - nos ayuda a realizar gráficas con datos numéricos
+# - Referencia: https://www.w3schools.com/python/matplotlib_intro.asp
+
+
+# ------------------------
+# importación del módulo
+# ------------------------
+# - no viene por defecto cuando se instala python
+# - instalar en el CMD:
+"""
+python -m pip install -U pip
+python -m pip install -U matplotlib
+"""
+# - verificar si está instalado: pip list + buscar matplotlib
+# - Replit ya tiene instalado por defecto
+
+import matplotlib
+
+
+# -------------------------------
+# Averiguar versión en Terminal
+# -------------------------------
+print(matplotlib.__version__) # 3.8.2
+
+
+# ----------------------------------
+# importación específica de pyplot
+# ----------------------------------
+
+import matplotlib.pyplot as plt   #! RECORDAR ESTA LÍNEA
+
+
+# -----------------------
+# plot básico con listas
+# -----------------------
+
+"""
+valores_x = [1,2,3,4,5]
+valores_y = [10,15,12,18,20]
+
+plt.plot( valores_x , valores_y )
+plt.show()
+"""
+
+# - (comentamos para que se abra el siguiente)
+
+
+# ---------------------------
+# Marcadores / Línea / Color
+# ---------------------------
+# - marker|line|color
+# - https://www.w3schools.com/python/matplotlib_markers.asp
+
+# MARCADORES
+"""
+    Marcador        Descripción
+    'o'             Círculo
+    '*'             Estrella
+    'X'             Equis
+"""
+
+# LÍNEA
+"""
+    Sintaxis        Descripción
+    '-'             Línea Sólida
+    ':'             Línea de puntos
+    '--'            Línea entrecortada
+"""
+
+# COLORES
+"""
+    Sintaxis        Descripción
+    'r'             Rojo
+    'g'             Verde
+    'b'             Azul
+"""
+
+"""
+valores_x = [1,2,3,4,5]
+valores_y = [10,15,12,18,20]
+
+plt.plot( valores_x , valores_y, 'X--g' )
+plt.show()
+"""
+
+
+# -----------------------------------------------
+# Tamaño marcador => markersize => ms
+# Color borde marcador => markeredgecolor => mec
+# Color fondo marcador =>markerfacecolor  => mfc
+# -----------------------------------------------
+
+"""
+valores_x = [1,2,3,4,5]
+valores_y = [10,15,12,18,20]
+
+plt.plot( 
+    valores_x,
+    valores_y,
+    'o--g',
+    ms = 15,
+    mfc = 'b',
+    mec = 'r'
+    )
+
+plt.show()
+"""
+
+# ------------------------------------
+# Tamaño de línea => linewidth => lw
+# ------------------------------------
+
+"""
+valores_x = [1,2,3,4,5]
+valores_y = [10,15,12,18,20]
+
+plt.plot( 
+    valores_x,
+    valores_y,
+    'o--g',
+    linewidth = 3,
+    ms = 8,
+    mfc = 'b',
+    mec = 'r'
+    )
+
+plt.show()
+"""
+
+# ----------------------------
+# Título & Etiquetas de Ejes
+# ----------------------------
+# Título => plt.title('')
+# Etiqueta / Label en X => plt.xlabel('')
+# Etiqueta / Label en Y => plt.ylabel('')
+
+"""
+valores_x = [1,2,3,4,5]
+valores_y = [10,15,12,18,20]
+
+plt.title('Valores de X vs. Valores de Y')
+plt.xlabel('Valores en X')
+plt.ylabel('Valores en Y')
+
+plt.plot( 
+    valores_x,
+    valores_y,
+    'o--g',
+    linewidth = 3,
+    ms = 8,
+    mfc = 'b',
+    mec = 'r'
+    )
+
+plt.show()
+"""
+
+
+# --------------------------------
+# Incorporar Grilla => plt.grid()
+# --------------------------------
+# - Grilla en X, Y => plt.grid()
+# - Grilla en X    => plt.grid(axis = 'x')
+# - Grilla en Y    => plt.grid(axis = 'y')
+
+"""
+valores_x = [1,2,3,4,5]
+valores_y = [10,15,12,18,20]
+
+plt.title('Valores de X vs. Valores de Y')
+plt.xlabel('Valores en X')
+plt.ylabel('Valores en Y')
+
+plt.plot( 
+    valores_x,
+    valores_y,
+    'o--g',
+    linewidth = 3,
+    ms = 8,
+    mfc = 'b',
+    mec = 'r'
+    )
+
+plt.grid()
+
+plt.show()
+"""
+
+# -------------------
+# Tipos de Gráficos
+# -------------------
+# - Dispersión / Scatter => plt.scatter(x,y)
+# - Barras / Bars => plt.bar(x,y)
+# - Pastel / Pie => plt.pie(y)
+
+# DISPERSIÓN & BARRAS
+"""
+valores_x = [1,2,3,4,5]
+valores_y = [10,15,12,18,20]
+
+plt.title('Valores de X vs. Valores de Y')
+plt.xlabel('Valores en X')
+plt.ylabel('Valores en Y')
+
+plt.scatter(valores_x , valores_y)
+#plt.bar(valores_x , valores_y)
+
+plt.show()
+"""
+
+# PASTEL
+"""
+valores_y = [15, 20, 25, 30, 10] # sumados deben dar 100, 1 pastel = 100%
+etiquetas = ['USA', 'ECU', 'DEU', 'JPN', 'ESP']
+#plt.pie(valores_y)
+plt.pie(valores_y , labels=etiquetas)
+plt.show()
+"""
+
+
+
+
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# 64) Matplotlib + Numpy
+print('\n\n64) Matplotlib + Numpy\n')
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+
+# ----------------------------
+# A) Función de valores de X
+# ----------------------------
+def funcion_x(x):
+    return x**2 -3/x + 15
+# end def
+
+# -------------------------------------------
+# B) Valores de X / Valores de Y con numpy
+# -------------------------------------------
+valores_x = np.linspace(1.0, 100.0, num=50)
+valores_y = funcion_x(valores_x)
+#print(valores_x)
+#print(valores_y)
+
+
+# -----------------------
+# C) Ejecutar Matplotlib
+# -----------------------
+"""
+plt.title('y = x**2 -3/x + 15')
+plt.xlabel('Valores en X')
+plt.ylabel('Valores en Y')
+
+plt.plot( 
+    valores_x,
+    valores_y,
+    'o-r',
+    linewidth = 1,
+    ms = 1.5,
+    mfc = 'b',
+    mec = 'b'
+    )
+
+plt.grid()
+
+plt.show()
+"""
