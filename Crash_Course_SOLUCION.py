@@ -14,15 +14,24 @@ print('\n\n\n1) Comentarios\n')
 # - entre 6 comillas simples o dobles => multilínea => string
 # - no afectan al código
 
-# comentario de 1 línea
+# comentario de una línea 1
+# comentario número 2
+# comentario número 3
+# comentario número 4
+
+'''
+esto es un comentario
+de varias líneas
+'''
 
 """
-comentario
-de varias
-líneas
+esta es otra manera de 
+poner comentarios de varias líneas
+pero
+con comillas dobles !!!
 """
 
-# => este súper caracter ≡ es alt + 240 :)
+# => ≡ alt + 240
 
 
 
@@ -34,21 +43,24 @@ print('\n\n\n2) print()\n')
 # - función interna para imprimir en consola
 # - función interna en python => built-in function
 
+print('Hola Mundo')
 print("Hola Mundo")
-print('Hola Mundo') # comilla simple o doble
-print('Hola a todos! Soy Sebas!') # cualquier mensaje
-print(123) # números
+print('Hola a todos! Soy Sebastián, me gusta Python!')
+print(123456)
+print(555)
+print(12.5)
+
 
 # -------------
 # Línea Vacía
 # -------------
 print('¿Cómo estás?')
 print() # línea vacía
-print('Estoy bien, y tú?')
+print("Estoy bien, gracias, y tú cómo estás?")
 print('') # línea vacía
-print('Gracias')
+print("Gracias")
 print("") # línea vacía
-print('De nada')
+print('De nada!!!!')
 
 
 
@@ -68,38 +80,41 @@ print(a) # 20
 print(b) # 10.5
 print(c) # Sebas
 
+
 # ----------------------------------------------------------------------
 # Truco print => imprimir varios valores, separando con coma
 # ¿por qué? => print es una función => recibe argumentos de función
 # ----------------------------------------------------------------------
-print(a, b, c) # 20 10.5 Sebas
-print('hola', -50, -5.5)
+print(a,b,c) # 20 10.5 Sebas
+print('hola' , -50 , -5.5) # hola -50 -5.5
+print('hola',-50,-5.5) # hola -50 -5.5
+print('hola'    ,    -50   ,    -5.5) # hola -50 -5.5
+
 
 # --------------------------------
 # Redefinir / Reasignar variables
 # --------------------------------
 print(a) # 20
-a = "I love Python"
-print(a) # I love Python
+a = "I love Python, Sebas is the best!!!"
+print(a) # I love Python, Sebas is the best!!!
+
 
 # ---------------------
 # Asignación Múltiple
 # ---------------------
-a, b, c = 100, -5.5, 'Hola'
-
+a , b , c = 100, -5.5, 'Hola' # 1 sola línea de código !!!
 print(a) # 100
 print(b) # -5.5
 print(c) # Hola
 
+
 # -----------------------------------
 # Asignación Múltiple a Valor Único
 # -----------------------------------
-a = b = c = 'Python'
-
+a = b = c = "Python"
 print(a) # Python
 print(b) # Python
 print(c) # Python
-
 
 
 
@@ -121,22 +136,22 @@ apellido = 'Silva'
 edad = 36
 pais_origen = 'Ecuador'
 
-print(nombre, apellido, edad, pais_origen) # Sebas Silva 36 Ecuador
+print( nombre, apellido, edad, pais_origen ) # Sebas Silva 36 Ecuador
+
 
 # ------------------------
 # print en varias líneas
 # ------------------------
 
 print(
-    nombre,
-    apellido,
-    edad,
-    pais_origen,
+nombre,
+apellido,
+edad,
+pais_origen
 ) # Sebas Silva 36 Ecuador
 
-#123nombre = 'Sebas' # SyntaxError: invalid decimal literal
-#%nombre = 'Sebas' # SyntaxError: invalid syntax
-
+#123nombre = 'Sebas' # ERROR
+#%nombre = 'Silva'   # ERROR
 
 
 
@@ -186,18 +201,25 @@ nota = 18.5
 es_profesor = True
 es_estudiante = False
 
-print( nombre, type(nombre) ) # Sebas <class 'str'>
-print( edad, type(edad) ) # 36 <class 'int'>
-print( nota, type(nota) ) # 18.5 <class 'float'>
-print( es_profesor, type(es_profesor) ) # True <class 'bool'>
-print( es_estudiante, type(es_estudiante) ) # False <class 'bool'>
+print( nombre , type(nombre) ) # Sebas <class 'str'>
+print( edad , type(edad) ) # 36 <class 'int'>
+print( nota , type(nota) ) # 18.5 <class 'float'>
+print( es_profesor , type(es_profesor) ) # True <class 'bool'>
+print( es_estudiante , type(es_estudiante) ) # False <class 'bool'>
 
 
 # ----------------------------------------------------------------
 # None => útil para crear una variable sin valor y asignar luego
 # ----------------------------------------------------------------
-x = None
+# declaración => int a;
+# asignación => a = 20;
+
+#a = 20
+
+x = None 
 print( x , type(x) ) # None <class 'NoneType'>
+
+# ... han pasado bastantes líneas de código aquí!!!
 
 x = 100
 print( x , type(x) ) # 100 <class 'int'>
@@ -246,8 +268,9 @@ int_1 = 10
 int_2 = -5
 int_3 = 0
 float_1 = 5.5
-float_2 = 0
-none_1 = None
+float_2 = -6.88
+float_3 = 0.0
+none_1 = None 
 
 print( str_1 , '=>' , bool(str_1) ) # h => True
 print( str_2 , '=>' , bool(str_2) ) #   => True
@@ -256,8 +279,10 @@ print( int_1 , '=>' , bool(int_1) ) # 10 => True
 print( int_2 , '=>' , bool(int_2) ) # -5 => True
 print( int_3 , '=>' , bool(int_3) ) # 0 => False
 print( float_1 , '=>' , bool(float_1) ) # 5.5 => True
-print( float_2 , '=>' , bool(float_2) ) # 0 => False
+print( float_2 , '=>' , bool(float_2) ) # -6.88 => True
+print( float_3 , '=>' , bool(float_3) ) # 0.0 => False
 print( none_1 , '=>' , bool(none_1) ) # None => False
+
 
 # ------------
 # Conclusión
@@ -283,10 +308,11 @@ b = 100
 print( a , type(a) ) # hola <class 'str'>
 print( b , type(b) ) # 100 <class 'int'>
 
-print( isinstance(a, str) ) # True
-print( isinstance(a, int) ) # False
-print( isinstance(b, str) ) # False
-print( isinstance(b, int) ) # True
+# el valor a es un string ???
+print( isinstance( a , str ) ) # True
+print( isinstance( a , int ) ) # False
+print( isinstance( b , str ) ) # False
+print( isinstance( b , int ) ) # True
 
 
 
@@ -343,14 +369,16 @@ print('\n\n\n9) Aritmética en Python\n')
 # ---------------------------------
 # Aritmética con Valores Directos
 # ---------------------------------
-2 + 3
-5 * 8
-9 / 5
-# más sentido imprimir para ver
+#2 + 3
+#5 * 8
+#9 / 5
 
-print(2 + 3) # 5
-print(5/6) # 0.8333333333333334
-print(5  *8) # 40
+# tiene más sentido imprimir para ver esto
+print( 2 + 3 ) # 5
+print( 5 * 8 ) # 40
+#print(9/5) # 1.8
+print( 9 / 5 ) # 1.8
+
 
 # -------------------------
 # Aritmética con variables
@@ -363,8 +391,9 @@ print( x, '-', y, '=', x - y ) # 10 - 3 = 7
 print( x, '*', y, '=', x * y ) # 10 * 3 = 30
 print( x, '/', y, '=', x / y ) # 10 / 3 = 3.3333333333333335
 print( x, '**', y, '=', x ** y ) # 10 ** 3 = 1000
-print( x, '%', y, '=', x % y ) # 10 % 3 = 1
-print( x, '//', y, '=', x // y ) # 10 // 3 = 3
+print( x, '%', y, '=', x % y ) # 10 % 3 = 1 ??
+print( x, '//', y, '=', x // y ) # 10 // 3 = 3 ??
+
 
 # -------
 # Módulo
@@ -372,30 +401,35 @@ print( x, '//', y, '=', x // y ) # 10 // 3 = 3
 #    10 |___ 4
 #    -8      2
 #     2
+
 print( 10 % 4 ) # 2
+
 
 # --------------------
 # División y Redondeo
 # --------------------
 # divide y devuelve la parte entera
-print( 5/2 , 5//2 ) # 2 1
-print( 9/5 , 9//5 ) # 2 1
+print( 5/2 , 5//2 ) # 2.5 2
+print( 9/5 , 9//5 ) # 1.8 1
 print( type(9/5) , type(9//5) ) # <class 'float'> <class 'int'>
+
 # la división convierte a punto flotante !
+
+print( 4/2 ) # 2.0
 
 # ----------------------------------
 # Las reglas matemáticas se cumplen
 # ----------------------------------
 x = 5
 y = 2
-resultado = x * (y + x) - y + x**y - x / (x- 2*y)
-#           5 * (2 + 5) - 2 + 5**2 - 5 / (5- 2*2)
-#           5 *    7    - 2 +  25  - 5 / (5 - 4)
+resultado = x * (y + x) - y + x**y - x / (x - 2*y)
+#           5 * (2 + 5) - 2 + 5**2 - 5 / (5 - 2*2)
+#           5 *    7    - 2 + 25   - 5 / (5 - 4)
 #           35 - 2 + 25 - 5 / 1
 #           35 - 2 + 25 - 5.0
 #           53.0
 
-print(resultado)
+print( resultado , type(resultado) ) # 53.0 <class 'float'>
 
 
 
@@ -424,18 +458,23 @@ SECUENCIA  NOMBRE           DEFINICIÓN
 # - aquí vamos a ver los más relevantes
 
 print('hola mundo')
-print('hola\nmundo\nhola sebas')
-print('\tpython\t\tjava') # python 1 tab => 4 espacios
-#print("Me gusta "Python", es chévere!") # Error de Sintaxis
-print('Me gusta "Python", es chévere!')
-print("Me gusta \"Python\", es chévere!")
-print('Me gusta \'Python\', es chévere!')
+print('hola\nmundo\n\n\n\nhola sebas')
 
-# \b => retroceso
-print('Hola\bAmigos') # HolAmigos
+print('\tpython\t\tjava')
 
-# para poner el backslash
-print('hola\\mundo') # hola\mundo
+#print("El lenguaje de programación "Python" es chévere!!")
+print("El lenguaje de programación \"Python\" es chévere!!")
+print('El lenguaje de programación "Python" es chévere!!')
+
+print('El lenguaje de programación \'Python\' es chévere!!')
+print("El lenguaje de programación 'Python' es chévere!!")
+
+print('HolaAmigos')
+print('Hola\bAmigos') # retroceso
+
+print('hola\mundo') # hola\mundo
+print('hola\barbacoa') # holarbacoa
+print('hola\\barbacoa') # hola\barbacoa
 
 
 
@@ -452,10 +491,20 @@ cadena_1 = 'hola python'
 cadena_2 = "hola java"
 cadena_3 = '''hola ecuador'''
 cadena_4 = """hola alemania"""
-cadena_5 = """
-hola este string
-tiene varias
+
+"""
+comentario
+de varias
 líneas
+"""
+
+cadena_5 = """
+hola, este string
+tiene
+
+\tvarias
+líneas!!\n
+Saludos cordiales!
 """
 
 print( cadena_1 , type(cadena_1) )
@@ -464,27 +513,24 @@ print( cadena_3 , type(cadena_3) )
 print( cadena_4 , type(cadena_4) )
 print( cadena_5 , type(cadena_5) )
 
+
 # -----------------
 # concatenación +
 # -----------------
 nombre = 'Sebas'
 apellido = 'Silva'
-
 texto = nombre + apellido
-print(texto)
+print(texto) # SebasSilva
 
 nombre = 'Sebas'
 apellido = ' Silva'
-
 texto = nombre + apellido
-print(texto)
+print(texto) # Sebas Silva
 
 nombre = 'Sebas'
 apellido = 'Silva'
-
 texto = nombre + ' ' + apellido
-print(texto)
-print( nombre + ' ' + apellido )
+print(texto) # Sebas Silva
 
 # ------------------
 # multiplicación *
@@ -500,20 +546,21 @@ palabra = 'hola'
 # (+)      0123
 # (-)      4321
 
-print( palabra )
+print( palabra ) # hola
 print()
-print( palabra[0] )
-print( palabra[1] )
-print( palabra[2] )
-print( palabra[3] )
+print( palabra[0] ) # h
+print( palabra[1] ) # o
+print( palabra[2] ) # l
+print( palabra[3] ) # a
 print()
-print( palabra[-4] )
-print( palabra[-3] )
-print( palabra[-2] )
-print( palabra[-1] )
+print( palabra[-4] ) # h
+print( palabra[-3] ) # o
+print( palabra[-2] ) # l
+print( palabra[-1] ) # a
 print()
-print( len(palabra) , type(len(palabra)) )
-#print( palabra[5] )  # IndexError: string index out of range
+print( len(palabra) , type( len(palabra) ) ) # 4 <class 'int'>
+
+#print( palabra[100] ) # IndexError: string index out of range
 
 # ---------------------------
 # slicing [start:end:step]
@@ -523,35 +570,35 @@ print( len(palabra) , type(len(palabra)) )
 
 palabra = 'programación'
 #          012345678901
-
+#          0         1
 
 # EJ:
 # pro
 # gramación
 
-print( palabra[0:2] ) # end => exclusivo!
-print( palabra[0:3] )
-print( palabra[3:11] ) # end => exclusivo, slicing no tiene index error!
-print( palabra[3:12] )
-print( palabra[3:100] )
+print( palabra[0:2] ) # pr => END - exclusivo
+print( palabra[0:3] ) # pro
+print( palabra[3:11] ) # gramació
+print( palabra[3:12] ) # gramación
+print( palabra[3:50] ) # gramación
 print()
-print( palabra[:3] )
-print( palabra[3:] )
-
+print( palabra[:3] ) # pro
+print( palabra[3:] ) # gramación
 
 # EJ:
 # grama
-print( palabra[3:8] )
-print( palabra[3:8:1] )
-print( palabra[3:8:2] )
 
+print( palabra[3:8] ) # grama
+print( palabra[3:8:1] ) # grama
+print( palabra[3:8:2] ) # gaa
 
-# EJ:
-# usando => step
-print( palabra[::1] )
-print( palabra[::2] )
-print( palabra[::3] )
-
+# EJ
+# => usando step / salto
+print( palabra[::] ) # programación
+print( palabra[::1] ) # programación
+print( palabra[::2] ) # pormcó
+print( palabra[::3] ) # pgmi
+print( palabra[::4] ) # prc
 
 
 
@@ -564,34 +611,39 @@ print('\n\n\n12) Métodos de Formato Importantes de String <str>\n')
 # Para dar formato a texto
 # --------------------------
 texto = 'mE gusTA APRENDER pyTHON'
-print( texto ) # mE gusTA APRENDER pyTHON
+
+print(texto) # mE gusTA APRENDER pyTHON
 print( texto.capitalize() ) # Me gusta aprender python
 print( texto.title() ) # Me Gusta Aprender Python
 print( texto.upper() ) # ME GUSTA APRENDER PYTHON
 print( texto.lower() ) # me gusta aprender python
 print( texto.swapcase() ) # Me GUSta aprender PYthon
 
+
 # ---------------------
 # Alineación de texto
 # ---------------------
 nombre = 'Andy'
 
-print('Hola', nombre, 'espero estés bien!') # Hola Andy espero estés bien!
-print('Hola', nombre.center(10), 'espero estés bien!') # Hola    Andy    espero estés bien!
-print('Hola', nombre.ljust(10), 'espero estés bien!') # Hola Andy       espero estés bien!
-print('Hola', nombre.rjust(10), 'espero estés bien!') # Hola       Andy espero estés bien!
+print('Hola', nombre, 'espero que estés bien!') # Hola Andy espero que estés bien!
+print('Hola', nombre.center(10), 'espero que estés bien!') # Hola    Andy    espero que estés bien!
+print('Hola', nombre.ljust(10), 'espero que estés bien!') # Hola Andy       espero que estés bien!
+print('Hola', nombre.rjust(10), 'espero que estés bien!') # Hola       Andy espero que estés bien!
+
 
 # ---------------------
 # Contar Coincidencias
 # ---------------------
 cadena = 'esta vida es hermosa'
-#         01234567890123456789
+#         01234567890123456785
+#         0         1
 
 print( cadena.count('a') ) # 3
 print( cadena.count('es') ) # 2
-print( cadena.count('a' , 4) ) # 2
-print( cadena.count('a' , 4 , 10) ) # 1
+print( cadena.count('a',4) ) # 2
+print( cadena.count('a',4,10) ) # 1
 print( cadena.count('x') ) # 0
+
 
 # --------------------------------
 # Retornar índice de una búsqueda
@@ -599,30 +651,37 @@ print( cadena.count('x') ) # 0
 lenguaje = 'javascript'
 #           0123456789
 
-print( lenguaje.index('a') , lenguaje.find('a') ) # izquierda a derecha
-print( lenguaje.rindex('a') , lenguaje.rfind('a') ) # derecha a izquierda
-print( lenguaje.index('asc') , lenguaje.find('asc') ) 
-print( lenguaje.index('c',3,8) , lenguaje.find('c',3,8) ) 
+print( lenguaje.index('a') , lenguaje.find('a') ) # 1 1 => por defecto: de izq a der
+print( lenguaje.rindex('a') , lenguaje.rfind('a') ) # 3 3 => der a izq
+print( lenguaje.index('asc') , lenguaje.find('asc') ) # 3 3
+print( lenguaje.rindex('asc') , lenguaje.rfind('asc') ) # 3 3
+print( lenguaje.rindex('c',3,8) , lenguaje.rfind('c',3,8) ) # 5 5
 #print( lenguaje.index('x') ) # ValueError: substring not found
 print( lenguaje.find('x') ) # -1
+
 
 # ------------------------------
 # Eliminar espacios / caracter
 # ------------------------------
+# IMPORTANTE
+
 c1 = '    python'
-c2 = 'python   '
-c3 = '      python   '
-c4 = '***python**'
+c2 = 'python     '
+c3 = '    python    '
+c4 = '*****python****'
 
-print(c1)
-print(c2)
-print(c3)
-print(c4)
+print(c1) #     python
+print(c2) # python     
+print(c3) #     python    
+print(c4) # *****python****
 
-print( c1.lstrip() )
-print( c2.rstrip() )
-print( c3.strip() )
-print( c4.strip('*') )
+print( c1.lstrip() ) # python
+print( c2.rstrip() ) # python
+print( c3.strip() ) # python
+print( c1.strip() ) # python
+print( c2.strip() ) # python
+print( c4.strip('*') ) # python
+
 
 # -------------------------------------------
 # Unir un caracter a un string en secuencia
@@ -634,7 +693,8 @@ palabra = 'youtube'
 
 print( char_1.join(palabra) ) # y-o-u-t-u-b-e
 print( char_2.join(palabra) ) # y#o#u#t#u#b#e
-print( '.'.join(palabra) ) # y.o.u.t.u.b.e
+
+print( '....'.join(palabra) ) # y....o....u....t....u....b....e
 
 # ---------------------------------------------
 # Separar un string en elementos de una lista
@@ -652,17 +712,21 @@ print( lista_2 , type(lista_2) , len(lista_2) ) # ['java', 'python', 'c++', 'bas
 # --------------------------
 # Líneas de string a lista
 # --------------------------
-texto = 'Yo programo en Python.\nEl en Java.\nElla en C++.'
-lista_1 = texto.splitlines()
-lista_2 = texto.splitlines(keepends=True) # conserva los saltos de línea como secuencia de escape
-
+texto = 'Yo programo en Python.\nEl en Java.\nElla en C++'
 print(texto)
-print(lista_1)
-print(lista_2)
+
+lista_1 = texto.splitlines()
+print(lista_1) # ['Yo programo en Python.', 'El en Java.', 'Ella en C++']
+
+lista_2 = texto.splitlines(keepends=True)
+print(lista_2) # ['Yo programo en Python.\n', 'El en Java.\n', 'Ella en C++']
+
 
 texto = """hola
 mundo
 hola python"""
+
+print(texto)
 
 lista = texto.splitlines()
 print(lista)
@@ -672,20 +736,32 @@ print(lista)
 # --------------------------
 saludo = 'hola\tamigo'
 
-print( saludo )               # hola    amigo
-print( saludo.expandtabs() )  # hola    amigo
+print(saludo) # hola    amigo
+print( saludo.expandtabs() ) # hola    amigo
 print( saludo.expandtabs(1) ) # hola amigo
 print( saludo.expandtabs(2) ) # hola  amigo
+print( saludo.expandtabs(3) ) # hola  amigo
 print( saludo.expandtabs(4) ) # hola    amigo
+
 
 # -----------------------------------------------
 # IMPORTANTE: reemplazar un caracter del string
 # -----------------------------------------------
-secreto = 'pXlabrX secreXtX pXlabrX ocultX'
+secreto = 'palabra secreta palabra oculta'
+secreto = 'pXlabrX secrXtX pXlabrX ocultX'
 
-print( secreto.replace('X' , '***') ) # p***labr*** secre***t*** p***labr*** ocult***       
-print( secreto.replace('pXl' , 'zzzzzz') ) # zzzzzzabrX secreXtX zzzzzzabrX ocultX
-print( secreto.replace(' ' , 'yyy') ) # pXlabrXyyysecreXtXyyypXlabrXyyyocultX
+print( secreto )
+
+print( secreto.replace('X' , '***') ) # p***labr*** secr***t*** p***labr*** ocult***
+print( secreto.replace('pXl' , 'ZZZZZ') ) # ZZZZZabrX secrXtX ZZZZZabrX ocultX
+print( secreto.replace(' ' , 'yyy') ) # pXlabrXyyysecrXtXyyypXlabrXyyyocultX
+
+print( secreto )
+
+# => ¿se puede modificar los strings con métodos?
+# la variable original ?
+# NO
+# => mutabilidad / inmutabilidad
 
 
 
@@ -701,10 +777,13 @@ print('\n\n\n13) Métodos de String con Retorno Booleano (averiguar algo en el S
 c_1 = 'abcXYZ'
 c_2 = 'abc XYZ'
 c_3 = '1abcXYZ'
+c_4 = 'abcXYZ1'
 
 print( c_1 , c_1.isalpha() ) # abcXYZ True
 print( c_2 , c_2.isalpha() ) # abc XYZ False
 print( c_3 , c_3.isalpha() ) # 1abcXYZ False
+print( c_4 , c_4.isalpha() ) # abcXYZ1 False
+
 
 # -------------------------------------------
 # .isalnum() => True si son letras y números
@@ -712,10 +791,11 @@ print( c_3 , c_3.isalpha() ) # 1abcXYZ False
 print( c_1 , c_1.isalnum() ) # abcXYZ True
 print( c_2 , c_2.isalnum() ) # abc XYZ False
 print( c_3 , c_3.isalnum() ) # 1abcXYZ True
+print( c_4 , c_4.isalnum() ) # abcXYZ1 True
 
-# --------------------------------------------
-# .isdigit() => True si es un sting numérico
-# --------------------------------------------
+# ----------------------------------------------------
+# .isdigit() => True si es un sting numérico (ENTERO)
+# ----------------------------------------------------
 c_1 = '12345'
 c_2 = '123 45'
 c_3 = '12.345'
@@ -734,14 +814,20 @@ print( c_4 , c_4.isdigit() ) # a12345 False
 # --------------------------
 c_1 = 'Hola Amigo' # title
 c_2 = 'Hola amigo'
-c_3 = 'HOLA AMIGO' # upper
-c_4 = 'hola amigo' # lower
+c_3 = 'HOLA AMIGO'
+c_4 = 'hola amigo'
 
-print('string|.islower()|.isupper()|.istitle()')             # string|.islower()|.isupper()|.istitle()
-print( c_1 , c_1.islower() , c_1.isupper() , c_1.istitle() ) # Hola Amigo False False True
-print( c_2 , c_2.islower() , c_2.isupper() , c_2.istitle() ) # Hola amigo False False False
-print( c_3 , c_3.islower() , c_3.isupper() , c_3.istitle() ) # HOLA AMIGO False True False
-print( c_4 , c_4.islower() , c_4.isupper() , c_4.istitle() ) # hola amigo True False False
+print( 'string|.islower()|.isupper()|.istitle()' )
+print( c_1 , c_1.islower(), c_1.isupper(), c_1.istitle() )
+print( c_2 , c_2.islower(), c_2.isupper(), c_2.istitle() )
+print( c_3 , c_3.islower(), c_3.isupper(), c_3.istitle() )
+print( c_4 , c_4.islower(), c_4.isupper(), c_4.istitle() )
+
+# string|.islower()|.isupper()|.istitle()
+# Hola Amigo False False True
+# Hola amigo False False False
+# HOLA AMIGO False True False
+# hola amigo True False False
 
 # ----------------------------
 # .startswith() / .endswith()
@@ -751,6 +837,7 @@ c_2 = ' Hola mundo...'
 
 print( c_1.startswith('s') ) # True
 print( c_1.startswith('sú') ) # True
+print( c_1.startswith('su') ) # False
 print( c_2.startswith(' ') ) # True
 print( c_2.startswith(' H') ) # True
 print( c_2.startswith(' h') ) # False
@@ -776,9 +863,9 @@ num_1 = 3.2
 num_2 = 3.5
 num_3 = 3.9
 
-print( num_1, '|' , round(num_1) ) # 3.2 | 3
-print( num_2, '|' , round(num_2) ) # 3.5 | 4
-print( num_3, '|' , round(num_3) ) # 3.9 | 4
+print( num_1 , '|' , round(num_1) ) # 3.2 | 3
+print( num_2 , '|' , round(num_2) ) # 3.5 | 4
+print( num_3 , '|' , round(num_3) ) # 3.9 | 4
 
 # ---------------------------
 # abs() / valor absoluto
@@ -786,22 +873,29 @@ print( num_3, '|' , round(num_3) ) # 3.9 | 4
 num_1 = -9
 num_2 = -10.5
 
+print( num_1, abs(num_1) ) # -9 9
+print( num_2, abs(num_2) ) # -10.5 10.5
+
+
 # ---------------------
 # pow() / exponencial
 # ---------------------
+print( 2**3 ) # 8
 print( pow(2,3) ) # 8
-print( pow(5,2) ) # 25
-print( pow(25,1/2) ) # 5.0
-print( pow(25,0.5) ) # 5.0
 
-print( abs(num_1) , abs(num_2) ) # 9 10.5
+print( 25**0.5 ) # 5.0
+print( 25**(1/2) ) # 5.0
+print( pow(25,0.5) ) # 5.0
+print( pow(25,1/2) ) # 5.0
 
 # -----------------------------------
 # sum() / max() / min() / En Listas
 # -----------------------------------
 lista_1 = [-5, 20, 5, 8.6, -1.2]
 
-print( sum(lista_1), max(lista_1), min(lista_1) ) # 27.400000000000002 20 -5
+print( sum(lista_1) ) # 27.400000000000002
+print( max(lista_1) ) # 20
+print( min(lista_1) ) # -5
 
 
 # ==> librería math
@@ -810,6 +904,7 @@ print( sum(lista_1), max(lista_1), min(lista_1) ) # 27.400000000000002 20 -5
 # --------------------------
 # Importación de un módulo
 # --------------------------
+#math.cos(45) # NameError: name 'math' is not defined
 import math
 
 # ------------
@@ -821,34 +916,51 @@ print( math.pi ) # 3.141592653589793
 # ------------------------
 # Representación numérica
 # ------------------------
-print( math.ceil(4.8) ) # techo / número arriba => 5
-print( math.floor(4.8) ) # piso / número abajo => 4
+num = 3.5
+print( num ) # 3.5
+print( round(num) ) # 4
+print( math.ceil(num) ) # ceil => techo # 4
+print( math.floor(num) ) # floor => piso # 4
+
+num = 1.01
+print( math.ceil(num) ) # 2
+print( math.floor(num) ) # 1
 
 # ------------------
 # Raíces y Potencia
 # ------------------
-print( math.pow(2,3) ) # potencia => 8.0
-print( math.sqrt(25) ) # raíz cuadrada => 5.0
-print( math.cbrt(8) ) # raiz cúbica => 2.0
+print( math.pow(2,3) ) # 8.0 => flotante
+print( pow(2,3) ) # 8
+print( math.sqrt(25) ) # 5.0 => flotante
+#print( math.cbrt(8) ) # AttributeError: module 'math' has no attribute 'cbrt'
 
 # -----------
 # Logaritmos
 # -----------
-print( math.log(2.71 ** 5) ) # logaritmo natural => 4.984743174458048
-print( math.log10(10000) ) # logatirmo base 10 => 4.0
+# log 5 => e ^ x = 5
+# log(10) 1000 => 10 ^ x = 1000 => 3
 
-# ---------------------------
+print( math.log(2.71**5) ) # logaritmo natural # 4.984743174458048
+print( math.log10(10000) ) # logaritmo base 10 # 4.0
+
+# -----------------------------
 # Ángulos
 # 360 grados == 2*pi radianes
-# ---------------------------
+# 180 grados = pi radianes
+# -----------------------------
 print( math.degrees( math.pi / 3 ) ) # pasar de rad a grados => 59.99999999999999
 print( math.radians(180) ) # pasar de grados a rad => 3.141592653589793
-print( math.sin( math.pi / 6 ) ) # seno de 30 grados => 0.49999999999999994
-print( math.cos( math.pi / 3 ) ) # coseno de 60 grados => 0.5000000000000001
-print( math.tan( math.pi / 4 ) ) # tangente de 45 grados => 1
-print( math.asin(0.5) ) # arcoseno => 0.5235987755982989
-print( math.acos(0.5) ) # arcocoseno => 1.0471975511965979
-print( math.atan(1) ) # arcotangente => 0.7853981633974483
+
+# angulos en radianes para funciones trigonométricas
+print( math.sin( math.pi/6 ) ) # seno de 30 grados => 0.49999999999999994
+print( math.cos( math.pi/3 ) ) # coseno de 60 grados => 0.5000000000000001
+print( math.tan( math.pi/4 ) ) # tangente de 45 grados => 0.9999999999999999
+
+# funciones trigonométricas inversas
+print( math.asin(0.5) ) # 0.5235987755982989 (30 grados en radianes)
+print( math.acos(0.5) ) # 1.0471975511965979 (60 grados en radianes)
+print( math.atan(1) ) # 0.7853981633974483 (45 grados en radianes)
+
 print( math.degrees( math.asin(0.5) ) ) # 30.000000000000004
 print( math.degrees( math.acos(0.5) ) ) # 60.00000000000001
 print( math.degrees( math.atan(1) ) ) # 45.0
@@ -856,13 +968,20 @@ print( math.degrees( math.atan(1) ) ) # 45.0
 # ----------------------------
 # Otras funciones importantes
 # ----------------------------
+# factorial
+# 4! = 4*3*2*1 = 24
+# 6! = 6*5*4*3*2*1 = 720
+
 print( math.factorial(4) ) # 24
+print( math.factorial(6) ) # 720
 
-lista_1 = [-5, 20, 5, 8.6, -1.2]
-print( math.fsum(lista_1) ) # 27.4
+lista = [-5, 20, 5, 8.6, -1.2]
+print( sum(lista) ) # 27.400000000000002
+print( math.fsum(lista) ) # 27.4
 
-num_1 = -55.66
-print( math.fabs(num_1) ) # 55.66
+num = -55.66
+print( math.fabs(num) ) # 55.66
+print( abs(num) ) # 55.66
 
 
 
@@ -876,8 +995,8 @@ print('\n\n\n15) Encadenamiento / Chaining - Funciones & Métodos\n')
 # Métodos
 # => izquierda a derecha
 # ------------------------
-str_1 = '   hOla MundO  '
-print( str_1 ) #    hOla MundO
+str_1 = '      hOlA MunDO    '
+print( str_1 ) #       hOlA MunDO    
 print( str_1.title().strip(' ') ) # Hola Mundo
 
 
@@ -891,17 +1010,21 @@ print( type( len(str_1) ) ) # <class 'int'>
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 16) Función Internal => eval()
-print('\n\n\n16) Función Internal => eval()\n')
+# 16) Función Interna => eval()
+print('\n\n\n16) Función Interna => eval()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - evaluar una expresión matemática
-# - expresada a manera de string 
+# - expresada a manera de string
 
-expr_1 = '2*5 - (10 + 3)/2 - 2**3'
-expr_2 = '2*5 - (10 + 3)/2 - 2**3 - pow(3,2) + sum([1,2,3])'
+expr_1 = '2*5 - (10+3)/2 - 2**3'
+expr_2 = "2*5 - (10 + 3)/2 - 2**3 - pow(3,2) + sum([1,2,3])"
 
 print( eval(expr_1) ) # -4.5
 print( eval(expr_2) ) # -7.5
+
+expr_3 = '2 * 3 */ 8'
+
+#print( eval(expr_3) ) # SyntaxError: invalid syntax
 
 
 
@@ -915,41 +1038,42 @@ print('\n\n\n17) input => entrada de datos\n')
 # -----------
 # SIN input
 # -----------
-"""
 nombre = 'Sebas'
 edad = 36
 
 print('Su nombre es', nombre)
 print('Usted tiene', edad, 'años')
-print('El próximo año tendrá', edad + 1, 'años!')
-"""
+print('El próximo año 2024, usted tendrá', edad+1, 'años')
 
 # -----------------
 # Utilizando input
 # -----------------
 """
-nombre = input('¿Cual es su nombre? : ')
-edad = input('Qué edad tiene? : ')
+nombre = input('¿Cuál es su nombre? : ')
+edad = input('¿Cuántos años tiene usted? : ')
 
 print('Su nombre es', nombre)
 print('Usted tiene', edad, 'años')
-#print('El próximo año tendrá', edad + 1, 'años!')
+#print('El próximo año 2024, usted tendrá', edad+1, 'años')
+# TypeError: can only concatenate str (not "int") to str
 
-# => todo lo que viene del input es string
-print( type(nombre) )
-print( type(edad) )
+# ==> OJO: todo lo que viene del input es str
+
+print( type(nombre) ) # <class 'str'>
+print( type(edad) ) # <class 'str'>
 """
 
 # -------------------
 # Utilizando casting
 # -------------------
 """
-nombre = input('¿Cual es su nombre? : ')
-edad = input('Qué edad tiene? : ')
+nombre = input('¿Cuál es su nombre? : ')
+edad = input('¿Cuántos años tiene usted? : ')
+edad = int(edad)
 
 print('Su nombre es', nombre)
 print('Usted tiene', edad, 'años')
-print('El próximo año tendrá', int(edad) + 1, 'años!')
+print('El próximo año 2024, usted tendrá', edad+1, 'años')
 """
 
 
@@ -971,8 +1095,8 @@ Operador |  Definición
    <     |  Menor que
    >=    |  Mayor o igual que
    <=    |  Menor o igual que
-   ==    |  Igual que
-   !=    |  Diferente de
+   ==    |  Igual que (valores)
+   !=    |  Diferente de (valores)
 '''
 
 # ------------
@@ -994,6 +1118,7 @@ print( 10 != 10 ) # False
 print( 'a' > 'z' ) # False
 print( '&' > '@' ) # False
 
+
 # https://elcodigoascii.com.ar/
 # @ => alt + 64
 # & => alt + 38
@@ -1013,13 +1138,13 @@ print('\n\n\n19) Operadores Lógicos\n')
 '''
 Operador |  Ejemplo  |  Descripción
 ----------------------------------------------------------------
-not      |  X and Y  |  True si todos son True
-and      |  X or Y   |  Basta que 1 sea True, resultado es True
-or       |  not X    |  Niega al booleano
+and      |  X and Y  |  True si todos son True
+or       |  X or Y   |  Basta que 1 sea True, resultado es True
+not      |  not X    |  Niega al booleano
 '''
 
 print('\nTabla AND')
-# => basta que tengamos 1 False, resultado es False
+# => basta que tengamos 1 False : resultado es False
 print( True and False ) # False
 print( False and True ) # False
 print( False and False ) # False
@@ -1028,7 +1153,7 @@ print( True and True and True and True ) # True
 print( True and True and False and True ) # False
 
 print('\nTabla OR')
-# => basta que tengamos 1 True, resultado es True
+# => basta que tengamos 1 True : resultado es True
 print( True or False ) # True
 print( False or True ) # True
 print( False or False ) # False
@@ -1040,8 +1165,10 @@ print('\nTabla NOT')
 print( not True ) # False
 print( not False ) # True
 
-print('\nCombinando!')
+print('\nCombinando')
 print( True and False or (True and not False) ) # True
+#      False or (True)
+#      True
 
 
 
@@ -1057,14 +1184,19 @@ print('\n\n\n20) Listas en Python\n')
 # ----------------
 # - corchetes y separando elementos con coma
 # - con len() => tamaño de lista / número de elementos
-lista = [True, -100, 'ABC', 8.5, None, [1,2,3]] # True
-print(lista , type(lista) , len(lista)) # [True, -100, 'ABC', 8.5, None, [1, 2, 3]] <class 'list'> 6
+
+lista = [ True, -100, 'ABC', 8.5, None, [1,2,3] ]
+print( lista , type(lista) , len(lista) )
+# [True, -100, 'ABC', 8.5, None, [1, 2, 3]] <class 'list'> 6
+
 
 # ----------------------------
 # Creación con Función list()
 # ----------------------------
-lista = list([1,2,'A']) # [1, 2, 'A'] <class 'list'> 3
-print(lista , type(lista) , len(lista)) # [1, 2, 'A'] <class 'list'> 3
+lista = list([1,2,'A'])
+print( lista , type(lista) , len(lista) )
+# [1, 2, 'A'] <class 'list'> 3
+
 
 # ------------
 # Lista Vacía
@@ -1075,18 +1207,20 @@ lista_vacia_2 = list()
 print( lista_vacia_1 , len(lista_vacia_1) ) # [] 0
 print( lista_vacia_2 , len(lista_vacia_2) ) # [] 0
 
+
 # ---------------------------
 # Palabra Clave / Keyword in
 # ---------------------------
-lista = [True, -100, 'ABC', 8.5, None, [1,2,3]]
+lista = [ True, -100, 'ABC', 8.5, None, [1,2,3] ]
 
 print( 'ABC' in lista ) # True
 print( -100 in lista ) # True
 print( '-100' in lista ) # False
 
-# ---------------------------
-# Concatenación y Operador *
-# ---------------------------
+
+# ------------------------------
+# Concatenación + y Operador *
+# ------------------------------
 lista_1 = [10, 20]
 lista_2 = ['A', 'B']
 
@@ -1100,12 +1234,17 @@ print( r2 ) # ['A', 'B', 10, 20]
 print( r3 ) # [10, 20, 10, 20]
 print( r4 ) # ['A', 'B', 'A', 'B', 'A', 'B']
 
+
 # -------------------
 # Indexing & Slicing
 # -------------------
 lista = [10,20,30,40]
+#         0  1  2  3
 
 print( lista[0] ) # 10
+print( lista[1] ) # 20
+print( lista[2] ) # 30
+print( lista[3] ) # 40
 print( lista[-1] ) # 40
 print( lista[1:3] ) # [20, 30]
 print( lista[:3] ) # [10, 20, 30]
@@ -1118,6 +1257,7 @@ print( lista[::2] ) # [10, 30]
 # -----------
 # .append()
 # -----------
+print()
 lista = [1,2,3]
 print(lista) # [1, 2, 3]
 lista.append('a')
@@ -1128,14 +1268,14 @@ print( lista , len(lista) ) # [1, 2, 3, 'a', [10, 20]] 5
 # -----------
 # .insert()
 # -----------
-lista = ['A', 'B', 'C']
-#         0    1    2
+lista = ['A' , 'B' , 'C']
+#         0     1     2
 
-lista.insert( 1 , 'Sebas' )
-print( lista )
+lista.insert(1 , 'Sebas')
+print(lista) # ['A', 'Sebas', 'B', 'C']
 
-lista.insert( -1 , 100 )
-print( lista )
+lista.insert(-1 , 1520)
+print(lista) # ['A', 'Sebas', 'B', 1520, 'C']
 
 
 # -------------------------------------------
@@ -1148,60 +1288,81 @@ print( lista )
 # -------------------------------------------
 
 lista = ['A', 'B', 'C', 10, 20, 30, -100.5, -200.5]
-#         0    1    2   3   4   5     6       7
-print(lista) # ['A', 'B', 'C', 10, 20, 30, -100.5, -200.5]
+#         0    1    2    3   4   5    6        7
+
+print(lista , len(lista)) # ['A', 'B', 'C', 10, 20, 30, -100.5, -200.5] 8
 
 del lista[4]
-print( lista, len(lista) ) # ['A', 'B', 'C', 10, 30, -100.5, -200.5] 7
+print(lista , len(lista)) # ['A', 'B', 'C', 10, 30, -100.5, -200.5] 7
+
+lista.pop() # elimina el último
+print(lista , len(lista)) # ['A', 'B', 'C', 10, 30, -100.5] 6
 
 lista.pop()
-print( lista, len(lista) ) # ['A', 'B', 'C', 10, 30, -100.5] 6
-
-lista.pop()
-print( lista, len(lista) ) # ['A', 'B', 'C', 10, 30] 5
+print(lista , len(lista)) # ['A', 'B', 'C', 10, 30] 5
 
 lista.pop(2)
-print( lista, len(lista) ) # ['A', 'B', 10, 30] 4
+print(lista , len(lista)) # ['A', 'B', 10, 30] 4
+
+lista.pop()
+lista.pop()
+lista.pop()
+lista.pop()
+#lista.pop() # IndexError: pop from empty list
+
+print(lista)
 
 lista = ['A', 'B', 'C', 10, 20, 30, -100.5, -200.5]
-#         0    1    2   3   4   5     6       7
 
-elemento_pop = lista.pop()
+elemento_eliminado = lista.pop()
 print( lista ) # ['A', 'B', 'C', 10, 20, 30, -100.5]
-print( elemento_pop ) # -200.5
+print( elemento_eliminado ) # -200.5
 
-lista.remove('A')
-print( lista ) # ['B', 'C', 10, 20, 30, -100.5]
+# => .remove()
+lista = ['A', 'B', 'C', 10, 20, 30, -100.5, -200.5]
 
-lista.remove(30)
-print( lista ) # ['B', 'C', 10, 20, -100.5]
-
+lista.remove('C')
+print(lista)
 
 # ==> ERROR cuando trato de eliminar algo que no existe
 
-lista = ['A', 'B', 'C', 10, 20, 30, -100.5, -200.5]
-#         0    1    2   3   4   5     6       7
+#lista.remove('Z') # ValueError: list.remove(x): x not in list
+#del lista[50] # IndexError: list assignment index out of range
+#lista.pop(50) # IndexError: pop index out of range
 
-#del lista[10] # IndexError: list assignment index out of range
-#lista.pop(10) # IndexError: pop index out of range
-#lista.remove('AA') # ValueError: list.remove(x): x not in list
+
+# => .clear()
+
+lista = ['A', 'B', 'C', 10, 20, 30, -100.5, -200.5]
+print( lista , len(lista) )
 
 lista.clear()
-print( lista ) # []
+print( lista , len(lista) ) # [] 0
+
+str_1 = 'sebas'
+print(str_1) # sebas
+str_1.upper()
+print(str_1) # sebas
+print( str_1.upper() ) # SEBAS
+
 
 # ---------
 # .count()
 # ---------
 lista = [1,2,3,10,20,30,1,5,9,-1,-2,-3,1]
-print( lista.count(1) )
+print( lista.count(1) ) # 3
+print( lista.count(100) ) # 0
+
 
 # -----------
 # .reverse()
 # -----------
 lista = ['A', 'B', 'C', 10, 20, 30, -100.5, -200.5]
-print( lista ) # ['A', 'B', 'C', 10, 20, 30, -100.5, -200.5]
+print(lista)
+
 lista.reverse()
-print( lista ) # [-200.5, -100.5, 30, 20, 10, 'C', 'B', 'A']
+print(lista) # [-200.5, -100.5, 30, 20, 10, 'C', 'B', 'A']
+
 
 # --------
 # .sort()
@@ -1210,43 +1371,65 @@ l1 = [20, 5, 2, 15]
 l2 = ['a', 'x', 'm', 'h']
 l3 = ['sol', 'hola', 'palabra']
 
-l1.sort() # números => menor a mayor
-l2.sort() # strings => a-z
+# .sort() => # números: menor a mayor / strings: a-z
+# .sort(reverse=False)
+l1.sort()
+l2.sort()
+print(l1) # [2, 5, 15, 20]
+print(l2) # ['a', 'h', 'm', 'x']
 
-print( l1 ) # [2, 5, 15, 20]
-print( l2 ) # ['a', 'h', 'm', 'x']
+# .sort(reverse=True)
+# números: mayor a menor / strings: z-a
+l1.sort(reverse=True)
+l2.sort(reverse=True)
+print(l1) # [20, 15, 5, 2]
+print(l2) # ['x', 'm', 'h', 'a']
 
-l1.sort(reverse=True) # números => mayor a menor
-l3.sort(reverse=True) # strings => z-a
+# .sort(reverse , key)
+l3 = ['sol', 'palabra', 'hola']
+print(l3) # ['sol', 'palabra', 'hola']
 
-print( l1 ) # [20, 15, 5, 2]
-print( l2 ) # ['a', 'h', 'm', 'x']
+l3.sort( reverse=False , key=len )
+print(l3) # ['sol', 'hola', 'palabra']
+
+l3.sort( key=len )
+print(l3) # ['sol', 'hola', 'palabra']
 
 l3.sort( reverse=True, key=len )
 print(l3) # ['palabra', 'hola', 'sol']
-l3.sort( reverse=False, key=len )
-print(l3) # ['sol', 'hola', 'palabra']
-l3.sort( key=len )
-print(l3) # ['sol', 'hola', 'palabra']
+
 
 # --------
 # .copy()
 # --------
 lista = [1,2,3]
-print( lista, len(lista) ) # [1, 2, 3] 3
+print(lista , len(lista))
+
 lista.append('A')
-print( lista, len(lista) ) # [1, 2, 3, 'A'] 4
+print(lista , len(lista))
 
 lista = [1,2,3]
-lista_2 = lista
-lista_2.append('Z')
-print(lista, lista_2) # [1, 2, 3, 'Z'] [1, 2, 3, 'Z']
+lista_2 = lista ##### OJO
 
+print(lista)
+print(lista_2)
+
+lista_2.append('Z')
+
+print(lista) # [1, 2, 3, 'Z']
+print(lista_2) # [1, 2, 3, 'Z']
+
+
+# SOLUCION
 lista = [1,2,3]
 lista_copy = lista.copy()
-lista.append('X')
-lista_copy.append('Y')
-print(lista, lista_copy) # [1, 2, 3, 'X'] [1, 2, 3, 'Y']
+# lista y lista_copy son INDEPENDIENTES !!!!
+
+lista.append('AAA')
+lista_copy.append('ZZZ')
+
+print(lista) # [1, 2, 3, 'AAA']
+print(lista_copy) # [1, 2, 3, 'ZZZ']
 
 
 
@@ -1261,13 +1444,17 @@ print('\n\n\n21) Condicional IF\n')
 # -----
 nota = 14
 
-if nota >= 15 and nota < 20:
+if nota >= 15 and nota <= 20:
     print('Usted ha pasado la materia')
 elif nota < 15 and nota >= 0:
     print('Usted ha perdido la materia')
 else:
-    print('Error - Nota debe ser de 0 a 20')
+    print('ERROR - Nota debe ser entre 0 y 20')
 # end if
+
+# => if / elif / elif / elif ... / else 
+# => if / else
+# => if / elif
 
 
 # -----
@@ -1277,12 +1464,12 @@ else:
 nota = input('¿Cuál fue su nota? : ')
 nota = int(nota)
 
-if nota >= 15 and nota < 20:
+if nota >= 15 and nota <= 20:
     print('Usted ha pasado la materia')
 elif nota < 15 and nota >= 0:
     print('Usted ha perdido la materia')
 else:
-    print('Error - Nota debe ser de 0 a 20')
+    print('ERROR - Nota debe ser entre 0 y 20')
 # end if
 """
 
@@ -1290,11 +1477,12 @@ else:
 # EJ 3
 # -----
 temp = 20
+temp = 2
 
 if temp < 5 or temp > 35:
-    print('Clima muy malo!')
+   print('Clima está muy malo!!')
 else:
-    print('Qué buen clima!')
+   print('Qué buen clima!!')
 # end if
 
 
@@ -1307,18 +1495,24 @@ print('\n\n\n22) Condicional Match-Case\n')
 # - a partir de python 3.10 >
 # - simula el switch...case de otros lenguajes
 
+"""
 opcion = '5'
+opcion = input('Ingrese su opción : ')
 
 match opcion:
-    case '1':
-        print('Opción 1 - Guardar Archivo')
-    case '2':
-        print('Opción 2 - Eliminar Archivo')
-    case '3':
-        print('Opción 3 - Salir del Programa')
-    case _ :
-        print('ERROR - Opción no existe')
+   case '1':
+       print('Opción 1 - Guardar Archivo')
+   case '2':
+       print('Opción 2 - Eliminar Archivo')
+   case '3':
+       print('Opción 3 - Salir del Programa')
+   case _:
+       print('ERROR - Opción no EXISTE !!')
 # end match-case
+"""
+
+# => if / elif / elif / elif / elif .... / else ==> match-case
+# => + 3 elif => match-case
 
 
 
@@ -1329,6 +1523,7 @@ print('\n\n\n23) Operador Ternario\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - una manera corta / sencilla de expresar una condición
 # - aconsejable usarla para algo sencillo
+# - siempre en 1 línea
 
 # --------------------
 # Con condicional IF
@@ -1336,16 +1531,22 @@ print('\n\n\n23) Operador Ternario\n')
 edad = 14
 
 if edad >= 18:
-    print('Usted es mayor de edad')
+   print('Usted es mayor de edad!')
 else:
-    print('Usted es menor de edad!!')
+   print('Usted es menor de edad...')
 # end if
 
 # ----------------------
 # Con Operador Ternario
 # ----------------------
-resultado = 'Mayor de edad' if edad >= 18 else 'Menor de Edad'
+print()
+
+edad = 19
+
+resultado = 'MAYOR DE EDAD' if edad >= 18 else 'MENOR DE EDAD'
 print(resultado)
+
+print( 'MAYOR' if edad >= 18 else 'MENOR!!!' ) # operador ternario dentro del print
 
 
 
@@ -1354,27 +1555,37 @@ print(resultado)
 # 24) Bucle For
 print('\n\n\n24) Bucle For\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# elemento iterable => acceder a los índices []
 
 lista = ['Sebas', 'Carlos', 'Ana', 'Ramón', 'Julia']
-nombre = 'Ximena'
+
 
 # --------------------
 # recorrido de listas
 # --------------------
-for cada_elemento in lista:
-    print(cada_elemento)
+for elemento in lista:
+    print(elemento)
 # end for
+
+print('---')
+
+for x in lista:
+    print(x)
+# end for
+
+
 
 # --------------------------------------------
 # la variable usada para el recorrido se crea
 # --------------------------------------------
-print()
-print( cada_elemento ) # Julia
+print(x) # Julia
 
 # ----------------------
 # recorrido de Strings
 # ----------------------
-print()
+nombre = 'Ximena'
+print(nombre)
+
 for letra in nombre:
     print(letra)
 # end for
@@ -1387,14 +1598,16 @@ for letra in nombre:
 print()
 
 rango_1_10 = range(1,11)
+
+for numero in rango_1_10:
+    print(numero)
+# end for
+
 rango_1_10_2 = range(1,11,2)
 
-print( rango_1_10 ) # range(1, 11)
-print( rango_1_10_2 ) # range(1, 11, 2)
-
-for x in range(1,11):
-    print(x, x*2, x**2)
-# print
+for numero in rango_1_10_2:
+    print('Número =', numero)
+# end for
 
 # -----------------------
 # for + contador externo
@@ -1406,7 +1619,8 @@ contador = 1
 
 for nombre in lista:
     print('Estudiante #', contador, '=>', nombre)
-    contador += 1 # importante incremento!
+    #contador = contador + 1
+    contador += 1 # importante !!!
 # end for
 
 # ----------------
@@ -1414,8 +1628,8 @@ for nombre in lista:
 # ----------------
 print()
 
-for index, nombre in enumerate(lista):
-    print('Estudiante #', index, '==>', nombre)
+for index, elemento in enumerate(lista):
+    print('Estudiante Número', index + 1, '===>', elemento)
 # end for
 
 # -----------
@@ -1425,10 +1639,10 @@ for index, nombre in enumerate(lista):
 print()
 
 for nombre in lista:
-    print('Estudiante: ' + nombre + ' => PRESENTE!')
+    print('Estudiante ' + nombre + ' => PRESENTE !')
 else:
     print('Fin de tomar lista')
-# end for
+
 
 # -------------
 # for + break
@@ -1439,10 +1653,11 @@ print()
 for x in range(1, 21):
     print(x)
     if x == 10:
-        print('fin del bucle for')
+        print('fin del bucle for...')
         break
     # end if
 # end for
+
 
 # ---------------
 # for + continue
@@ -1450,46 +1665,59 @@ for x in range(1, 21):
 # - para saltar una iteración
 print()
 
-for x in range(1, 21):
-    print(x)
+for x in range(1,21):
+    
     if x == 10 or x == 15:
-        print('Salto en iteración cuando x =', x)
+        print('Salto en la iteración cuando x =', x)
         continue
     # end if
+
+    print('ITERACIÓN = ', x)
 # end for
+
 
 # -----------
 # for + pass
 # -----------
-# - en este caso pass funciona como continue
+# - pass nos sirve para dejar expresando algo que vamos a trabajar luego
+
 print()
 
-for x in range(1, 21):
-    print(x)
+for x in range(1,21):
+    
     if x == 10 or x == 15:
-        print('Salto en iteración cuando x =', x)
         pass
     # end if
+
+    print('ITERACIÓN = ', x)
 # end for
+
 
 # -----------------------------------
 # aplicación for => cálculo numérico
 # -----------------------------------
+# EJ: sumatoria y producto de números del 1 al 10
 print()
+
+# 10
+# sumatoria = 1+2+3+4+5+6+7+8+9+10
+# producto  = 1*2*3*4*5*6*7*8*9*10
 
 sumatoria = 0
 producto = 1
 
 for x in range(1,11):
-    sumatoria += x
+    #sumatoria = sumatoria + x
+    sumatoria += x # SUMA EN LA ASIGNACIÓN / Operador de Incremento
 # end for
 
 for x in range(1,11):
-    producto *= x
+    #producto = producto * x 
+    producto *= x # PRODUCTO EN LA ASIGNACIÓN
 # end for
 
-print('sumatoria =', sumatoria)
-print('producto =', producto)
+print('sumatoria =', sumatoria) # sumatoria = 55
+print('producto =', producto) # producto = 3628800
 
 
 
@@ -1504,7 +1732,7 @@ print('\n\n\n25) Bucle while\n')
 # ----------------------
 # ERROR: bucle infinito
 # ----------------------
-
+# => evitar por favor esto
 """
 x = 1
 
@@ -1522,19 +1750,29 @@ x = 1
 
 while x <= 10:
     print('x =', x)
-    x += 1
+    x += 1 # suma en la asignación / incremento
+# end while
+
+print()
+
+x = 10
+
+while x >= 1:
+    print('El valor de x =', x)
+    x -= 1 # resta en la asignación / decremento
 # end while
 
 
 # ----------------------------------
 # Recorrido de Elementos Iterables
 # ----------------------------------
-# - también puede recorrer strings, listas, tange, etc...
+# - también puede recorrer strings, listas, range, etc...
 # - pero para hacer eso se debe usar mejor el bucle for
 
 lista = ['Sebas', 'Carlos', 'Ana', 'Ramón', 'Julia']
 nombre = 'Ximena'
 rango_1_10 = range(1,11)
+
 
 # -- recorrido de lista + while
 print()
@@ -1556,6 +1794,7 @@ while i < len(nombre):
     i += 1
 # end while
 
+
 # -- recorriendo range + while
 print()
 
@@ -1566,35 +1805,41 @@ while i < len(rango_1_10):
     i += 1
 # end while
 
+# UN POCO MÁS SOBRE RANGE
+# range(start, end, step)
+# => end obligatorio
+# => start, step => opcionales
+
+print( range(5) ) # range(0, 5)
+
+print()
+
+for x in range(5):
+    print('Valor X =', x)
+# end for
+
 
 # --------------
 # while + else
 # --------------
 # - se ejecuta una vez al final
 # - así se cumpla la condición o no
-print()
 
-x = 5
+x = 10
 
-while x > 10:
-    print('hola')
+while x > 20:
+    print('Hola desde while')
+else:
+    print('Siempre se ejecuta esto !!!')
 # end while
 
 print()
 
-while x > 10:
-    print('hola')
+while x >= 1:
+    print('Hola, x =', x)
+    x -= 1
 else:
-    print('else en while')
-# end while
-
-print()
-
-while x <= 10:
-    print('x =', x)
-    x += 1
-else:
-    print('Fin de bucle, x al final =', x)
+    print('Fin del bucle while...')
 # end while
 
 # ---------------
@@ -1612,8 +1857,22 @@ while x <= 5:
     x += 1
 # end while
 
+print()
+
+x = 0
+
+while x <= 5:
+    if x == 3:
+        break
+    print('Contador, Ejemplo 2 x =', x)
+    x += 1
+else:
+    print('Fin del bucle while')
+# end while
+
+
 # -------------------------
-# while + continue / pass
+# while + continue 
 # -------------------------
 # - saltarse iteraciones
 print()
@@ -1624,7 +1883,40 @@ while x <= 5:
     if x == 2 or x == 4:
         x += 1
         continue
-    print('El valor de x =', x)
+    print('El valor de x es igual a', x)
+    x += 1
+# end while
+
+# --------------
+# while + pass
+# --------------
+# - para dejar expresado algo que vamos a trabajar luego
+# - pero cuando tenemos un while + if
+
+# ejemplo básico de pass
+x = 5
+
+if x == 5:
+    pass
+# end if
+
+print('Hola')
+
+# pass + while => no se hace esto
+"""
+while x >= 0:
+    pass
+# end while
+"""
+
+# while + if => pass
+x = 0
+
+while x <= 5:
+    if x == 2:
+        pass
+    # end if
+    print('x =', x)
     x += 1
 # end while
 
@@ -1634,28 +1926,28 @@ while x <= 5:
 # - técnica de bucle para ejecutar un programa
 # - siempre entramos al bucle
 # - CUIDADO: obliga el uso de un break para terminar el bucle en algún momento
-print()
 
 """
 while True:
-    print('Bienvenido al Programa')
+    print('Bienvenido a mi Programa - sebas.silva.p')
     print('Opciones:')
-    print('(A) Comprar')
-    print('(B) Vender')
-    print('(C) Salir (s/q)\n')
+    print('(A) - Comprar')
+    print('(B) - Vender')
+    print('(C) - Salir del Programa (s/q)\n')
+
     opcion = input('Elija su opción : ')
-    opcion = opcion.upper().strip(' ')
+    opcion = opcion.upper().strip(' ') # MUY IMPORTANTE !!!
     print()
-    
+
     if opcion == 'A':
-        print('Usted a seleccionado la opción de COMPRAR !')
+        print('Usted ha seleccionado la opción de COMPRAR !!!')
     elif opcion == 'B':
-        print('Usted a seleccionado la opción de VENDER !')
+        print('Usted ha seleccionado la opción de VENDER !!!')
     elif opcion == 'C' or opcion == 'S' or opcion == 'Q':
-        print('Gracias por utilizar el programa!')
+        print('Gracias por utilizar el programa...')
         break
     else:
-        print('ERROR - Opción no existe! :(')
+        print('ERROR - Opción no EXISTE :(')
 # end while
 """
 
@@ -1697,8 +1989,10 @@ print('\n\n26) Pares / Impares / Múltiplos\n')
 # EJ 1
 # ------
 lista_estudiantes = [
-    'goku', 'krilin', 'piccolo', 'vegeta', 'majin boo', 'yamcha'
+'goku', 'krilin', 'piccolo', 'vegeta', 'majin boo', 'yamcha'
 ]
+
+print(lista)
 
 estudiantes_pares = []
 estudiantes_impares = []
@@ -1710,8 +2004,8 @@ for index, estudiante in enumerate(lista_estudiantes):
         estudiantes_impares.append(estudiante)
 # end for
 
-print('PARES =', estudiantes_pares)
-print('IMPARES =', estudiantes_impares)
+print('ESTUDIANTES PARES =', estudiantes_pares)
+print('ESTUDIANTES IMPARES =', estudiantes_impares)
 
 
 # ------
@@ -1739,17 +2033,19 @@ print('\n\n\n27) Print Avanzado + String Format\n')
 # ------------------------
 # print básico aprendido
 # ------------------------
-print('hola mundo')
-print('hola python')
+print('hola mundo') # print => built-in function
+print('hola mundo', 'hola sebas', 123)
 
 # --------------------------
 # parámetro opcional (end)
 # --------------------------
-print('hola mundo' , end=' ')
+# oir default end = '\n'
+print('hola mundo', end=' ')
 print('hola python')
 
-print('hola mundo' , end='****')
+print('hola mundo', end='*********')
 print('hola python')
+
 
 # -----------------
 # string.format()
@@ -1759,23 +2055,33 @@ edad = 36
 nota_final = 15.5
 es_estudiante = False
 
-print( nombre, edad, nota_final, es_estudiante ) # print con parámetros
-print( nombre + ' ' + str(edad) + ' ' + str(nota_final) + ' ' + str(es_estudiante) ) # print + concatenación str
-print( '{} / {} / {} / {}'.format(nombre, edad, nota_final, es_estudiante) ) # print + str.format()
-print( '\nNombre: {}\nEdad:{}\nNota Final: {}\n¿Es estudiante?: {}\n'.format(nombre, edad, nota_final, es_estudiante) )
+# print con parámetros
+print( nombre, edad, nota_final, es_estudiante )
 
-print( '\nNombre: {}\nEdad:{}\nNota Final: {}\n¿Es estudiante?: {}\n'.format
-      (nombre.upper(),
-       edad,
-       nota_final,
-       es_estudiante)
-     )
+# print + str en concatenación
+print( nombre + ' ' + str(edad) + ' ' + str(nota_final) + ' ' + str(es_estudiante) )
+e = ' '
+print( nombre + e + str(edad) + e + str(nota_final) + e + str(es_estudiante) )
+
+# str.format
+print( '{} {} {} {}'.format(nombre, edad, nota_final, es_estudiante) )
+print( '{} / {} - {} **** {}'.format(nombre, edad, nota_final, es_estudiante) ) # Sebas / 36 - 15.5 **** False
+
+print( '\nNombre: {}\nEdad: {}\nNota Final: {}\n¿Es Estudiante?: {}'.format(
+nombre, edad, nota_final, es_estudiante
+) )
+
+print( '\nNombre: {}\nEdad: {}\nNota Final: {}\n¿Es Estudiante?: {}'.format(
+    nombre.upper(),
+    edad + 10,
+    nota_final * 1.05,
+    not es_estudiante
+) )
 
 # -----------
 # f'String'
 # -----------
-print( f'Nombre: {nombre} | Edad: {edad} | Nota Final: {nota_final} | ¿Es Estudiante?: {es_estudiante}' )
-
+print( f"Nombre: {nombre} | Edad: {edad} | Nota Final: {nota_final} | ¿Es Estudiante?: {es_estudiante}" )
 
 # ---------------------------------------
 # str.format() + argumentos posicionales
@@ -1785,26 +2091,28 @@ n2 = 'Paola'
 n3 = 'Ximena'
 
 print( '{} es increíble! {} es inteligente! {} es una gran persona!'.format(
-    n1, n2, n3
+n1, n2, n3
 ) )
 
 print( '{2} es increíble! {1} es inteligente! {0} es una gran persona!'.format(
-    n1, n2, n3
+n1, n2, n3
 ) )
 
 # IndexError
 """
 print( '{5} es increíble! {1} es inteligente! {0} es una gran persona!'.format(
-    n1, n2, n3
+n1, n2, n3
 ) )
 """
+# IndexError: Replacement index 5 out of range for positional args tuple
+
 
 # ---------------------------------------
 # str.format() + argumentos con keyword
 # ---------------------------------------
 print('Me gusta el pastel de {comida} con una {bebida}'.format(
-    comida = 'chocolate',
-    bebida = 'cola'
+    comida = 'vainilla',
+    bebida = 'coca cola'
 ))
 
 
@@ -1818,28 +2126,40 @@ print('\n\n28) String Format + Números\n')
 # ------------------------------
 # Número de dígitos & decimales
 # ------------------------------
-PI = 3.14159265358979323846
+PI = 3.14159265358979323846 # constantes => mayúsculas
+#print(PI)
 
-print( 'PI = {}'.format(PI) )
-print( 'PI = {:.2}'.format(PI) )
-print( 'PI = {:.4}'.format(PI) )
-print( 'PI = {:.2f}'.format(PI) )
-print( 'PI = {:.4f}'.format(PI) )
+print( 'PI = {}'.format(PI) ) # PI = 3.141592653589793
+# número de dígitos
+print( 'PI = {:.2}'.format(PI) ) # PI = 3.1
+print( 'PI = {:.4}'.format(PI) ) # PI = 3.142
+# números decimales
+print( 'PI = {:.2f}'.format(PI) ) # PI = 3.14
+print( 'PI = {:.4f}'.format(PI) ) # PI = 3.1416
+
+print( '{:.2f}'.format(PI) )
+
+num = '{:.2f}'.format(PI)
+print( num , type(num) ) # 3.14 <class 'str'>
+
+num = float(num)
+print( num , type(num) ) # 3.14 <class 'float'>
 
 # -----------
 # Alineación
 # -----------
 num = 1.234
-print( 'Valor = {} | Es un Número Flotante'.format(num) )
-print( 'Valor = {:10} | Es un Número Flotante'.format(num) ) # alineación derecha
-print( 'Valor = {:>10} | Es un Número Flotante'.format(num) ) # alineación derecha
-print( 'Valor = {:<10} | Es un Número Flotante'.format(num) ) # alineación izquierda
-print( 'Valor = {:^10} | Es un Número Flotante'.format(num) ) # alineación en centro
+print( 'Valor = {} | Es un número Flotante'.format(num) )
+print( 'Valor = {:10} | Es un número Flotante'.format(num) ) # alineación a la derecha
+print( 'Valor = {:>10} | Es un número Flotante'.format(num) ) # alineación a la derecha
+print( 'Valor = {:<10} | Es un número Flotante'.format(num) ) # alineación a la izquierda
+print( 'Valor = {:^10} | Es un número Flotante'.format(num) ) # alineación al centro
 
 # -------------------
 # Relleno de ceros 
 # -------------------
 # - OJO: Toma en cuenta todos los caracteres
+
 num = 1.23
 print( 'Número = {:05}'.format(num) )
 print( 'Número = {:08}'.format(num) )
@@ -1848,15 +2168,16 @@ print( 'Número = {:08}'.format(num) )
 # Separador de miles
 # -------------------
 num = 12345678
-print( '{}'.format(num) )
-print( '{:,}'.format(num) )
+print( '{}'.format(num) ) # 12345678
+print( '{:,}'.format(num) ) # 12,345,678
 
 # --------------------
 # Notación Científica
 # --------------------
-print( '{:E}'.format(num) )
-print( '{:e}'.format(num) )
-print( '{:.3e}'.format(num) ) # notación científica con decimales
+num = 12345678
+print( '{:E}'.format(num) ) # 1.234568E+07
+print( '{:e}'.format(num) ) # 1.234568e+07
+print( '{:.3e}'.format(num) ) # 1.235e+07
 
 # ----------------
 # Combinando todo
@@ -1865,6 +2186,7 @@ num = 1.23456
 print( 'El valor = {} | Es un flotante.'.format(num) )
 print( 'El valor = {:15.2f} | Es un flotante.'.format(num) )
 print( 'El valor = {:<15.2f} | Es un flotante.'.format(num) )
+print( 'El valor = {:^15.2f} | Es un flotante.'.format(num) )
 
 # --------------
 # CON f'String'
@@ -1881,13 +2203,17 @@ print('\n\n\n29) String Format + Texto\n')
 
 pais = 'ECUADOR'
 
-print( 'Mi país {}, es un país muy hermoso'.format(pais) ) # sin formato
-print( 'Mi país {:<15}, es un país muy hermoso'.format(pais) ) # alineación a izquierda
-print( 'Mi país {:>15}, es un país muy hermoso'.format(pais) ) # alineación a derecha
-print( 'Mi país {:^15}, es un país muy hermoso'.format(pais) ) # alineación a centro
-print( 'Mi país {:.3}, es un país muy hermoso'.format(pais) ) # truncamiento
-print( 'Mi país {:^10.3}, es un país muy hermoso'.format(pais) ) # alineación + truncamiento
-print( f'Mi país {pais:^10.3}, es un país muy hermoso' ) # con f'String'
+print( 'Mi país {}, es un país muy hermoso!'.format(pais) ) # sin formato =>  Mi país ECUADOR, es un país muy hermoso!
+print( 'Mi país {:<15}, es un país muy hermoso!'.format(pais) ) # alineación a izquierda =>  Mi país ECUADOR        , es un país muy hermoso!
+print( 'Mi país {:>15}, es un país muy hermoso!'.format(pais) ) # alineación a derecha =>  Mi país         ECUADOR, es un país muy hermoso!
+print( 'Mi país {:^15}, es un país muy hermoso!'.format(pais) ) # alineación a centro =>  Mi país     ECUADOR    , es un país muy hermoso!
+
+print( 'Mi país {:.3}, es un país muy hermoso!'.format(pais) ) # truncamiento => Mi país ECU, es un país muy hermoso!
+
+print( 'Mi país {:^10.3}, es un país muy hermoso!'.format(pais) ) # alineación + truncamiento => Mi país    ECU    , es un país muy hermoso!
+
+# utilizando f'String'
+print( f'Mi país {pais:^10.3}, es un país muy hermoso!' ) # Mi país    ECU    , es un país muy hermoso!
 
 
 
@@ -1902,14 +2228,18 @@ print('\n\n\n30) Librería / Módulo random\n')
 # -------------------
 import random
 
+
 # ----------
 # .random()
 # ----------
 # - número al azar entre 0 y 1
 # - sin incluir el 1
-
 x = random.random()
-print(x)
+print( x )
+# 0.40959174249127883
+# 0.6648617000335229
+# 0.5399202665685434
+
 
 # ---------------
 # .random() * N
@@ -1921,10 +2251,11 @@ print()
 lista_numeros = []
 
 for i in range(1,21):
-    lista_numeros.append( random.random() * 100 )
+    lista_numeros.append( round(random.random() * 100) )
 # end for
 
-print(lista_numeros)
+print(lista_numeros) # [1, 10, 4, 85, 67, 16, 50, 4, 24, 7, 70, 44, 1, 7, 40, 28, 95, 60, 49, 41]
+
 
 # -----------------------------------------
 # Truco str.format() para reducir decimales
@@ -1941,6 +2272,7 @@ for i in range(1,21):
 # end for
 
 print(lista_numeros)
+# [52.14, 56.11, 63.52, 24.06, 47.64, 80.54, 94.1, 83.42, 80.3, 56.58, 6.97, 41.39, 28.89, 30.11, 94.06, 90.5, 36.26, 65.01, 56.06, 93.36]
 
 # --------------
 # .randint(x,y)
@@ -1951,38 +2283,51 @@ print()
 lista_numeros = []
 
 for i in range(1,21):
-    lista_numeros.append( random.randint(1000,2000) )
+    lista_numeros.append( random.randint(1000, 2000) )
 # end for
 
 print(lista_numeros)
+# [1062, 1130, 1025, 1076, 1123, 1405, 1569, 1546, 1758, 1992, 1202, 1091, 1077, 1053, 1502, 1519, 1087, 1991, 1893, 1205]
+
 
 # ----------
 # .choice()
 # ----------
 # - aplicado en lista !!
+
 heroes = ['goku', 'gohan', 'krilin', 'yamcha', 'vegeta']
 
-print( heroes )
-print( random.choice(heroes) )
-print( random.choice(heroes) )
+print(heroes)
+# no es fijo, cada vez que ejecutamos el programa, es algo distinto
+print( random.choice(heroes) ) # vegeta
+print( random.choice(heroes) ) # vegeta
+print( random.choice(heroes) ) # yamcha
+print( random.choice(heroes) ) # gohan
+
 
 # -----------
 # .shuffle()
 # -----------
 # - aplicado en lista !!
+# - barajar una lista
+# - OJO: se modifica la lista original
+
 heroes = ['goku', 'gohan', 'krilin', 'yamcha', 'vegeta']
-print( heroes )
+print(heroes)
 
 random.shuffle(heroes)
-print( heroes )
+print(heroes)
+# ['yamcha', 'krilin', 'goku', 'vegeta', 'gohan']
+# ['yamcha', 'gohan', 'goku', 'krilin', 'vegeta']
+# ['krilin', 'gohan', 'goku', 'yamcha', 'vegeta']
 
-# sin cambiar la lista original
+# ==> sin cambiar la lista original
 heroes = ['goku', 'gohan', 'krilin', 'yamcha', 'vegeta']
 heroes_copy = heroes.copy()
-random.shuffle( heroes_copy )
+random.shuffle(heroes_copy)
 
-print( heroes )
-print( heroes_copy )
+print(heroes) # ['goku', 'gohan', 'krilin', 'yamcha', 'vegeta']
+print(heroes_copy) # ['goku', 'gohan', 'yamcha', 'krilin', 'vegeta']
 
 
 
@@ -1991,59 +2336,73 @@ print( heroes_copy )
 # 31) Condicional Anidado
 print('\n\n\n31) Condicional Anidado\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - if dentro de if
+# - Juego de Piedra / Papel / Tijera
 
 """
 opciones_juego = ['Piedra', 'Papel', 'Tijera']
 
-opcion_player = ''
-opcion_cpu = ''
+opcion_player = None
+opcion_cpu = None
 
 while True:
-    print('Juego Piedra / Papel / Tijera')
-    print('(A) Piedra')
-    print('(B) Papel')
-    print('(C) Tijera')
-    print('(D) Salir (s/q)\n')
-    
+    print('Bienvenidos a nuestro juego de Piedra / Papel / Tijera')
+    print('(A) - Piedra')
+    print('(B) - Papel')
+    print('(C) - Tijera')
+    print('(D) - Salir(s/q)\n')
+
     opcion_player = input('Elija su opción : ')
     opcion_player = opcion_player.title().strip(' ')
-    
+
     opcion_cpu = random.choice(opciones_juego)
-    
-    print( 'Player ha elegido => {}'.format(opcion_player.upper()) )
-    print( 'Computadora ha elegido => {}'.format(opcion_cpu.upper()) )
-    
+
     if opcion_player == 'A' or opcion_player == 'Piedra':
+        
         opcion_player = 'Piedra'
+        print( 'Player ha elegido => {}'.format( opcion_player.upper() ) )
+        print( 'Computadora ha elegido => {}'.format( opcion_cpu.upper() ) )
+        print()
+
         if opcion_cpu == 'Piedra':
             print('EMPATE !')
         elif opcion_cpu == 'Papel':
-            print( '{} le gana a {} - Computadora gana!!'.format(opcion_cpu.upper(), opcion_player.upper()) )
+            print( '{} le gana a {} - Computadora GANA!'.format( opcion_cpu.upper() , opcion_player.upper() ) )
         elif opcion_cpu == 'Tijera':
-            print( '{} le gana a {} - Player gana!!'.format(opcion_player.upper(), opcion_cpu.upper()) )
-    
+            print( '{} le gana a {} - Player GANA!'.format( opcion_player.upper() , opcion_cpu.upper() ) )
+
     elif opcion_player == 'B' or opcion_player == 'Papel':
+
         opcion_player = 'Papel'
+        print( 'Player ha elegido => {}'.format( opcion_player.upper() ) )
+        print( 'Computadora ha elegido => {}'.format( opcion_cpu.upper() ) )
+        print()
+
         if opcion_cpu == 'Papel':
             print('EMPATE !')
         elif opcion_cpu == 'Tijera':
-            print( '{} le gana a {} - Computadora gana!!'.format(opcion_cpu.upper(), opcion_player.upper()) )
+            print( '{} le gana a {} - Computadora GANA!'.format( opcion_cpu.upper() , opcion_player.upper() ) )
         elif opcion_cpu == 'Piedra':
-            print( '{} le gana a {} - Player gana!!'.format(opcion_player.upper(), opcion_cpu.upper()) )
-    
+            print( '{} le gana a {} - Player GANA!'.format( opcion_player.upper() , opcion_cpu.upper() ) )
+
     elif opcion_player == 'C' or opcion_player == 'Tijera':
+
         opcion_player = 'Tijera'
+        print( 'Player ha elegido => {}'.format( opcion_player.upper() ) )
+        print( 'Computadora ha elegido => {}'.format( opcion_cpu.upper() ) )
+        print()
+
         if opcion_cpu == 'Tijera':
             print('EMPATE !')
         elif opcion_cpu == 'Piedra':
-            print( '{} le gana a {} - Computadora gana!!'.format(opcion_cpu.upper(), opcion_player.upper()) )
+            print( '{} le gana a {} - Computadora GANA!'.format( opcion_cpu.upper() , opcion_player.upper() ) )
         elif opcion_cpu == 'Papel':
-            print( '{} le gana a {} - Player gana!!'.format(opcion_player.upper(), opcion_cpu.upper()) )
-    
+            print( '{} le gana a {} - Player GANA!'.format( opcion_player.upper() , opcion_cpu.upper() ) )
+
     elif opcion_player == 'D' or opcion_player == 'S' or opcion_player == 'Q':
         print('Gracias por Jugar! :)')
         break
-    
+
     else:
         print('ERROR - Opción Equivocada! :(')
     # end if
@@ -2066,24 +2425,39 @@ print('\n\n\n32) Listas Multidimensionales\n')
 # - ejemplo: matriz de 3 filas y 3 columnas
 
 matriz = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
+[1,2,3],
+[4,5,6],
+[7,8,9]
 ]
 
 print(matriz)
+# [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+for fila in matriz:
+    print(fila)
+# end for
+
 
 # --------------------
 # Acceso de elementos
 # --------------------
-print( len(matriz) )
+print( len(matriz) ) # 3
+
+# acceso a las filas
 print( matriz[0] )
 print( matriz[1] )
 print( matriz[2] )
-# ej acceder al 6
+
+# acceso individual => doble indexing
+print()
+
+# ej: acceder al 6
 print( matriz[1][2] ) # 6
-# ej acceder al 8
+
+# ej: acceder al 8
 print( matriz[2][1] ) # 8
+
+# =>matriz[fila][columna] => indexing empieza desde 0
 
 
 
@@ -2099,11 +2473,12 @@ print('\n\n\n33) Bucles Anidados\n')
 # - NO OLVIDAR: while obliga tener un contador
 
 matriz = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
+[1,2,3],
+[4,5,6],
+[7,8,9]
 ]
 
+# simbología de vectores unitarios
 i = 0 # filas
 j = 0 # columnas
 
@@ -2118,11 +2493,13 @@ while i < len(matriz):
     j = 0
 # end while
 
-i = 0
-j = 0
 
 # ==> recorrido + print => forma de matriz
 print()
+
+i = 0 # filas
+j = 0 # columnas
+
 while i < len(matriz):
     while j < len( matriz[i] ):
         print( matriz[i][j] , end='\t' )
@@ -2132,20 +2509,18 @@ while i < len(matriz):
     print()
 # end while
 
-
 # -------------------------
 # Recorrido básico con for
 # -------------------------
 
 matriz = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
+[1,2,3],
+[4,5,6],
+[7,8,9]
 ]
 
 # i => filas
 # j => columnas
-
 
 # ==> recorrido básico
 print()
@@ -2154,7 +2529,6 @@ for i in matriz:
     for j in i:
         print(j)
 # end for
-
 
 # ==> recorrido + print en forma de matriz
 print()
@@ -2185,13 +2559,14 @@ numero = 10
 string = 'python'
 lista = [1,2,3]
 
-print( id(numero) )
-print( id(string) )
-print( id(lista) )
+print( id(numero) ) # 139781892178448
+print( id(string) ) # 139781890350448
+print( id(lista) )  # 139781890217856
 
-print( hex(id(numero)) )
-print( hex(id(string)) )
-print( hex(id(lista)) )
+print( hex(id(numero)) ) # 0x7efc31b38210
+print( hex(id(string)) ) # 0x7efc31979d70
+print( hex(id(lista)) )  # 0x7efc31959740
+
 
 # ----------------------
 # concepto de INMUTABLE
@@ -2199,55 +2574,84 @@ print( hex(id(lista)) )
 # - cualquier tipo básico
 
 string = 'python'
-print( string[0] ) # p
-#string[0] = 'P' # TypeError: 'str' object does not support item assignment
+print( string[0] )  # p
+print( string[-1] ) # n
 
-print( hex(id(string)) )
+#string[0] = 'X' # TypeError: 'str' object does not support item assignment
+# string es inmutable !!!!
 
-string = string[0].upper() + string[1:] # no es modificar / reasignar una variable
-print(string)
-print( hex(id(string)) )
+string = 'python'
+print( string )
+print( hex(id(string)) ) # 0x7f9fd08add70
+
+string = string[0].upper() + string[1:] # NO ES MODIFICAR => reasignación de variable
+# al reasignar => nuevo espacio en la memoria !!!!
+print( string )
+print( hex(id(string)) ) # 0x7f9fd088d9f0
+
+print()
 
 string_1 = 'java'
 string_2 = 'java'
 
-print( hex(id(string_1)) )
-print( hex(id(string_2)) )
+print( hex(id(string_1)) ) # 0x7fd091873670
+print( hex(id(string_2)) ) # 0x7fd091873670
 
 
 # ---------------------
 # concepto de MUTABLE
 # ---------------------
 # - típico ejemplo son las listas
+print('\nMUTABLE')
 
 lista_1 = [1,2,3]
 lista_2 = [1,2,3]
 
-print( hex(id(lista_1)) )
-print( hex(id(lista_2)) ) # son distintos
-
-lista_3 = lista_1
-
-print( hex(id(lista_1)) )
-print( hex(id(lista_3)) ) # son los mismos
-
-lista_3.append('A') # método que modifica la variable, la cambia!!
-
-print( lista_1, hex(id(lista_1)) )
-print( lista_3, hex(id(lista_3)) )
-
-# => solución
-lista_1 = [1,2,3]
-lista_3 = lista_1.copy()
-
-print( hex(id(lista_1)) )
-print( hex(id(lista_3)) ) # son diferentes
+print( hex(id(lista_1)) ) # 0x7fd0c6f82840
+print( hex(id(lista_2)) ) # 0x7fd0c6f829c0
 
 lista_1.append('Z')
-lista_3.pop()
 
-print( lista_1, hex(id(lista_1)) )
-print( lista_3, hex(id(lista_3)) )
+print(lista_1)
+print(lista_2)
+
+print()
+lista_1 = [1,2,3]
+lista_3 = lista_1 # asignando la misma dirección en la memoria
+print( hex(id(lista_1)) ) # 0x7f990654c9c0
+print( hex(id(lista_3)) ) # 0x7f990654c9c0
+
+lista_1.append('ZZZ')
+
+print(lista_1) # [1, 2, 3, 'ZZZ']
+print(lista_3) # [1, 2, 3, 'ZZZ']
+
+lista_3.append('AAA')
+
+print(lista_1)
+print(lista_3)
+
+lista_1[0] = 'Y' # no es posible en String => lista es MUTABLE !!!
+
+print(lista_1)
+print(lista_3)
+
+print('\nConclusión')
+
+lista_1 = [1,2,3]
+lista_2 = [1,2,3]
+lista_3 = lista_1.copy()
+
+print( hex(id(lista_1)) ) # 0x7f6494ac6ac0
+print( hex(id(lista_2)) ) # 0x7f6494aa5cc0
+print( hex(id(lista_3)) ) # 0x7f6494ac6c40
+
+lista_3.append('A')
+lista_1.pop()
+
+print(lista_1) # [1, 2]
+print(lista_2) # [1, 2, 3]
+print(lista_3) # [1, 2, 3, 'A']
 
 
 
@@ -2263,18 +2667,15 @@ print('\n\n35) keyword is\n')
 
 lista_1 = [1,2,3]
 lista_2 = [1,2,3]
+lista_3 = lista_1.copy()
+lista_4 = lista_1 # OJO # mismo espacio en la memoria + mismo valor
 
-print( lista_1 == lista_2 ) # True
-print( lista_1 is lista_2 ) # False
-print( 'lista_1', hex(id(lista_1)) ) # lista_1 0x1acc3447bc0
-print( 'lista_2', hex(id(lista_2)) ) # lista_2 0x1acc3387c80
+print(lista_1 , lista_2, lista_3, lista_4)
 
-lista_3 = lista_1
+print( lista_1 == lista_2, lista_1 == lista_3, lista_1 == lista_4 ) # True True True
+print( lista_1 is lista_2, lista_1 is lista_3, lista_1 is lista_4 ) # False False True
 
-print( lista_1 == lista_3 ) # True
-print( lista_1 is lista_3 ) # True
-print( 'lista_1', hex(id(lista_3)) ) # lista_1 0x1acc3447bc0
-print( 'lista_3', hex(id(lista_3)) ) # lista_3 0x1acc3447bc0
+# int / float / str / bool => INMUTABLES => is / == vienen a ser lo mismo
 
 
 
@@ -2294,64 +2695,77 @@ print('\n\n36) Tuplas\n')
 # - también tiene la función len()
 
 t1 = (100, 'sebas', False, -5.8)
-t2 = tuple( (100, 'sebas', False, -5.8) )
 
-print( t1, type(t1), len(t1) ) # (100, 'sebas', False, -5.8) <class 'tuple'> 4
-print( t2, type(t2), len(t2) ) # (100, 'sebas', False, -5.8) <class 'tuple'> 4
+# ==> función interna tuple()
+t2 = tuple( (100, 'diego', True, -8.9) )
 
-# => creando tupla vacía
+print( t1 , len(t1), type(t1) ) # (100, 'sebas', False, -5.8) 4 <class 'tuple'>
+print( t2 , len(t2), type(t2) ) # (100, 'diego', True, -8.9) 4 <class 'tuple'>
+
+# ==> creando tupla vacía
 tupla_vacia_1 = ()
-tupla_vacia_2 = tuple()
+tupla_vacia_2 = tuple() 
 
-print( tupla_vacia_1, type(tupla_vacia_1), len(tupla_vacia_1) ) # () <class 'tuple'> 0
-print( tupla_vacia_2, type(tupla_vacia_2), len(tupla_vacia_2) ) # () <class 'tuple'> 0
-
+print( tupla_vacia_1 , len(tupla_vacia_1), type(tupla_vacia_1) ) # () 0 <class 'tuple'>
+print( tupla_vacia_2 , len(tupla_vacia_2), type(tupla_vacia_2) ) # () 0 <class 'tuple'>
 
 # -------------------
 # Indexing & Slicing
 # -------------------
+t1 = (100, 'sebas', False, -5.8)
+#      0      1       2      3
+
 print( t1[0] ) # 100
 print( t1[1] ) # sebas
 print( t1[-1] ) # -5.8
 print( t1[1:3] ) # ('sebas', False)
 
+#print( t1[50] ) # IndexError: tuple index out of range
+
 # -----------
 # keyword in
 # -----------
+t1 = (100, 'sebas', False, -5.8)
+#      0      1       2      3
+
 print( 100 in t1 ) # True
-print( -200 in t1 ) # False
+print( '100' in t1 ) # False
 
 # ---------------
 # Son INMUTABLES
 # ---------------
-lista = [100, 'sebas', False, -5.8]
-tupla = (100, 'sebas', False, -5.8)
+lista = [100, 'sebas', True, -5.8]
+tupla = (100, 'sebas', True, -5.8)
 
 lista[1] = 'Python'
+print(lista) # [100, 'Python', True, -5.8]
+print(tupla) # (100, 'sebas', True, -5.8)
+
 #tupla[1] = 'Java' # TypeError: 'tuple' object does not support item assignment
+# tupla es INMUTABLE !!!
 
-print(lista) # [100, 'Python', False, -5.8]
-print(tupla) # (100, 'sebas', False, -5.8)
-
-# ---------------------
-# Truco para Modificar
-# ---------------------
-tupla = (100, 'sebas', False, -5.8)
+# ----------------------
+# Truco para Modificar*
+# ----------------------
+tupla = (100, 'sebas', True, -5.8)
+print( hex(id(tupla)) ) # 0x7f861c9712b0
 lista = list(tupla)
 lista[1] = 'Python'
 tupla = tuple(lista)
-print(tupla) # (100, 'Python', False, -5.8)
+print(tupla) # (100, 'Python', True, -5.8)
+print( hex(id(tupla)) ) # 0x7f861c9987c0
 
 # ---------------
 # Concatenación
 # ---------------
-t1 = (10, 20, 30)
+t1 = (10,20,30)
 t2 = ('a', 'b', 'c')
 
 r1 = t1 + t2
 r2 = t2 + t1
 
-print( r1, r2 ) # (10, 20, 30, 'a', 'b', 'c') ('a', 'b', 'c', 10, 20, 30)
+print(r1) # (10, 20, 30, 'a', 'b', 'c')
+print(r2) # ('a', 'b', 'c', 10, 20, 30)
 
 # -------------------------------
 # Métodos => .count() / .index()
@@ -2363,12 +2777,15 @@ print( tupla.count(10) ) # 2
 print( tupla.count(100) ) # 0
 
 print( tupla.index('A') ) # 2
-print( tupla.index(10) ) # 0 => búsqueda de index de izq a der
+print( tupla.index(10) ) # 0 => izq a der
+#print( tupla.index(100) ) # ValueError: tuple.index(x): x not in tuple
+
 
 # --------------------
 # Recorrido de tuplas
 # --------------------
 print()
+
 for elemento in tupla:
     print(elemento)
 # end for
@@ -2380,8 +2797,8 @@ for elemento in tupla:
 # 37) Sets / Conjuntos
 print('\n\n37) Sets / Conjuntos\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# - elementos únicos / conjuntos
-# - colección desordenada
+# - una colección de ELEMENTOS ÚNICOS
+# - colección desordenada => OJO !!!
 # - no se pueden alterar sus elementos, pero el set si
 # - se crean con {}
 
@@ -2390,34 +2807,37 @@ print('\n\n37) Sets / Conjuntos\n')
 # -------------------
 # - también tiene la función len()
 
-conjunto_1 = {10, 'ABC', -8.5}
-conjunto_2 = set( (10, 'ABC', -8.5) )
+conjunto_1 = {10, 'ABC', -9.6}
+conjunto_2 = set( (10, 'XYZ', -8.7) )
 
-print( conjunto_1, type(conjunto_1), len(conjunto_1) ) # {-8.5, 10, 'ABC'} <class 'set'> 3
-print( conjunto_2, type(conjunto_2), len(conjunto_2) ) # {-8.5, 10, 'ABC'} <class 'set'> 3
+print( conjunto_1 , type(conjunto_1), len(conjunto_1) ) # {'ABC', 10, -9.6} <class 'set'> 3
+print( conjunto_2 , type(conjunto_2), len(conjunto_2) ) # {-8.7, 'XYZ', 10} <class 'set'> 3
 
-# => creando conjunto vacío
-set_vacio_1 = {} # MANERA INCORRECTA => DICCIONARIO VACÍO
-set_vacio_2 =set()
+# ==> creando un conjunto vacío
+#set_vacio_1 = {} # INCORRECTO => diccionario vacío
+#print( set_vacio_1 , type(set_vacio_1) ) # {} <class 'dict'>
 
-print( set_vacio_1, type(set_vacio_1), len(set_vacio_1) ) # {} <class 'dict'> 0
-print( set_vacio_2, type(set_vacio_2), len(set_vacio_2) ) # set() <class 'set'> 0
+set_vacio = set()
+print( set_vacio , len(set_vacio), type(set_vacio) ) # set() 0 <class 'set'>
+
 
 # -------------------------------------
 # No existe Indexing & Slicing en Sets
 # -------------------------------------
 # - ¿por qué? => los sets son colecciones desordenadas
-
 s1 = {'A', 'B', 'C'}
-#s1[0]    # TypeError: 'set' object is not subscriptable
-#s1[0:2]  # TypeError: 'set' object is not subscriptable
+
+#s1[0] # TypeError: 'set' object is not subscriptable
+#s1[0:2] # TypeError: 'set' object is not subscriptable
+
 
 # -------------------------------
 # Elementos repetidos se eliminan
 # -------------------------------
 # - los elementos de un set son ÚNICOS
 s1 = {'A', 'B', 'C', 'A', 'A', 'B'}
-print(s1)
+print(s1) # {'B', 'C', 'A'}
+
 
 # -----------------------------------------
 # No existe concatenación & producto (+ *)
@@ -2425,8 +2845,8 @@ print(s1)
 s1 = {'A', 'B', 'C'}
 s2 = {10, 20, 30}
 
-#r1 = s1 + s2  # TypeError: unsupported operand type(s) for +: 'set' and 'set'
-#r2 = 2 * s1   # TypeError: unsupported operand type(s) for *: 'int' and 'set'
+#r1 = s1 + s2 # TypeError: unsupported operand type(s) for +: 'set' and 'set'
+#r2 = 2 * s1 # TypeError: unsupported operand type(s) for *: 'int' and 'set'
 
 # -----------------
 # Recorrido de Set
@@ -2434,7 +2854,7 @@ s2 = {10, 20, 30}
 s1 = {'A', 'B', 'C'}
 
 for elem in s1:
-    print(elem) # impresión en desorden
+    print(elem)
 # end for
 
 
@@ -2450,7 +2870,8 @@ s1.add(10)
 s1.add(False)
 s1.add('B')
 
-print(s1, len(s1))
+print(s1)
+
 
 
 """
@@ -2468,8 +2889,9 @@ Métodos para eliminar / borrar
 print()
 s1 = {'A', 'B', 'C'}
 s1.remove('A')
-print(s1)
+print(s1) # {'C', 'B'}
 #s1.remove('Z') # KeyError: 'Z'
+
 
 # -----------
 # .discard() 
@@ -2478,9 +2900,9 @@ print(s1)
 print()
 s1 = {'A', 'B', 'C'}
 s1.discard('A')
-print(s1)
-s1.discard('Z')
-print(s1)
+print(s1) # {'B', 'C'}
+s1.discard('Z') 
+print(s1) # {'B', 'C'}
 
 # -------
 # .pop()
@@ -2491,12 +2913,14 @@ s1 = {'A', 'B', 'C'}
 s1.pop()
 print(s1)
 
+
 # ---------
 # .clear()
 # ---------
 # - deja un set vacío
 print()
 s1 = {'A', 'B', 'C'}
+print(s1) # {'A', 'B', 'C'}
 s1.clear()
 print(s1) # set()
 
@@ -2506,8 +2930,10 @@ print(s1) # set()
 # elimina la variable por completo
 print()
 s1 = {'A', 'B', 'C'}
-del s1
+print(s1)
+del s1 # s1 deja de existir en nuestro programa !!!
 #print(s1) # NameError: name 's1' is not defined.
+
 
 
 """
@@ -2532,9 +2958,22 @@ s2 = {10, 'B', 20, 'A'}
 
 union = s1.union(s2)
 print(union)
+print(s1)
+print(s2)
 
+# update => modifica el conjunto
+print()
 s1.update(s2)
 print(s1)
+print(s2)
+
+s1 = {'A', 'B', 'C', 'D'}
+s2 = {10, 'B', 20, 'A'}
+
+print()
+s2.update(s1)
+print(s1)
+print(s2)
 
 # ---------------------------------------------
 # .intersection()   /  .intersection_update()
@@ -2543,12 +2982,29 @@ print(s1)
 s1 = {'A', 'B', 'C', 'D'}
 s2 = {10, 'B', 20, 'A'}
 
-intersection_1 = s1.intersection(s2)
-print(intersection_1)
+resultado_interseccion_1 = s1.intersection(s2)
+resultado_interseccion_2 = s2.intersection(s1)
+
+print( resultado_interseccion_1 ) # {'A', 'B'}
+print( resultado_interseccion_2 ) # {'A', 'B'}
+
+# intersection_update
+print()
+s1 = {'A', 'B', 'C', 'D'}
+s2 = {10, 'B', 20, 'A'}
 
 s1.intersection_update(s2)
-print(s1)
-print(s2)
+print(s1) # {'A', 'B'}
+print(s2) # {10, 20, 'A', 'B'}
+
+print()
+s1 = {'A', 'B', 'C', 'D'}
+s2 = {10, 'B', 20, 'A'}
+
+s2.intersection_update(s1)
+print(s1) # {'C', 'A', 'B', 'D'}
+print(s2) # {'A', 'B'}
+
 
 # ----------------------------------------
 # .difference()   /  .difference_update()
@@ -2559,31 +3015,52 @@ s2 = {10, 'B', 20, 'A'}
 
 diff_1 = s1.difference(s2)
 diff_2 = s2.difference(s1)
-print(diff_1)
-print(diff_2)
+
+print(diff_1) # {'D', 'C'}
+print(diff_2) # {10, 20}
+print()
+print(s1) # {'A', 'B', 'D', 'C'}
+print(s2) # {'A', 10, 'B', 20}
+
+# => difference_update
+print()
+s1 = {'A', 'B', 'C', 'D'}
+s2 = {10, 'B', 20, 'A'}
 
 s1.difference_update(s2)
-print(s1)
-print(s2)
+print(s1) # {'C', 'D'}
+print(s2) # {10, 'A', 20, 'B'}
+
+print()
+s1 = {'A', 'B', 'C', 'D'}
+s2 = {10, 'B', 20, 'A'}
+
+s2.difference_update(s1)
+print(s1) # {'D', 'A', 'C', 'B'}
+print(s2) # {20, 10}
 
 # --------
 # .copy()
 # --------
 # - igual que en listas
 s1 = {'A', 'B', 'C'}
-s2 = s1
-s1.add(100)
-s2.add(200)
-print(s1)
-print(s2)
+s2 = s1 # están en la misma dirección de la memoria !!!
 
-# => evitando esto con copy
+s2.add(100)
+s1.add(500)
+
+print(s1) # {100, 'C', 'B', 'A', 500}
+print(s2) # {100, 'C', 'B', 'A', 500}
+
+# => aplicando copy
 s1 = {'A', 'B', 'C'}
 s2 = s1.copy()
-s1.add(100)
-s2.add(200)
-print(s1)
-print(s2)
+
+s2.add(100)
+s1.add(500)
+
+print(s1) # {'A', 'B', 'C', 500}
+print(s2) # {'A', 'B', 'C', 100}
 
 
 
@@ -2592,35 +3069,41 @@ print(s2)
 # 38) Diccionarios
 print('\n\n38) Diccionarios\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - es una también de las más importantes (después de LISTAS)
 # - estructura de clave y valor (key-value pair)
-# - python 3.6 < -- DESORDENADOS
-# - python 3.6 > -- ORDENADOS
+# - python 3.7 >=  -- ORDENADOS
+# - python 3.6 <=  -- DESORDENADOS
+
 
 # -------------------------------
 # Creación Básica de Diccionario
 # -------------------------------
 # - también funciona el len (tamaño de diccionario)
 
-#   clave : valor
+# => JSON = javascript object
+
+# clave : valor
 dict_1 = {
-    'A' : 100,
-    'B' : 200,
-    'C' : 300,
+'A' : 100,
+'B' : 200,
+'C' : 300,
 }
 
-dict_2 = dict( A=100 , B=200, C=300 )
+# ==> función interna dict()
+dict_2 = dict( X=500 , Y=600, Z=700 )
 
-print( dict_1, type(dict_1), len(dict_1) ) # {'A': 100, 'B': 200, 'C': 300} <class 'dict'> 3
-print( dict_2, type(dict_2), len(dict_2) ) # {'A': 100, 'B': 200, 'C': 300} <class 'dict'> 3
+print( dict_1 , type(dict_1), len(dict_1) ) # {'A': 100, 'B': 200, 'C': 300} <class 'dict'> 3
+print( dict_2 , type(dict_2), len(dict_2) ) # {'X': 500, 'Y': 600, 'Z': 700} <class 'dict'> 3
 
-# claves => pueden ser números enteros
+# ==> claves pueden ser números enteros
 dict_3 = {
-    100 : 'Ecuador',
-    200 : 'USA',
-    300 : 'Alemania'
+100 : 'Ecuador',
+200 : 'USA',
+300 : 'Alemania'
 }
 
-print( dict_3, type(dict_3), len(dict_3) ) # {100: 'Ecuador', 200: 'USA', 300: 'Alemania'} <class 'dict'> 3
+print( dict_3 , type(dict_3), len(dict_3) )
+# {100: 'Ecuador', 200: 'USA', 300: 'Alemania'} <class 'dict'> 3
 
 # ------------------
 # Diccionario Vacío
@@ -2628,21 +3111,20 @@ print( dict_3, type(dict_3), len(dict_3) ) # {100: 'Ecuador', 200: 'USA', 300: '
 dict_vacio_1 = {}
 dict_vacio_2 = dict()
 
-print( dict_vacio_1, type(dict_vacio_1), len(dict_vacio_1) ) # {} <class 'dict'> 0
-print( dict_vacio_2, type(dict_vacio_2), len(dict_vacio_2) ) # {} <class 'dict'> 0
+print( dict_vacio_1 , type(dict_vacio_1), len(dict_vacio_1) ) # {} <class 'dict'> 0
+print( dict_vacio_2 , type(dict_vacio_2), len(dict_vacio_2) ) # {} <class 'dict'> 0
 
 # ------------------------------
 # NO existe Indexing y Slicing
 # ------------------------------
 dict_1 = {
-    'A' : 100,
-    'B' : 200,
-    'C' : 300,
+'A' : 100,
+'B' : 200,
+'C' : 300,
 }
 
 #dict_1[0]   # KeyError: 0
 #dict_1[0:2] # TypeError: unhashable type: 'slice'
-
 
 # -----------------
 # Acceso con Clave
@@ -2650,12 +3132,21 @@ dict_1 = {
 print( dict_1['A'] ) # 100
 print( dict_1['C'] ) # 300
 
+
 # --------------------------------------------
 # Creación / Modificación con Acceso de Clave
 # --------------------------------------------
+dict_1 = {
+'A' : 100,
+'B' : 200,
+'C' : 300,
+}
+
 dict_1['B'] = 555
 dict_1['Z'] = 'python'
-print( dict_1 ) # {'A': 100, 'B': 555, 'C': 300, 'Z': 'python'}
+print(dict_1)
+# {'A': 100, 'B': 555, 'C': 300, 'Z': 'python'}
+
 
 # -----------------------------------------------
 # 2 valores iguales es posible pero no 2 claves
@@ -2663,28 +3154,38 @@ print( dict_1 ) # {'A': 100, 'B': 555, 'C': 300, 'Z': 'python'}
 # - se sobrescribe el último valor ingresado
 
 dict_1 = {
-    'Carlos' : 15,
-    'Sebas' : 14,
-    'Ana' : 18,
-    'Ximena' : 15
+'Carlos' : 15,
+'Sebas' : 14,
+'Ana' : 18,
+'Ximena' : 15
 }
 
-print(dict_1) # {'Carlos': 15, 'Sebas': 14, 'Ana': 18, 'Ximena': 15}  
+print( dict_1 , len(dict_1) )
+# {'Carlos': 15, 'Sebas': 14, 'Ana': 18, 'Ximena': 15} 4
 
 dict_2 = {
-    'Carlos' : 15,
-    'Sebas' : 14,
-    'Ana' : 18,
-    'Sebas' : 15
+'Carlos' : 15,
+'Sebas' : 14,
+'Ana' : 18,
+'Sebas' : 15
 }
 
-print(dict_2) # {'Carlos': 15, 'Sebas': 15, 'Ana': 18}
+print( dict_2 , len(dict_2) )
+# {'Carlos': 15, 'Sebas': 15, 'Ana': 18} 3
 
 # ----------------------------------
 # keyword in => averiguar una clave
 # ----------------------------------
 # - True si existe la clave, False si no
 
+dict_1 = {
+'Carlos' : 15,
+'Sebas' : 14,
+'Ana' : 18,
+'Ximena' : 15
+}
+
+# => para averiguar las CLAVES !!!
 print( 'Carlos' in dict_1 ) # True
 print( 18 in dict_1 ) # False
 
@@ -2700,63 +3201,91 @@ Métodos de Eliminación => .pop / .popitem / .clear / del
 # .get()
 # -------
 heroes = {
-    'dbz' : 'goku',
-    'dc' : 'superman',
-    'marvel' : 'spiderman',
-    'starwars' : 'obi-wan',
+'dbz' : 'goku',
+'dc' : 'superman',
+'marvel' : 'spiderman',
+'starwars' : 'obi-wan'
 }
 
 print( heroes.get('dbz') ) # goku
-print( heroes['dbz'] ) # goku => con acceso por clave
+print( heroes['dbz'] ) # goku
+
 
 # --------
 # .keys()
 # --------
-claves = heroes.keys()
-print( claves , type(claves) ) # dict_keys(['dbz', 'dc', 'marvel', 'starwars']) <class 'dict_keys'>
+claves = heroes.keys() 
+print( claves , type(claves) )
+# dict_keys(['dbz', 'dc', 'marvel', 'starwars']) <class 'dict_keys'>
 
 # ----------
 # .values()
 # ----------
-values = heroes.values()
-print( values , type(values) ) # dict_values(['goku', 'superman', 'spiderman', 'obi-wan']) <class 'dict_values'>
+valores = heroes.values()
+print( valores , type(valores) )
+# dict_values(['goku', 'superman', 'spiderman', 'obi-wan']) <class 'dict_values'>
 
 # ---------
 # .items()
 # ---------
 # - retorna tupla de (clave, valor)
 items = heroes.items()
-print( items, type(items) ) # dict_items([('dbz', 'goku'), ('dc', 'superman'), ('marvel', 'spiderman'), ('starwars', 'obi-wan')]) <class 'dict_items'>
+print( items, type(items) )
+# dict_items([('dbz', 'goku'), ('dc', 'superman'), ('marvel', 'spiderman'), ('starwars', 'obi-wan')]) <class 'dict_items'>
+
+lista = list(items)
+print( lista , type(lista) )
+# [('dbz', 'goku'), ('dc', 'superman'), ('marvel', 'spiderman'), ('starwars', 'obi-wan')] <class 'list'>
 
 # ----------
 # .update()
 # ----------
 # modifica / crea clave - valor
+print()
 
-mod_heroes = {
-    'dc' : 'wonderwoman',
-    'tortugas ninja' : 'donatello'
+heroes = {
+'dbz' : 'goku',
+'dc' : 'superman',
+'marvel' : 'spiderman',
+'starwars' : 'obi-wan'
 }
 
-heroes.update( mod_heroes )
+print(heroes , len(heroes))
+# {'dbz': 'goku', 'dc': 'superman', 'marvel': 'spiderman', 'starwars': 'obi-wan'} 4
 
-print( heroes, len(heroes) )
+mod_heroes = {
+'dc' : 'wonderwoman',
+'tortugas ninja' : 'donatello'
+}
+
+heroes.update(mod_heroes)
+
+print(heroes , len(heroes))
 # {'dbz': 'goku', 'dc': 'wonderwoman', 'marvel': 'spiderman', 'starwars': 'obi-wan', 'tortugas ninja': 'donatello'} 5
 
-
 # => Con acceso a clave
+heroes = {
+'dbz' : 'goku',
+'dc' : 'superman',
+'marvel' : 'spiderman',
+'starwars' : 'obi-wan'
+}
+
+print( heroes, len(heroes) )
+# {'dbz': 'goku', 'dc': 'superman', 'marvel': 'spiderman', 'starwars': 'obi-wan'} 4
+
 heroes['dbz'] = 'gohan'
 heroes['power rangers'] = 'zordon'
-print( heroes, len(heroes) )
-# {'dbz': 'gohan', 'dc': 'wonderwoman', 'marvel': 'spiderman', 'starwars': 'obi-wan', 'tortugas ninja': 'donatello', 'power rangers': 'zordon'} 6
 
+print( heroes, len(heroes) )
+# {'dbz': 'gohan', 'dc': 'superman', 'marvel': 'spiderman', 'starwars': 'obi-wan', 'power rangers': 'zordon'} 5
 
 # => Pasar directamente un diccionario
 heroes = {
-    'dbz' : 'goku',
-    'dc' : 'superman',
-    'marvel' : 'spiderman',
-    'starwars' : 'obi-wan',
+'dbz' : 'goku',
+'dc' : 'superman',
+'marvel' : 'spiderman',
+'starwars' : 'obi-wan'
 }
 
 heroes.update( {'dbz' : 'piccolo'} )
@@ -2768,27 +3297,32 @@ print( heroes, len(heroes) )
 # --------------
 # - recibe como argumentos clave & valor
 # - .setdefault(clave, valor)
-# - si existe la clave => no la modifica
+# - si existe la clave => NO la modifica !!!
 # - si no existe => la crea
 
 persona = {
-    'nombre' : 'Andy',
-    'edad' : 32,
-    'nota' : 15.8,
-    'es_estudiante' : True
+'nombre' : 'Andy',
+'edad' : 32,
+'nota' : 15.8,
+'es_estudiante' : True
 }
 
-persona.setdefault( 'apellido' , 'Pérez' )
-print(persona)
-# {'nombre': 'Andy', 'edad': 32, 'nota': 15.8, 'es_estudiante': True, 'apellido': 'Pérez'}
+print( persona, len(persona) )
+#{'nombre': 'Andy', 'edad': 32, 'nota': 15.8, 'es_estudiante': True} 4
 
-persona.setdefault( 'nombre' , 'Carlos' )
-print(persona)
-# {'nombre': 'Andy', 'edad': 32, 'nota': 15.8, 'es_estudiante': True, 'apellido': 'Pérez'}
+persona.setdefault( 'apellido' , 'Pérez' )
+print( persona, len(persona) )
+#{'nombre': 'Andy', 'edad': 32, 'nota': 15.8, 'es_estudiante': True, 'apellido': 'Pérez'} 5
+
+persona.setdefault( 'nombre' , 'Carlos' ) # intento ?? => no es error, pero no lo hace
+print( persona, len(persona) )
+#{'nombre': 'Andy', 'edad': 32, 'nota': 15.8, 'es_estudiante': True, 'apellido': 'Pérez'} 5
+
 
 # -------
 # .pop()
 # -------
+# - no como en las listas
 # - hay que pasar la clave como argumento
 # - caso contrario da error
 # - devuelve VALOR de elemento eliminado
@@ -2800,18 +3334,22 @@ heroes = {
     'starwars' : 'obi-wan',
 }
 
-heroes.pop('dbz')
-print( heroes ) # {'dc': 'superman', 'marvel': 'spiderman', 'starwars': 'obi-wan'}
-elemento = heroes.pop('marvel')
-print( elemento ) # spiderman
-#heroes.pop() # TypeError: pop expected at least 1 argument, got 0 
+#heroes.pop() # TypeError: pop expected at least 1 argument, got 0
+heroes.pop('marvel')
+print( heroes )
+
+elemento_eliminado = heroes.pop('dc')
+print( heroes ) # {'dbz': 'goku', 'starwars': 'obi-wan'}
+print( elemento_eliminado ) # superman
+
 
 # -----------
 # .popitem()
 # -----------
-# - python 3.7 > -- borra último elemento
-# - python 3.6 < -- borra elemento al azar
+# - python 3.7 >= -- borra último elemento (colecciones ordenadas)
+# - python 3.6 <= -- borra elemento al azar (colecciones DESORDENADAS)
 # - devuelve tupla de clave valor del elemento eliminado
+print()
 
 heroes = {
     'dbz' : 'goku',
@@ -2821,12 +3359,15 @@ heroes = {
 }
 
 print( heroes.popitem() ) # ('starwars', 'obi-wan')
-print( heroes ) # {'dbz': 'goku', 'dc': 'superman', 'marvel': 'spiderman'} 
+print( heroes ) # {'dbz': 'goku', 'dc': 'superman', 'marvel': 'spiderman'}
+
 
 # ----------
 # .clear()
 # ----------
 # - deja un diccionario vacío
+
+print()
 
 heroes = {
     'dbz' : 'goku',
@@ -2835,9 +3376,12 @@ heroes = {
     'starwars' : 'obi-wan',
 }
 
-print( heroes ) # {'dbz': 'goku', 'dc': 'superman', 'marvel': 'spiderman', 'starwars': 'obi-wan'}
+print(heroes) # {'dbz': 'goku', 'dc': 'superman', 'marvel': 'spiderman', 'starwars': 'obi-wan'}
+
 heroes.clear()
-print( heroes ) # {}
+
+print(heroes) # {}
+
 
 # -------------------
 # del dict['clave']
@@ -2853,9 +3397,11 @@ heroes = {
 }
 
 del heroes['marvel']
-print( heroes ) # {'dbz': 'goku', 'dc': 'superman', 'starwars': 'obi-wan'}
+print(heroes)
+
+# ojo=> también podemos eliminar la variable como tal
 del heroes
-#print( heroes ) # NameError: name 'heroes' is not defined
+#print(heroes) # NameError: name 'heroes' is not defined
 
 # ---------------------------
 # Recorrido de diccionarios
@@ -2869,9 +3415,19 @@ heroes = {
     'starwars' : 'obi-wan',
 }
 
-for k, v in heroes.items():
-    print( 'Clave: {} - Valor: {}'.format(k,v) )
+# => .items()
+print()
+
+for clave, valor in heroes.items():
+    print( 'Clave : {} // Valor: {}'.format(clave, valor) )
 # end for
+
+"""
+Clave : dbz // Valor: goku
+Clave : dc // Valor: superman
+Clave : marvel // Valor: spiderman
+Clave : starwars // Valor: obi-wan
+"""
 
 
 
@@ -2893,6 +3449,9 @@ tupla = tuple(lista)
 print( lista , type(lista) ) # [1, 2, 3, 4] <class 'list'>
 print( tupla , type(tupla) ) # (1, 2, 3, 4) <class 'tuple'>
 
+lista[0] = 'A'
+#tupla[0] = 'Z' # TypeError: 'tuple' object does not support item assignmentvvvvvvvvvvvvvvvvvv
+
 # ----------------------
 # lista / tuplas a sets
 # ----------------------
@@ -2901,12 +3460,19 @@ print( tupla , type(tupla) ) # (1, 2, 3, 4) <class 'tuple'>
 lista = [10, -5, 20, 10, 30, 25, 20]
 tupla = [10, -5, 20, 10, 30, 25, 20]
 
+print(lista)
+print(tupla)
+
 set_1 = set(lista)
 set_2 = set(tupla)
-
 print(set_1) # {10, 20, 25, -5, 30}
 print(set_2) # {10, 20, 25, -5, 30}
 
+lista = list(set_1)
+tupla = tuple(set_2)
+
+print(lista) # [10, 20, 25, -5, 30]
+print(tupla) # (10, 20, 25, -5, 30)
 
 # ---------------------------------
 # Casting a Diccionario => CUIDADO
@@ -2923,30 +3489,38 @@ lista = [1,2,3]
 
 # ==> Esto es POSIBLE!
 lista = [
-    ['A', 10],
-    ['B', 20],
-    ['C', 30],
+['A' , 10],
+['B' , 15],
+['C' , 20],
+['D' , 25],
 ]
 
-tupla = (
-    ('X' , -10),
-    ('Y' , -20),
-    ('Z' , -30),
-)
-
-lista_tuplas = [
-    ('M' , 1.5),
-    ('N' , 2.5),
-    ('O' , 3.5),
-]
+print( lista )
 
 dict_1 = dict(lista)
-dict_2 = dict(tupla)
-dict_3 = dict(lista_tuplas)
+print(dict_1) # {'A': 10, 'B': 15, 'C': 20, 'D': 25}
 
-print(dict_1) # {'A': 10, 'B': 20, 'C': 30}
-print(dict_2) # {'X': -10, 'Y': -20, 'Z': -30}
-print(dict_3) # {'M': 1.5, 'N': 2.5, 'O': 3.5}
+# ==> de nuevo ERROR
+
+lista = [
+['A' , 10, 100],
+['B' , 15, 200],
+['C' , 20, 300],
+['D' , 25, 400],
+]
+
+#dict_1 = dict(lista) # ValueError: dictionary update sequence element #0 has length 3; 2 is required
+
+coleccion = (
+(1,2),
+(3,4),
+(5,6),
+)
+
+print(coleccion) # ((1, 2), (3, 4), (5, 6))
+
+dict_1 = dict(coleccion)
+print(dict_1) # {1: 2, 3: 4, 5: 6}
 
 
 
@@ -2964,41 +3538,45 @@ nombre = 'Sebas'
 edad = 36
 nota = 18.5
 
-print('{} tiene {} años y su nota final es {}'.format(
+print( '{} tiene {} años y su nota final es de {}'.format(
     nombre, edad, nota
-))
-# Sebas tiene 36 años y su nota final es 18.5
+) )
+# Sebas tiene 36 años y su nota final es de 18.5
 
-def presentar_estudiante(a, b, c): # PARÁMETROS
-    print('{} tiene {}. Su nota final es = {}'.format(
-        a, b, c
-    ))
+# ==> definición de una función
+def presentar_estudiante(a, b, c): # PARÁMETROS => definición
+    print( '{} tiene {} años y su nota final es de {}'.format(a, b, c) )
 # end def
 
-# => invocar la función
-# ARGUMENTOS
-presentar_estudiante(nombre, edad, nota) # Sebas tiene 36. Su nota final es = 18.5
-presentar_estudiante('Carlos', 15, 19.5) # Carlos tiene 15. Su nota final es = 19.5
+# ==> inovación de una función / llamar a la función / ejecutar a la función
+presentar_estudiante(nombre, edad, nota) # ARGUMENTOS => invocación
+# Sebas tiene 36 años y su nota final es de 18.5
+
+presentar_estudiante('Daniel', 15, 10.6) # Daniel tiene 15 años y su nota final es de 10.6
+presentar_estudiante('Juan', 53, 18.5) # Juan tiene 53 años y su nota final es de 18.5
+
 
 # ---------------------
 # Parámetros y Retorno
 # ---------------------
 # - Un función puede o no tener parámetros
 # - y puede o no retornar algún valor => keyword 'return'
+# - (las funciones tienen nombres de verbos)
 
 # ==> sin parámetros / sin retorno
 def saludar():
-    print('hola')
+    print('hola') # imprimir en la consola / no es retorno
 # end def
 
 saludar() # hola
 
 # ==> con parámetros / sin retorno
 def despedirse(nombre):
-    print( 'Charo {} !!'.format(nombre) )
+    print('Chao {} !!'.format(nombre))
 # end def
 
-despedirse('Mateo') # Charo Mateo !!
+despedirse('Mateo') # Chao Mateo !!
+despedirse('Santiago') # Chao Santiago !!
 
 
 # ==> con parámetros / con retorno
@@ -3007,13 +3585,16 @@ def sumar(a, b):
 # end def
 
 sumar(5,6)
+
+# imprimiendo el valor retornado por la función
 print( sumar(5,6) ) # 11
-r = sumar(5,6)
-print( r ) # 11
+
+resultado = sumar(80,15)
+print(resultado , type(resultado)) # 95 <class 'int'>
+
 
 # ==> sin parámetros / con retorno
 # (no tiene mucho sentido, pero no es error)
-
 def devolver_10():
     return 10
 # end def
@@ -3024,18 +3605,17 @@ print( devolver_10() ) # 10
 # ---------------------------
 # Pueden Redefinirse N veces
 # ---------------------------
-def sumar(a,b):
+def sumar(a, b):
     return a + b
 # end def
 
 print( sumar(10,15) ) # 25
 
-def sumar(a,b):
+def sumar(a, b):
     print( a + b + 100 )
 # end def
 
-sumar( 1,2 ) # 103
-
+sumar(1,2) # 103
 
 # --------------------------------------------
 # Parámetros => Existen solo en las funciones
@@ -3048,18 +3628,21 @@ a = 10
 b = 20
 
 def multiplicar(a,b):
-    return a * b
+    return a*b
 # end def
 
 def restar(a,b):
     return a-b
 # end def
 
-print( a , b ) # 0 20
-print( multiplicar(a, b) ) # 200
-print( multiplicar(7, 2) ) # 14
-print( restar(a, b) ) # -10
-print( restar(7, 2) ) # 5
+print()
+print(a,b) # 10 20
+print( multiplicar(a,b) ) # 200
+print( multiplicar(7,2) ) # 14
+print( restar(a,b) ) # -10
+print( restar(7,2) ) # 5
+print(a,b) # 10 20
+
 
 # ---------------------------------------
 # pass => definir función y trabar luego
@@ -3074,26 +3657,31 @@ def calcular_algo(a,b,c,d,e):
 # - marca el fin de la función
 # - pueden haber varios, con un condicional
 
+
+# ==> return marca el fin de la función
 def saludar(nombre, edad):
     return 'Hola {}, tienes {} años!'.format(nombre, edad)
-    print('hola de nuevo')
+    print('hola de nuevo...')
 # end def
 
 print( saludar('Dani',20) ) # Hola Dani, tienes 20 años!
 
-
+# ==> varios return
 def saludar(idioma):
     if idioma.lower() == 'esp':
         return 'buenos días'
     elif idioma.lower() == 'eng':
         return 'good morning'
+    elif idioma.lower() == 'deu':
+        return 'Guten Tag...'
     else:
-        return 'hola!'
+        return 'holaaaaaaaaaa'
 # end def
 
-print( saludar('a') ) # hola!
+print( saludar('a') ) # holaaaaaaaaaa
 print( saludar('esp') ) # buenos días
 print( saludar('ENG') ) # good morning
+print( saludar('deU') ) # Guten Tag...
 #print( saludar() ) # TypeError: saludar() missing 1 required positional argument: 'idioma'
 
 # --------------------
@@ -3113,7 +3701,10 @@ def presentar_resultados(x):
     print( 'El número triplicado es =', triplicar_numero(x) )
 # end def
 
-presentar_resultados(3)
+presentar_resultados(6)
+#El número doblado es = 12
+#El número triplicado es = 18
+
 
 # -----------------------
 # parámetros por defecto
@@ -3127,27 +3718,28 @@ print('Hola', end='-----')
 print('Dani')
 
 # ==> podemos definir las nuestras
-def que_aprendemos(lenguaje='Python'):
+def que_aprendemos( lenguaje='Python' ):
     print('Nosotros aprendemos', lenguaje)
 # end def
 
+que_aprendemos('Fisica') # Nosotros aprendemos Fisica
+que_aprendemos('Química') # Nosotros aprendemos Química
 que_aprendemos() # Nosotros aprendemos Python
-que_aprendemos('Física') # Nosotros aprendemos Física
 
 # ==> SIEMPRE al final
 def ingredientes_pasta(tipo_pasta, salsa, carne='carne molida', condimento='oregano'):
-    print('La pasta tiene: {}, {} y {}'.format(
-        tipo_pasta,
-        salsa,
-        carne,
-        condimento
+    print('La pasta tiene: {}, {}, {} y {}'.format(
+    tipo_pasta,
+    salsa,
+    carne,
+    condimento
     ))
 # end def
 
-ingredientes_pasta('spagethi', 'pesto') # La pasta tiene: spagethi, pesto y carne molida
-ingredientes_pasta('spagethi', 'pesto', 'pollo') # La pasta tiene: spagethi, pesto y pollo
-ingredientes_pasta('spagethi', 'pesto', 'pollo bbq', 'ajo molido') # La pasta tiene: spagethi, pesto y pollo bbq
-ingredientes_pasta('spagethi', 'pesto', condimento='pimienta', carne='bolitas de res') # La pasta tiene: spagethi, pesto y bolitas de res
+ingredientes_pasta('spagethi', 'pesto') # La pasta tiene: spagethi, pesto, carne molida y oregano
+ingredientes_pasta('spagethi', 'pesto', 'pollo') # La pasta tiene: spagethi, pesto, pollo y oregano
+ingredientes_pasta('spagethi', 'pesto', 'pollo bbq', 'ajo molido') # La pasta tiene: spagethi, pesto, pollo bbq y ajo molido
+ingredientes_pasta('spagethi', 'pesto', condimento='pimienta', carne='bolitas de res' ) # La pasta tiene: spagethi, pesto, bolitas de res y pimienta
 
 
 
@@ -3172,6 +3764,16 @@ def conteo_atras(x):
 
 conteo_atras(5)
 
+# Ej de consola:
+"""
+5 segundos para año nuevo!
+4 segundos para año nuevo!
+3 segundos para año nuevo!
+2 segundos para año nuevo!
+1 segundos para año nuevo!
+"""
+
+
 # -----
 # EJ 2
 # -----
@@ -3187,11 +3789,16 @@ def sumatorio(x):
 print( sumatorio(5) ) # 15
 print( sumatorio(3) ) # 6
 
+
 # -----
 # EJ 3
 # -----
 # factorial(5) = 5*4*3*2*1 = 120
+# 5 !
 
+print( math.factorial(5) ) # 120
+
+# ==> con función recursiva
 def factorial(x):
     if x > 0:
         return x * factorial(x-1)
@@ -3202,19 +3809,37 @@ def factorial(x):
 print( factorial(5) ) # 120
 print( factorial(3) ) # 6
 
-# ==> factorial con funcion normal
+# ==> con función normal + bucle
 
 def factorial_2(x):
     resultado = 1
     while x > 0:
+        #resultado = resultado * x
         resultado *= x
-        x -= 1
+        x -= 1 # x = x - 1
     # end while
     return resultado
 # end def
 
 print( factorial_2(5) ) # 120
 print( factorial_2(3) ) # 6
+
+"""
+def factorial(x):
+    if x > 0:
+        return x * factorial(x-1)
+    else:
+        return 1
+# end def
+
+factorial(3) = 3*2*1
+1) return 3 * factorial(3-1)
+2) factorial(3-1) = factorial(2) = return 2 * factorial(2-1)
+3) factorial(2-1) = factorial(1) = return 1 * factorial(1-1)
+4) factorial(1-1) = factorial(0) = return 1
+# => 3 * 2 * 1 * 1
+# => 6
+"""
 
 
 
@@ -3243,17 +3868,22 @@ print( variable_a )
 
 """
 def hacer_algo_mas():
-    #print(variable_b) # NameError: name 'variable_b' is not defined.
+    print(variable_b)
 # end def
 
-#hacer_algo_mas()
+hacer_algo_mas() # NameError: name 'variable_b' is not defined.
 """
+
+hacer_algo() # 20
+
 
 # ---------------
 # Keyword global
 # ---------------
 
 # ==> podemos mostrar una variable global dentro de local
+print()
+
 a = 20
 
 def mostrar():
@@ -3263,13 +3893,16 @@ def mostrar():
 # end def
 
 mostrar()
+#20
+#100
+
 
 # ==> NO se puede modificar directamente la variable global dentro de local
 # - en el siguiente ejemplo
-# - ambas se llaman a
+# - ambas variables se llaman => a
 # - pero son distintas, una es global / otra es local
 
-a = 20
+a = 20 # global
 
 def intento_modificar():
     a = 100
@@ -3278,29 +3911,33 @@ def intento_modificar():
 
 print(a) # 20
 print( intento_modificar() ) # 100
+print(a) # 20
+
 
 def intento_2(a):
     a = 150
     print(a)
 # end def
 
+print('\nintento 2:')
 intento_2(2) # 150
 print(a) # 20
 intento_2(a) # 150
 print(a) # 20
 
-
 # ==> Se puede modificar con keyword global
-a = 30
+
+a = 30 # global
 
 def cambiar_variable():
-    global a
-    a += 20
-    print('Se cambió el valor a {}'.format(a))
+    global a # IMPORTANTE !!!!
+    a += 20 # a = a + 20
+    print('Se cambió el valor de a , a = {}'.format(a))
 # end def
 
+print('\nkeyword global:')
 print(a) # 30
-cambiar_variable() # Se cambió el valor a 50
+cambiar_variable() # Se cambió el valor de a , a = 50
 print(a) # 50
 
 
@@ -3321,15 +3958,17 @@ def que_son_args(*args):
     print( args , type(args) )
 # end def
 
-que_son_args(1,2,3,4) # (1, 2, 3, 4) <class 'tuple'>
-    
+que_son_args(1,2,3,4,5,'a',True)
+# (1, 2, 3, 4, 5, 'a', True) <class 'tuple'>
+
+
 # ---------------------
 # aplicación con *args
 # ---------------------
 def sumatoria(*args):
     resultado = 0
     for valor in args:
-        resultado += valor
+        resultado += valor # resultado = resultado + valor
     # end for
     return resultado
 # end def
@@ -3341,16 +3980,16 @@ print( sumatoria(1,2,3,4,5) ) # 15
 # ----------------------------------------------
 # el nombre args => no es relevante, pero si *
 # ----------------------------------------------
-def promedio(*numeros):
+def calcular_promedio(*numeros):
     resultado = 0
-    for valor in numeros:
-        resultado += valor
+    for numero in numeros:
+        resultado += numero
     # end for
     resultado = resultado / len(numeros)
     return resultado
 # end def
 
-print( promedio(10,18,15,20) ) # 15.75
+print( calcular_promedio(10,18,15,20) ) # 15.75
 
 
 
@@ -3367,26 +4006,26 @@ print('\n\n44) Funciones **kwargs\n')
 # --------------------
 # ¿qué son **kwargs?
 # --------------------
-
 def que_son_kwargs(**kwargs):
     print( kwargs , type(kwargs) )
 # end def
 
-que_son_kwargs(nombre='sebas', edad=36, nota=18.5)
+que_son_kwargs( nombre='sebas', edad=36, nota=18.5 )
 # {'nombre': 'sebas', 'edad': 36, 'nota': 18.5} <class 'dict'>
 
 
 # ------------------------
 # aplicación con **kwargs
 # ------------------------
-def calculo_nota_final(**kwargs):
+def calcular_nota_final(**kwargs):
     nota_final = kwargs['nota_deberes'] * 0.3 + kwargs['nota_examen'] * 0.7
-    print( 'La nota final es de =', nota_final )
+    print('La nota final es de =', nota_final)
 # end def
 
-calculo_nota_final( nota_deberes=18, nota_examen=14 ) # La nota final es de = 15.2
-calculo_nota_final( nota_deberes=20, nota_examen=11 ) # La nota final es de = 13.7
-#calculo_nota_final( nota_deberes=20, nota_examn=11 ) # KeyError: 'nota_examen'
+calcular_nota_final( nota_deberes=18, nota_examen=14 ) # La nota final es de = 15.2
+calcular_nota_final( nota_deberes=20, nota_examen=11 ) # La nota final es de = 13.7
+#calcular_nota_final( nota_deberes=20, nota_examn=11 ) # KeyError: 'nota_examen'
+
 
 # ------------------------------------------------
 # el nombre kwargs => no es relevante, pero si **
@@ -3400,12 +4039,21 @@ def describir_persona(**caracteristicas):
 # end def
 
 describir_persona(
-    nombre='Sebas',
-    apellido='Silva',
-    edad=36,
-    profesion='Ing. Mecánico',
-    pais='Alemania'
+nombre='Sebas',
+apellido='Silva',
+edad=36,
+profesion='Ing. Mecánico',
+pais='Alemania'
 )
+
+"""
+Características de Persona:
+nombre : Sebas
+apellido : Silva
+edad : 36
+profesion : Ing. Mecánico
+pais : Alemania
+"""
 
 
 
@@ -3427,10 +4075,11 @@ def suma_normal(a,b):
     return a + b
 # end def
 
+print( suma_normal(4,5) ) # 9
+
 # ==> función lambda
 suma_lambda = lambda a,b : a + b
 
-print( suma_normal(4,5) ) # 9
 print( suma_lambda(2,6) ) # 8
 
 
@@ -3439,9 +4088,8 @@ print( suma_lambda(2,6) ) # 8
 # --------------------------
 saludar = lambda nombre, edad : 'Hola soy {}, tengo {} años'.format(nombre, edad)
 
-print( saludar('Diego',20) ) # Hola soy Diego, tengo 20 años
-print( saludar('Andrea',34) ) # Hola soy Andrea, tengo 34 años
-
+print( saludar('Diego', 20) ) # Hola soy Diego, tengo 20 años
+print( saludar('Andrea', 34) ) # Hola soy Andrea, tengo 34 años
 
 # ------------------------------
 # Lambda con Operador Ternario
@@ -3454,6 +4102,7 @@ print(mensaje) # menor de edad
 
 # ==> Lambda + Operador Ternario
 check_temperatura = lambda temp : 'Frío' if temp < 10 else 'Buen Clima'
+
 print( check_temperatura(10) ) # Buen Clima
 print( check_temperatura(15) ) # Buen Clima
 print( check_temperatura(8) ) # Frío
@@ -3469,11 +4118,12 @@ def multiplicador(x):
 # end def
 
 mult_5 = multiplicador(5)
-print(mult_5) # <function multiplicador.<locals>.<lambda> at 0x000001A8C8A0A200>
+print(mult_5)
+# <function multiplicador.<locals>.<lambda> at 0x7fe9065f1870>
 
 print( mult_5(20) ) # 100
 
-# ==> en 1 sola línea
+# ==> 1 sola línea !!
 mult_5_20 = multiplicador(5)(20)
 print(mult_5_20) # 100
 
@@ -3487,6 +4137,9 @@ print('\n\n46) Funciones como Variables\n')
 # - todo en Python puede ser variable
 # - en Python todo es un objeto (POO)
 
+a = 20
+print(type(a)) # <class 'int'>
+
 # --------------------
 # Función a Variable
 # --------------------
@@ -3494,20 +4147,20 @@ def resta(x,y):
     return x - y
 # end def
 
-print( resta , type(resta) ) # <function resta at 0x00000235CB5BA2A0> <class 'function'>
-print( hex(id(resta)) ) # 0x235cb5ba2a0
-
+print( resta , type(resta) ) # <function resta at 0x7efc3c495900> <class 'function'>
+print( hex(id(resta)) ) # 0x7efc3c495900
 
 # -------------------------------
 # Funciones Internas a Variables
 # -------------------------------
-print('hola mundo')
-print( print , type(print) ) # built-in function print> <class 'builtin_function_or_method'>
+print( 'hola mundo' )
+print( print , type(print) )
+# <built-in function print> <class 'builtin_function_or_method'>
 
-# ==> puedo asignarle "un nuevo nombre"
-imprimir = print
+# => puedo cambiarle el nombre a print ???
+imprimir_en_consola = print
 
-imprimir('hola mundo') # hola mundo
+imprimir_en_consola('hola mundo') # hola mundo
 
 
 
@@ -3533,19 +4186,17 @@ def en_voz_baja(msg):
     return msg.lower()
 # end def
 
-
 # ===> función de alto grado (high order function)
 def saludar(funcion):
-    saludo = funcion('Hola mi Estimado! Saludos!')
+    saludo = funcion('Hola mi Estimado! Saludos!!')
     print(saludo)
 # end def
-
 
 # ===> Ejecutando high order function
 # - las funciones-argumento se pasan como firma, sin ejecutar !!
 
-saludar(gritando) # HOLA MI ESTIMADO! SALUDOS!
-saludar(en_voz_baja) # hola mi estimado! saludos!
+saludar(gritando) # HOLA MI ESTIMADO! SALUDOS!!
+saludar(en_voz_baja) # hola mi estimado! saludos!!
 
 
 # ------------------------------------------------------
@@ -3554,16 +4205,15 @@ saludar(en_voz_baja) # hola mi estimado! saludos!
 # - EJ: una fórmula sencilla de la física
 #   velocidad = distancia / tiempo
 
-
 # ===> como función normal
 def velocidad(distancia, tiempo):
     return distancia / tiempo
 # end def
 
 d = 10 # 10 metros
-t = 60 # 60 segundos
+t = 60 # 60 segundos = 1 minuto
 
-print( velocidad(d,t) ) # 0.16666666666666666 m/s
+print( velocidad(d,t) ) # 0.16666666666666666
 
 
 # ===> como high order function
@@ -3574,13 +4224,13 @@ def distancia(d):
     return tiempo
 # end def
 
-calculo_velocidad_distancia = distancia(10)
-calculo_velocidad_distacia_tiempo = calculo_velocidad_distancia(60)
+calcular_velocidad_distancia = distancia(10)
+calcular_velocidad_distacia_tiempo = calcular_velocidad_distancia(60)
 
-print(calculo_velocidad_distancia) # <function distancia.<locals>.tiempo at 0x00000227E1D6F060>
-print(calculo_velocidad_distacia_tiempo) # 0.16666666666666666
+print(calcular_velocidad_distancia) # <function distancia.<locals>.tiempo at 0x7f907f7adbd0>
+print(calcular_velocidad_distacia_tiempo) # 0.16666666666666666
 
-# otra manera:
+# otra manera
 resultado = distancia(10)(60) # (d)(t)
 print(resultado) # 0.16666666666666666
 
@@ -3603,17 +4253,17 @@ def saludo_sin_decorador():
 
 saludo_sin_decorador() # Hola, un abrazo!
 
+
 # --------------
 # CON decorador
 # --------------
 
 # ==> función decoradora
 def funcion_decoradora(funcion):
-    
     def funcion_wrapper():
-        print('Hola!!!')
+        print('HOLA !!!!')
         funcion()
-        print('Cuídate mucho!!!')
+        print('Cuídate mucho!....')
     # end def
     
     return funcion_wrapper
@@ -3622,18 +4272,17 @@ def funcion_decoradora(funcion):
 # ==> función con decorador
 @funcion_decoradora
 def saludo_con_decorador():
-    print('Qué increíble que es programar...')
+    print('Hola, un abrazo, qué bonito es programar!!')
 # end def
 
 # ==> invocando
 saludo_con_decorador()
 
 """
-Hola!!!
-Qué increíble que es programar...
-Cuídate mucho!!!
+HOLA !!!!
+Hola, un abrazo, qué bonito es programar!!
+Cuídate mucho!....
 """
-    
 
 
 
@@ -3667,24 +4316,25 @@ print('\n\n50) sorted()\n')
 lista = [20, 15, 8, 90, -5, -50, 20.2]
 
 lista_menor_mayor = sorted(lista)
-lista_mayor_menor = sorted(lista, reverse=True)
+lista_mayor_menor = sorted(lista , reverse=True)
 
-print( 'lista =', lista ) # lista = [20, 15, 8, 90, -5, -50, 20.2]
-print( 'lista_mayor_menor =', lista_mayor_menor ) # lista_mayor_menor = [90, 20.2, 20, 15, 8, -5, -50]       
-print( 'lista_menor_mayor =', lista_menor_mayor ) # lista_menor_mayor = [-50, -5, 8, 15, 20, 20.2, 90] 
+print('lista =', lista) # lista = [20, 15, 8, 90, -5, -50, 20.2]
+print('lista_menor_mayor =', lista_menor_mayor) # lista_menor_mayor = [-50, -5, 8, 15, 20, 20.2, 90]
+print('lista_mayor_menor =', lista_mayor_menor) # lista_mayor_menor = [90, 20.2, 20, 15, 8, -5, -50]
+print('lista =', lista) # lista = [20, 15, 8, 90, -5, -50, 20.2]
+
 
 # -----
 # EJ 2
 # -----
 palabras = ['sol', 'planeta', 'investigacion']
 
-orden_menos_mas = sorted(palabras, key=len)
-orden_mas_menos = sorted(palabras, key=len, reverse=True)
+orden_menos_mas = sorted(palabras , key=len)
+orden_mas_menos = sorted(palabras , key=len, reverse=True)
 
 print( 'palabras =', palabras ) # palabras = ['sol', 'planeta', 'investigacion']
-print( 'orden_menos_mas =', orden_menos_mas ) # orden_menos_mas = ['sol', 'planeta', 'investigacion']    
-print( 'orden_mas_menos =', orden_mas_menos ) # orden_mas_menos = ['investigacion', 'planeta', 'sol'] 
-
+print( 'orden_menos_mas =', orden_menos_mas ) # orden_menos_mas = ['sol', 'planeta', 'investigacion']
+print( 'orden_mas_menos =', orden_mas_menos ) # orden_mas_menos = ['investigacion', 'planeta', 'sol']
 
 
 
@@ -3706,11 +4356,14 @@ def funcion(x):
 
 valores = [-20, 5, 16, -8, 12]
 resultado_map = map( funcion , valores )
-print( resultado_map , type(resultado_map) ) # <map object at 0x0000025580522590> <class 'map'>
+print( resultado_map , type(resultado_map) )
+# <map object at 0x7fd55991a2c0> <class 'map'>
 
-# ==> conveniente hacer casting a lista u otro iterable
-resultado = list(resultado_map)
-print( resultado , type(resultado) ) # [-65, 10, 43, -29, 31] <class 'list'>
+# ==> conveniente hacer un CASTING a otro iterable, ej: lista
+resultado_final = list(resultado_map)
+print( resultado_final , type(resultado_final) )
+# [-65, 10, 43, -29, 31] <class 'list'>
+
 
 # ----------------------------------
 # Ejemplo Básico con Función Lambda
@@ -3718,18 +4371,19 @@ print( resultado , type(resultado) ) # [-65, 10, 43, -29, 31] <class 'list'>
 # - ej: notas de 3 alumnos ordenadas en lista
 # - nota_final = 0.2*deberes + 0.3*proyecto + 0.5*examen
 
+#              A     B   C
 nota_deberes = [15, 18, 14]
 nota_proyecto = [18, 16, 20]
 nota_examen = [16, 17, 15]
 
-nota_final_map = map(
-    lambda deberes, proyecto, examen : 0.2*deberes + 0.3*proyecto + 0.5*examen,
-    nota_deberes,
-    nota_proyecto,
-    nota_examen
+nota_final = map(
+lambda deberes, proyecto, examen : 0.2*deberes + 0.3*proyecto + 0.5*examen,
+nota_deberes,
+nota_proyecto,
+nota_examen
 )
 
-nota_final = list(nota_final_map)
+nota_final = list(nota_final)
 print(nota_final) # [16.4, 16.9, 16.3]
 
 # ==> con función normal
@@ -3738,22 +4392,19 @@ def calcular_nota_final(deberes, proyecto, examen):
 # end def
 
 """
-nota_final_map_2 = map(
-    calcular_nota_final,
-    nota_deberes,
-    nota_proyecto,
-    nota_examen
+nota_final_2 = map(
+calcular_nota_final,
+nota_deberes,
+nota_proyecto,
+nota_examen
 )
-nota_final_2 = list(nota_final_map_2)
 """
 
-# ==> se puede hacer todo de 1 sola!!
-
 nota_final_2 = list(map(
-    calcular_nota_final,
-    nota_deberes,
-    nota_proyecto,
-    nota_examen
+calcular_nota_final,
+nota_deberes,
+nota_proyecto,
+nota_examen
 ))
 
 print(nota_final_2) # [16.4, 16.9, 16.3]
@@ -3768,12 +4419,12 @@ print('\n\n52) filter()\n')
 # - filter( funcion , elemento_iterable )
 # - la función debe retornar True / False => de acuerdo al criterio de filtrado
 # - la función puede ser normal / lambda
-# - filter => retorna un objeto de tipo dilter
+# - filter => retorna un objeto de tipo filter
 
 # ----------------------------------
 # Ejemplo Básico con Función Normal
 # ----------------------------------
-calificaciones = [13, 14, 18, 10, 20, 15, 16, 14, 19, 11]
+calificaciones = [13, 14, 18, 10, 20, 15, 16, 14, 19, 11] # / 20
 
 def notas_altas(nota):
     if nota > 14:
@@ -3782,24 +4433,26 @@ def notas_altas(nota):
         return False
 # end def
 
-calificaciones_altas_filter = filter( notas_altas , calificaciones )
-print( calificaciones_altas_filter , type(calificaciones_altas_filter) )
-# <filter object at 0x000001C8F96E26E0> <class 'filter'> 
+calificaciones_altas = filter( notas_altas , calificaciones )
+print( calificaciones_altas , type(calificaciones_altas) )
+# <filter object at 0x7f2b0ca02140> <class 'filter'>
 
-# ==> muy conveniente castearlo a un iterable, ej: lista
-calificaciones_altas = list(calificaciones_altas_filter)
-print(calificaciones_altas) # [18, 20, 15, 16, 19]
+calificaciones_altas = tuple(calificaciones_altas)
+print( calificaciones_altas , type(calificaciones_altas) )
+# (18, 20, 15, 16, 19) <class 'tuple'>
+
 
 # ----------------------------------
 # Ejemplo Básico con Función Lambda
 # ----------------------------------
 
 calificaciones_bajas = list(filter(
-    lambda nota : True if nota <= 14 else False,
-    calificaciones
+lambda nota : True if nota <= 14 else False,
+calificaciones
 ))
 
-print(calificaciones_bajas) # [13, 14, 10, 14, 11]
+print(calificaciones_bajas)
+# [13, 14, 10, 14, 11]
 
 
 
@@ -3822,12 +4475,14 @@ import functools
 # Ejemplo Básico
 # ----------------
 compras_usd = [100.50, 200, 85, 15, 20.99]
-suma_compras = lambda x , y : x + y
+suma_compras = lambda x, y : x + y
 valor_a_pagar = functools.reduce( suma_compras , compras_usd )
 print( valor_a_pagar ) # 421.49
-# sería lo mismo que:
+
+# sería lo mismo
 valor_total_2 = sum(compras_usd)
 print(valor_total_2) # 421.49
+
 
 # ------------------
 # Ejemplo Complejo
@@ -3842,25 +4497,37 @@ gastos = [
 ]
 
 gastos_administrativos_totales = functools.reduce(
-    lambda x , y : x + y, # función de suma reduce
-    
-    list(map( # lista con solo gastos administrativos
-        lambda x : x[1],
-        gastos[1:]
-    ))
+lambda x,y : x + y, # función de suma para mi reduce
+
+list(map(
+lambda x : x[1],
+gastos[1:]
+))
+
 )
-#print(list(map( lambda x : x[1] , gastos[1:] )))
+
 print(gastos_administrativos_totales, 'USD') # 150.69 USD
 
+gastos_administrativos = list(map(
+lambda x : x[1],
+gastos[1:]
+))
+
+print(gastos_administrativos)
+
+
+# ==> gastos de combustible
+
 gastos_combustible_totales = functools.reduce(
-    lambda x , y : x + y, # función de suma reduce
-    
-    list(map( # lista con solo gastos administrativos
-        lambda x : x[2],
-        gastos[1:]
-    ))
+lambda x,y : x + y,
+
+list(map(
+lambda x : x[2],
+gastos[1:]
+))
 )
-print(gastos_combustible_totales, 'USD') # 96.29 USD
+
+print(gastos_combustible_totales , 'USD') # 96.29 USD
 
 
 
@@ -3882,19 +4549,24 @@ print('\n\n54) List Comprehension\n')
 # A) lista = [ expresión + bucle FOR en un iterable ]
 # ----------------------------------------------------
 valores = [10, -50, 62, -5, 22, 15, -9]
-resultado_1 = [ 2*x - 5 for x in valores ]
-print(resultado_1) # [15, -105, 119, -15, 39, 25, -23] => también se podría usar map
 
-resultado_2 = [ math.sqrt(x) for x in range(1,11) ]
-print(resultado_2) # [1.0, 1.4142135623730951, 1.7320508075688772, 2.0, 2.23606797749979, 2.449489742783178, 2.6457513110645907, 2.8284271247461903, 3.0, 3.1622776601683795]
+resultado_1 = [ 2*x - 5 for x in valores ]
+print(resultado_1) # [15, -105, 119, -15, 39, 25, -23]
+
+resultado_2 = [ math.sqrt(z) for z in range(1,11) ]
+print(resultado_2)
+# [1.0, 1.4142135623730951, 1.7320508075688772, 2.0, 2.23606797749979, 2.449489742783178, 2.6457513110645907, 2.8284271247461903, 3.0, 3.1622776601683795]
 
 
 # ---------------------------------------------------------------------
 # B) lista = [ expresión + bucle FOR en un iterable + condicional IF ]
 # ---------------------------------------------------------------------
 valores = [10, -50, 62, -5, 22, 15, -9]
+print( len(valores) ) # 7
+
 resultado = [ 2.5*y - 5/y for y in valores if y > 0 ]
-print(resultado) # [24.5, 154.91935483870967, 54.77272727272727, 37.166666666666664]
+print( resultado , len(resultado) )
+# [24.5, 154.91935483870967, 54.77272727272727, 37.166666666666664] 4
 
 
 # --------------------------------------------------------------------------
@@ -3902,7 +4574,8 @@ print(resultado) # [24.5, 154.91935483870967, 54.77272727272727, 37.166666666666
 # --------------------------------------------------------------------------
 valores = [10, -50, 62, -5, 22, 15, -9]
 resultado = [ 'positivo' if z > 0 else 'negativo' for z in valores ]
-print(resultado) # ['positivo', 'negativo', 'positivo', 'negativo', 'positivo', 'positivo', 'negativo']
+print(resultado)
+# ['positivo', 'negativo', 'positivo', 'negativo', 'positivo', 'positivo', 'negativo']
 
 
 
@@ -3922,6 +4595,8 @@ print('\n\n55) Dictionary Comprehension\n')
     D) dict = {KEY: función(VALOR) + bucle FOR (KEY, VALUE) + in + ITERABLE}
 """
 
+# notas / 20
+# clave : valor
 notas = {
     'Daniel' : 16,
     'Pedro' : 14,
@@ -3933,15 +4608,17 @@ notas = {
     'María' : 14,
 }
 
+
 # --------------------------------------------------------------------
 # A) dict = {KEY: expresión + bucle FOR (KEY, VALUE) + in + ITERABLE}
 # --------------------------------------------------------------------
-notas_100 = { key : (value / 20 * 100) for (key, value) in notas.items() }
+print()
+notas_100 = { key : (value/20 * 100) for (key, value) in notas.items() }
 print(notas_100)
 # {'Daniel': 80.0, 'Pedro': 70.0, 'Sebastián': 65.0, 'Santiago': 95.0, 'Eduardo': 55.00000000000001, 'Rodrigo': 100.0, 'Francisco': 60.0, 'María': 70.0}
 
-# ==> key / value, no es importante el nombre!, pero si el orden!
-notas_100 = { clave : float('{:.2f}'.format(valor / 20 * 100)) for (clave, valor) in notas.items() }
+# ==> key / value, los nombres no son importantes, pero si el orden!!
+notas_100 = { c : float('{:.2f}'.format(v/20*100)) for (c, v) in notas.items() }
 print(notas_100)
 # {'Daniel': 80.0, 'Pedro': 70.0, 'Sebastián': 65.0, 'Santiago': 95.0, 'Eduardo': 55.0, 'Rodrigo': 100.0, 'Francisco': 60.0, 'María': 70.0}
 
@@ -3949,24 +4626,34 @@ print(notas_100)
 # -------------------------------------------------------------------------------------
 # B) dict = {KEY: expresión + bucle FOR (KEY, VALUE) + in + ITERABLE + condicional IF}
 # -------------------------------------------------------------------------------------
+print()
 estudiantes_aprobados = { clave : valor for (clave, valor) in notas.items() if valor > 14 }
-estudiantes_no_aprobados = { clave : valor for (clave, valor) in notas.items() if valor <= 14 }
+estudiantes_NO_aprobados = { clave : valor for (clave, valor) in notas.items() if valor <= 14 }
 
 print(estudiantes_aprobados) # {'Daniel': 16, 'Santiago': 19, 'Rodrigo': 20}
-print(estudiantes_no_aprobados) # {'Pedro': 14, 'Sebastián': 13, 'Eduardo': 11, 'Francisco': 12, 'María': 14}
+print(estudiantes_NO_aprobados) # {'Pedro': 14, 'Sebastián': 13, 'Eduardo': 11, 'Francisco': 12, 'María': 14}
 
 
 # ------------------------------------------------------------------------------
 # C) dict = {KEY: condicional IF/ELSE + bucle FOR (KEY, VALUE) + in + ITERABLE}
 # ------------------------------------------------------------------------------
-aprobado_reprobado = { clave : ('aprobado' if valor > 14 else 'reprobado') for (clave, valor) in notas.items() }
+print()
+aprobado_reprobado = { c : ('aprobado' if v > 14 else 'reprobado') for (c,v) in notas.items() }
 print(aprobado_reprobado)
 # {'Daniel': 'aprobado', 'Pedro': 'reprobado', 'Sebastián': 'reprobado', 'Santiago': 'aprobado', 'Eduardo': 'reprobado', 'Rodrigo': 'aprobado', 'Francisco': 'reprobado', 'María': 'reprobado'}
+
+for c, v in aprobado_reprobado.items():
+    print(c,'->',v)
+# end for
 
 
 # -------------------------------------------------------------------------
 # D) dict = {KEY: función(VALOR) + bucle FOR (KEY, VALUE) + in + ITERABLE}
 # -------------------------------------------------------------------------
+print()
+
+# => ecuador hace 20 años
+
 def check_estudiante(nota):
     if nota > 14 and nota <= 20:
         return 'Aprobado'
@@ -3977,13 +4664,28 @@ def check_estudiante(nota):
     elif nota >= 0 and nota < 12:
         return 'Pierde el Año'
     else:
-        return 'ERROR - Nota'
+        return 'ERROR - Nota debe estar entre 0 y 20'
 # end def
 
-analisis_estudiante = { clave : check_estudiante(valor) for(clave, valor) in notas.items() }
+analisis_estudiante = { clave : check_estudiante(valor) for (clave, valor) in notas.items() }
 
 print(analisis_estudiante)
 # {'Daniel': 'Aprobado', 'Pedro': 'Supletorio', 'Sebastián': 'Pierde el Cupo', 'Santiago': 'Aprobado', 'Eduardo': 'Pierde el Año', 'Rodrigo': 'Aprobado', 'Francisco': 'Pierde el Cupo', 'María': 'Supletorio'}
+
+for c,v in analisis_estudiante.items():
+    print('Estudiante: {} / {}'.format(c,v))
+# end for
+
+"""
+Estudiante: Daniel / Aprobado
+Estudiante: Pedro / Supletorio
+Estudiante: Sebastián / Pierde el Cupo
+Estudiante: Santiago / Aprobado
+Estudiante: Eduardo / Pierde el Año
+Estudiante: Rodrigo / Aprobado
+Estudiante: Francisco / Pierde el Cupo
+Estudiante: María / Supletorio
+"""
 
 
 
@@ -4003,11 +4705,20 @@ l1 = ['A', 'B', 'C']
 l2 = [100, 200, 300]
 
 zip_l1_l2 = zip(l1, l2)
-print(zip_l1_l2) # <zip object at 0x0000017728147440>
+print( zip_l1_l2 , type(zip_l1_l2) )
+# <zip object at 0x7f5d757e1c80> <class 'zip'>
 
-# ==> más sentido transformarlo a un iterable conocido
-resultado_zip = list(zip_l1_l2)
-print(resultado_zip) # [('A', 100), ('B', 200), ('C', 300)]
+# ==> más sentido haciendo un casting
+resultado = list(zip_l1_l2)
+print(resultado)
+# [('A', 100), ('B', 200), ('C', 300)]
+
+zip_l1_l2 = zip(l1, l2)
+
+dict_1 = dict(zip_l1_l2)
+print(dict_1)
+# {'A': 100, 'B': 200, 'C': 300}
+
 
 # --------------------------------------------------------
 # N iterables / el de menor tamaño decide el tamaño final
@@ -4019,7 +4730,8 @@ iter_3 = ('USA', 'ECU', 'DEU', 'JPN')
 resultado_zip = zip(iter_1, iter_2, iter_3)
 resultado_final = tuple( resultado_zip )
 
-print( resultado_final ) # (('A', 100, 'USA'), ('B', 200, 'ECU'), ('C', 300, 'DEU'))
+print(resultado_final)
+# (('A', 100, 'USA'), ('B', 200, 'ECU'), ('C', 300, 'DEU'))
 
 
 
@@ -4042,20 +4754,23 @@ import time
 # -----------
 # punto cero
 # -----------
-print( time.ctime(0) ) # Thu Jan  1 01:00:00 1970
+print( time.ctime(0) ) # Thu Jan  1 00:00:00 1970
 
 # ------------------------------------
 # milisegundos a partir del tiempo 0
 # ------------------------------------
 # - desde el punto 0
 # - hasta el preciso momento de ejecución de este script
-print( time.time() ) # 1701018544.838476
+print( time.time() ) # 1701659285.7050157
+
 
 # -------------
 # fecha actual
 # -------------
 # - en el preciso momento de ejecución del script
-print( time.ctime( time.time() ) ) # Sun Nov 26 18:10:21 2023
+print( time.ctime( time.time() ) )
+# Mon Dec  4 03:09:47 2023
+
 
 # ---------------------------------------
 # aplicación útil => estampas de tiempo
@@ -4071,7 +4786,8 @@ for estudiante in lista_estudiantes:
     identificacion_unica.append( round(time.time() * random.random()) )
 # end for
 
-#print(identificacion_unica)
+print(identificacion_unica)
+# [63458501, 307877323, 271684009, 27168269, 356612388, 1057728778, 385017988]
 
 id_estudiante = zip(identificacion_unica , lista_estudiantes)
 tupla_id_estudiante = tuple(id_estudiante)
@@ -4080,20 +4796,39 @@ for elemento in tupla_id_estudiante:
     print(elemento)
 # end for
 
+"""
+(941751948, 'Carlos')
+(93386415, 'Ana')
+(909686399, 'Diego')
+(70049301, 'Ximena')
+(359844215, 'Adri')
+(1502787801, 'Sebas')
+(1441999506, 'Marcelo')
+"""
+
 # -------------
 # time.sleep()
 # -------------
+
 """
 contador = 5
 
 while contador > 0:
-    print( 'Quedan {} segundos para año nuevo!'.format(contador) )
+    print('Quedan {} segundos para año nuevo!'.format(contador))
     contador -= 1
     time.sleep(1)
 else:
-    print('Feliz año nuevo!!!')
+    print('Feliz año nuevo!!')
 # end while
+
+#Quedan 5 segundos para año nuevo!
+#Quedan 4 segundos para año nuevo!
+#Quedan 3 segundos para año nuevo!
+#Quedan 2 segundos para año nuevo!
+#Quedan 1 segundos para año nuevo!
+#Feliz año nuevo!!
 """
+
 
 
 
@@ -4113,8 +4848,11 @@ import datetime
 # -------------
 # - al momento de ejecución del script !!
 # - retorna un objeto del tipo "datetime.datetime"
+
 fecha_actual = datetime.datetime.now()
-print( fecha_actual , type(fecha_actual) ) # 2023-11-26 19:42:44.708292 <class 'datetime.datetime'>
+print( fecha_actual ) # 2023-12-04 03:17:50.772528
+print( type(fecha_actual) ) # <class 'datetime.datetime'>
+
 
 # -----------------------------------
 # acceso a los elementos de datetime
@@ -4135,9 +4873,10 @@ acceder a los segundos      |  fecha_datetime.second
 acceder a los microsegundos |  fecha_datetime.microsecond
 """
 
-print(fecha_actual.year) # 2023
-print(fecha_actual.month) # 11
-print(fecha_actual.hour) # 19
+print( fecha_actual.year ) # 2023
+print( fecha_actual.month ) # 12
+print( fecha_actual.hour ) # 3
+
 
 # ------------------------------
 # creando fechas personalizadas
@@ -4146,11 +4885,12 @@ print(fecha_actual.hour) # 19
 #   a) tupla de 3 valores (año, mes, día)
 #   b) tupla de 6 valores (año, mes, día, hora, minutos, segundos)
 
-fecha_1 = datetime.datetime(2001,7,20)
-fecha_2 = datetime.datetime(2025,12,19,19,51,25)
+fecha_1 = datetime.datetime(2001, 7, 20)
+fecha_2 = datetime.datetime(2025, 12, 19, 19, 51, 25)
 
 print(fecha_1) # 2001-07-20 00:00:00
 print(fecha_2) # 2025-12-19 19:51:25
+
 
 # -----------------------------
 # formato personalizado fácil
@@ -4159,40 +4899,42 @@ print(fecha_2) # 2025-12-19 19:51:25
 # - pero como breve introducción aprenderemos una manera muy fácil
 
 fecha_actual = datetime.datetime.now()
-print(fecha_actual)
+print(fecha_actual) # 2023-12-04 03:23:12.372530
 
 formato_personalizado = '{}/{}/{} - {}h:{}m:{}s'.format(
-    fecha_actual.year,
-    fecha_actual.month,
-    fecha_actual.day,
-    fecha_actual.hour,
-    fecha_actual.minute,
-    fecha_actual.second
+fecha_actual.year,
+fecha_actual.month,
+fecha_actual.day,
+fecha_actual.hour,
+fecha_actual.minute,
+fecha_actual.second,
 )
 
-print(formato_personalizado) # 2023/11/26 - 19h:53m:39s
+print( formato_personalizado ) # 2023/12/4 - 3h:23m:12s
 
 # ---------------------
 # reloj en tiempo real
 # ---------------------
+# => chévere ejercicio
+
 """
 def imprimir_reloj_tiempo_real():
     hoy = datetime.datetime.now()
     print('{}/{}/{} - {}h:{}m:{}s'.format(
-        hoy.year,
-        hoy.month,
-        hoy.day,
-        hoy.hour,
-        hoy.minute,
-        hoy.second
-    ))
+           hoy.year,
+           hoy.month,
+           hoy.day,
+           hoy.hour,
+           hoy.minute,
+           hoy.second,
+         ))
 # end def
 
 while True:
     imprimir_reloj_tiempo_real()
     time.sleep(1)
 # end while
-"""
+""" 
 
 
 
@@ -4208,11 +4950,11 @@ print('\n\n59) keyword as / from\n')
 import random as r
 import datetime as dt
 
-print( r.random() ) # 0.7889372068450233
-print( dt.datetime.now() ) # 2023-11-26 20:03:57.858369
+print( r.random() ) # 0.38543460526168283
+print( dt.datetime.now() ) # 2023-12-04 03:29:30.016278
 
 from math import cos
-print( cos(3.1416 / 3) ) # 0.4999978792725457
+print( cos(3.1416/3) ) # 0.4999978792725457
 
 from math import pi as constante_pi, sin as seno, cos as coseno
 print( coseno( constante_pi / 6 ) ) # 0.8660254037844387
@@ -4234,10 +4976,11 @@ print('\n\n60) Operador Walrus :=\n')
 # Ejemplo Básico
 # ---------------
 nombre = 'Sebas'
-print( nombre ) # Sebas
+print(nombre) # Sebas
 
-print( nombre_completo := 'Sebas Silva' )
-print( nombre_completo )
+print( nombre_completo := 'Sebas Silva P.' ) # Sebas Silva P.
+print( nombre_completo ) # Sebas Silva P.
+
 
 # ---------------------
 # Ejemplo más complejo
@@ -4254,16 +4997,18 @@ while opcion_user != 'salir':
     ingredientes.append(opcion_user)
 else:
     ingredientes.pop()
+# end while
 
-print( ingredientes )
-"""
+print(ingredientes)
+"""    
+
 
 # ==> con walrus :=
 """
 ingredientes = []
 
 print('Lista de Ingredientes para una Receta:')
-while ( opcion_user := input('Ingrese un Ingrediente : ') ) != 'salir':
+while( opcion_user := input('Ingrese un Ingrediente : ') ) != 'salir':
     ingredientes.append(opcion_user)
 # end while
 
@@ -4288,7 +5033,8 @@ print('\n\n61) Gestión de Errores => try-except\n')
 # Error de Sintaxis
 # ------------------
 print('hola')
-#pint('hola') # NameError: name 'pint' is not defined. Did you mean: 'print'?
+#prin('hola')
+
 
 # -------------------
 # Error de Ejecución
@@ -4299,7 +5045,6 @@ print( lista[0] )
 
 #resultado = 5/0 # ZeroDivisionError: division by zero
 
-print('si llego aquí no hay error')
 
 # ------------------
 # try-except Básico
@@ -4311,10 +5056,11 @@ print()
 try:
     print( 5/0 )
 except:
-    print('ERROR - algo salió mal')
+    print('ERROR - algo salió mal...')
 # end try-except
 
-print('si llego aquí el error no ha parado el programa')
+print('otra línea')
+
 
 # ------------------
 # Mostrando el error
@@ -4325,10 +5071,11 @@ print()
 try:
     print( 5/0 )
 except Exception as e:
-    print('ERROR - algo salió mal |', e)
+    print('ERROR - algo salió mal...', e)
 # end try-except
 
-print('si llego aquí el error no ha parado el programa')
+print('otra línea')
+
 
 # ---------------------------------------------
 # Estructura Completa: try-except-else-finally
@@ -4336,7 +5083,7 @@ print('si llego aquí el error no ha parado el programa')
 """
 try:     aquí va el código que tiene el riesgo de producir error
 except:  bloque que se ejecuta en caso de error sin interrumpir el flujo del programa
-else:    bloque que se ejecuta cuando no se da error
+else:    bloque que se ejecuta cuando NO se da error
 finally: bloque que se ejecuta SIEMPRE, haya error o no
 """
 
@@ -4344,18 +5091,19 @@ def dividir(a,b):
     try:
         resultado = a/b
     except Exception as e:
-        print( 'ERROR | Lo siento, pero algo salió mal |', e )
-    else:
-        print( 'Operación con ÉXITO | RESULTADO => {}/{} = {:.2f}'.format(a,b,resultado) )
-    finally:
-        print( 'FIN DEL MÉTODO DIVIDIR' )
+        print('ERROR | Lo siento, algo salió mal |', e)
+    else: # cuando no hay error
+        print('Operación con Éxito | Resultado => {}/{} = {:.2f}'.format(a,b,resultado))
+    finally: # haya o no error
+        print('FIN del método dividir')
     # end try-except
-# end def
+# end method
 
-print('\nTEST')
+print('\nTEST:')
 dividir(5,0)
 dividir(5,2)
 dividir(5,'a')
+
 
 # -----------------
 # type(e).__name__
@@ -4366,18 +5114,34 @@ def dividir(a,b):
     try:
         resultado = a/b
     except Exception as e:
-        print( 'ERROR | Lo siento, pero algo salió mal |', e, '|', type(e).__name__ )
-    else:
-        print( 'Operación con ÉXITO | RESULTADO => {}/{} = {:.2f}'.format(a,b,resultado) )
-    finally:
-        print( 'FIN DEL MÉTODO DIVIDIR' )
+        print('ERROR | Lo siento, algo salió mal |', e, '|', type(e).__name__)
+    else: # cuando no hay error
+        print('Operación con Éxito | Resultado => {}/{} = {:.2f}'.format(a,b,resultado))
+    finally: # haya o no error
+        print('FIN del método dividir')
     # end try-except
-# end def
+# end method
 
-print('\nTEST')
+print('\nTEST:')
+print('----------------------')
 dividir(5,0) # ZeroDivisionError
+print('----------------------')
 dividir(5,2)
+print('----------------------')
 dividir(5,'a') # TypeError
+
+"""
+TEST:
+----------------------
+ERROR | Lo siento, algo salió mal | division by zero | ZeroDivisionError
+FIN del método dividir
+----------------------
+Operación con Éxito | Resultado => 5/2 = 2.50
+FIN del método dividir
+----------------------
+ERROR | Lo siento, algo salió mal | unsupported operand type(s) for /: 'int' and 'str' | TypeError
+FIN del método dividir
+"""
 
 # ---------------------------------
 # Capturar Excepciones Específicas
@@ -4387,25 +5151,44 @@ def dividir(a,b):
     try:
         resultado = a/b
     except TypeError as e:
-        print( type(e).__name__ , '||' , e  )
-        print('ERROR - Por favor ingrese un número !')
+        print( type(e).__name__, '||', e )
+        print('ERROR - Por favor ingrese un número!')
     except ZeroDivisionError as e:
-        print( type(e).__name__ , '||' , e  )
-        print('ERROR - La división para CERO no existe !')
-    except Exception as e: # de manera general
-        print( type(e).__name__ , '||' , e  )
+        print( type(e).__name__, '||', e )
+        print('ERROR - La división para CERO no existe!')
+    except Exception as e:
+        print( type(e).__name__, '||', e )
         print('ERROR - La división no es posible...')
-    else:
-        print( 'Operación con ÉXITO | RESULTADO => {}/{} = {:.2f}'.format(a,b,resultado) )
-    finally:
-        print( 'FIN DEL MÉTODO DIVIDIR' )
+    else: # cuando no hay error
+        print('Operación con Éxito | Resultado => {}/{} = {:.2f}'.format(a,b,resultado))
+    finally: # haya o no error
+        print('FIN del método dividir')
     # end try-except
-# end def
+# end method
 
-print('\nTEST')
+print('\nTEST:')
+print('----------------------')
 dividir(5,0) # ZeroDivisionError
+print('----------------------')
 dividir(5,2)
+print('----------------------')
 dividir(5,'a') # TypeError
+
+"""
+TEST:
+----------------------
+ZeroDivisionError || division by zero
+ERROR - La división para CERO no existe!
+FIN del método dividir
+----------------------
+Operación con Éxito | Resultado => 5/2 = 2.50
+FIN del método dividir
+----------------------
+TypeError || unsupported operand type(s) for /: 'int' and 'str'
+ERROR - Por favor ingrese un número!
+FIN del método dividir
+"""
+
 
 # --------------------------------
 # Generar Errores Personalizados
@@ -4413,12 +5196,14 @@ dividir(5,'a') # TypeError
 # - raise => invocamos un error
 # - OJO: debemos capturarlo, caso contrario, se para la ejecución del programa
 
-
 # ==> definición de una función sencilla
+print()
+
 def saludar(nombre):
     print('Hola', nombre)
 # end def
 
+#saludar()
 saludar('Carlos') # Hola Carlos
 saludar('123') # Hola 123
 
@@ -4426,45 +5211,47 @@ saludar('123') # Hola 123
 # ==> prohibiendo al usuario poner números en el nombre
 def saludar(nombre):
     if nombre.isalpha():
-        print('Hola', nombre)
+        print('Hola', nombre,'!!')
     else:
         print('ERROR')
 # end def
 
-print('\nTEST')
-saludar('Carlos') # Hola Carlos
+print('\nTEST:')
+saludar('Carlos') # Hola Carlos !!
 saludar('123') # ERROR
 saludar('') # ERROR
-
 
 # ==> utilizando raise
 def saludar(nombre):
     if nombre.isalpha():
-        print('Hola', nombre)
+        print('Hola', nombre,'!!')
     else:
+        #print('ERROR')
         raise Exception('ERROR - El nombre solo puede contener letras')
 # end def
 
-saludar('Carlos') # Hola Carlos
-#saludar('123') # Exception: ERROR - El nombre solo puede contener letras 
+print('\nTEST:')
+saludar('Carlos') # Hola Carlos !!
+#saludar('123') # ERROR
 #saludar('') # ERROR
 
 
 # ==> raise + try-except
+
 def saludar(nombre):
     try:
         if nombre.isalpha():
-            print('Hola', nombre)
+            print('Hola mi estimado', nombre, '!!')
         else:
-            raise Exception('ERROR - El nombre solo puede contener letras')
-    except Exception as e: # el mensaje que definimos arriba !
+            raise Exception('ERROR - El nombre solo puede contener letras!')
+    except Exception as e:
         print( type(e).__name__, '||', e )
 # end def
 
-print('\nTEST')
-saludar('Carlos') # Hola Carlos
-saludar('123') # Exception || ERROR - El nombre solo puede contener letras
-saludar('') # Exception || ERROR - El nombre solo puede contener letra
+print('\nTEST:')
+saludar('Carlos') # Hola mi estimado Carlos !!
+saludar('123') # Exception || ERROR - El nombre solo puede contener letras!
+saludar('') # Exception || ERROR - El nombre solo puede contener letras!
 
 
 
@@ -4483,28 +5270,30 @@ lista_2 = [2, 4, 1]
 resultado = lista_1 + lista_2
 print(resultado) # [5, 3, 7, 2, 4, 1]
 
-
 # -----------------------------------------------------
 # ¿Hay alguna manera de hacer operaciones aritméticas?
 # -----------------------------------------------------
 
 # ==> utilizando for
 suma_listas = []
+
 for index, numero in enumerate(lista_1):
     suma_listas.append( lista_1[index] + lista_2[index] )
 # end for
 
-print(suma_listas) # [7, 7, 8]
+print( suma_listas ) # [7, 7, 8]
+
 
 # ==> utilizando while
 resta_listas = []
 index = 0
+
 while index < len(lista_1):
     resta_listas.append( lista_1[index] - lista_2[index] )
     index += 1
 # end while
 
-print(resta_listas) # [3, -1, 6]
+print( resta_listas ) # [3, -1, 6]
 
 
 # --------------------------------------------------
@@ -4514,60 +5303,61 @@ print(resta_listas) # [3, -1, 6]
 # ==> importando la librería numpy
 # - instalar primero: pip install numpy
 # - verificar si está instalado: pip list + buscar numpy
-# - Replit ya tiene instalado por defecto
+# - Replit, tenemos que instalarlo en el shell
 
-import numpy as np   #! RECORDAR ESTA LÍNEA
-
+import numpy as np # RECORDAR ESTA LÍNEA
 
 # ==> averiguando versión en terminal
 print( np.__version__ ) # 1.26.2
 
 
-# ==> creando un array con numpy
-lista_1 = np.array([5, 3, 7])
-lista_2 = np.array([2, 4, 1])
+# ==> creando un array con numpy / arreglo => [10, 20, 30]
+lista_1 = np.array( [5, 3, 7] )
+lista_2 = np.array( [2, 4, 1] )
 
-print( lista_1 , type(lista_1), len(lista_1) ) # [5 3 7] <class 'numpy.ndarray'> 3
-print( lista_2 , type(lista_2), len(lista_2) ) # [2 4 1] <class 'numpy.ndarray'> 3
-
+print( lista_1, type(lista_1), len(lista_1) ) # [5 3 7] <class 'numpy.ndarray'> 3
+print( lista_2, type(lista_2), len(lista_2) ) # [2 4 1] <class 'numpy.ndarray'> 3
 
 # ==> creando array de numpy con variable de lista
 lista_1 = [5, 3, 7]
 lista_2 = [2, 4, 1]
 
-lista_1 = np.array(lista_1)
-lista_2 = np.array(lista_2)
+array_1 = np.array(lista_1)
+array_2 = np.array(lista_2)
 
-print( lista_1 , type(lista_1), len(lista_1) ) # [5 3 7] <class 'numpy.ndarray'> 3
-print( lista_2 , type(lista_2), len(lista_2) ) # [2 4 1] <class 'numpy.ndarray'> 3
-
+print(array_1) # [5 3 7]
+print(array_2) # [2 4 1]
 
 # ==> operaciones aritméticas de listas con numpy
-suma_listas = lista_1 + lista_2
-resta_listas = lista_1 - lista_2
-producto_listas = lista_1 * lista_2
-division_listas = lista_1 * lista_2
-modulo_listas = lista_1 % lista_2
-potencia_listas = lista_1 ** lista_2
+suma_listas = array_1 + array_2
+resta_listas = array_1 - array_2
+producto_listas = array_1 * array_2
+division_listas = array_1 / array_2
+modulo_listas = array_1 % array_2
+potencia_listas = array_1 ** array_2
 
 print( suma_listas ) # [7 7 8]
 print( resta_listas ) # [ 3 -1  6]
 print( producto_listas ) # [10 12  7]
-print( division_listas ) # [10 12  7]
+print( division_listas ) # [2.5  0.75 7.  ]
 print( modulo_listas ) # [1 3 0]
 print( potencia_listas ) # [25 81  7]
 
 
 # ==> operaciones escalar & array
-lista = np.array([2, 4, 1])
-r1 = 2 * lista
-r2 = 10 / lista
+lista = [1,2,3]
+print( 2 * lista ) # [1, 2, 3, 1, 2, 3]
 
-print(r1) # [4 8 2]
-print(r2) # [ 5.   2.5 10. ]
+array = np.array(lista)
+r1 = 2 * array
+r2 = 10 / array
 
+print(r1) # [2 4 6]
+print(r2) # [10.          5.          3.33333333]
 
 # ==> funciones normales con numpy
+array = np.array([2,4,1])
+
 def funcion_x(x):
     return 2*x - 5 + x**2
 # end def
@@ -4575,30 +5365,35 @@ def funcion_x(x):
 r1 = funcion_x(2)
 r2 = funcion_x(4)
 r3 = funcion_x(1)
-print(r1, r2, r3) # 3 19 -2
 
-r = funcion_x(lista)
+print( r1 , r2 , r3 ) # 3 19 -2
+
+r = funcion_x(array)
 print(r) # [ 3 19 -2]
 
+# ==> libería math & array => NO ES POSIBLE, pero no necesitamos
+array = np.array([2,4,1])
 
-# ==> libería math & array
 r1 = math.sin(2)
 r2 = math.sin(4)
 r3 = math.sin(1)
 print(r1, r2, r3) # 0.9092974268256817 -0.7568024953079282 0.8414709848078965
 
-#r = math.sin(lista) # TypeError: only length-1 arrays can be converted to Python scalars
+#r = math.sin(array) # TypeError: only length-1 arrays can be converted to Python scalars
 
 
 # ==> funciones aritméticas numpy
 # https://numpy.org/doc/stable/reference/routines.math.html
+array = np.array([2,4,1])
 
-array_seno = np.sin(lista)
-array_coseno = np.cos(lista)
-array_tangente = np.tan(lista)
-array_log_e = np.log(lista)
-array_log_10 = np.log10(lista)
+array_seno = np.sin(array)
+array_coseno = np.cos(array)
+array_tangente = np.tan(array)
+array_log_e = np.log(array)
+array_log_10 = np.log10(array)
 
+print('\nTEST:')
+print( array ) # [2 4 1]
 print( array_seno ) # [ 0.90929743 -0.7568025   0.84147098]
 print( array_coseno ) # [-0.41614684 -0.65364362  0.54030231]
 print( array_tangente ) # [-2.18503986  1.15782128  1.55740772]
@@ -4608,11 +5403,13 @@ print( array_log_10 ) # [0.30103    0.60205999 0.        ]
 
 # ==> linspace
 # - generar una distribución estándar de números desde un inicio a un final
+
 distribucion_1_100_10 = np.linspace(1.0, 100.0, num=10)
-print(distribucion_1_100_10) # [  1.  12.  23.  34.  45.  56.  67.  78.  89. 100.]
+#print(distribucion_1_100_10)
+# [  1.  12.  23.  34.  45.  56.  67.  78.  89. 100.]
 
 distribucion_500_1000_50 = np.linspace(50.0, 1000.0, num=50)
-print(distribucion_500_1000_50)
+#print(distribucion_500_1000_50)
 
 
 
@@ -4640,7 +5437,7 @@ python -m pip install -U pip
 python -m pip install -U matplotlib
 """
 # - verificar si está instalado: pip list + buscar matplotlib
-# - Replit ya tiene instalado por defecto
+# - Replit permite instalarlo con el SHELL
 
 import matplotlib
 
@@ -4648,20 +5445,18 @@ import matplotlib
 # -------------------------------
 # Averiguar versión en Terminal
 # -------------------------------
-print(matplotlib.__version__) # 3.8.2
+print( matplotlib.__version__ ) # 3.8.2
 
 
 # ----------------------------------
 # importación específica de pyplot
 # ----------------------------------
-
-import matplotlib.pyplot as plt   #! RECORDAR ESTA LÍNEA
+import matplotlib.pyplot as plt  # RECORDAR ESTA LÍNEA
 
 
 # -----------------------
 # plot básico con listas
 # -----------------------
-
 """
 valores_x = [1,2,3,4,5]
 valores_y = [10,15,12,18,20]
@@ -4669,9 +5464,6 @@ valores_y = [10,15,12,18,20]
 plt.plot( valores_x , valores_y )
 plt.show()
 """
-
-# - (comentamos para que se abra el siguiente)
-
 
 # ---------------------------
 # Marcadores / Línea / Color
@@ -4711,11 +5503,10 @@ plt.plot( valores_x , valores_y, 'X--g' )
 plt.show()
 """
 
-
 # -----------------------------------------------
 # Tamaño marcador => markersize => ms
 # Color borde marcador => markeredgecolor => mec
-# Color fondo marcador =>markerfacecolor  => mfc
+# Color fondo marcador => markerfacecolor  => mfc
 # -----------------------------------------------
 
 """
@@ -4723,13 +5514,13 @@ valores_x = [1,2,3,4,5]
 valores_y = [10,15,12,18,20]
 
 plt.plot( 
-    valores_x,
-    valores_y,
-    'o--g',
-    ms = 15,
-    mfc = 'b',
-    mec = 'r'
-    )
+valores_x,
+valores_y,
+'o--g',
+ms = 15,
+mfc = 'b',
+mec = 'r'
+)
 
 plt.show()
 """
@@ -4743,14 +5534,14 @@ valores_x = [1,2,3,4,5]
 valores_y = [10,15,12,18,20]
 
 plt.plot( 
-    valores_x,
-    valores_y,
-    'o--g',
-    linewidth = 3,
-    ms = 8,
-    mfc = 'b',
-    mec = 'r'
-    )
+valores_x,
+valores_y,
+'o--g',
+linewidth = 3,
+ms = 15,
+mfc = 'b',
+mec = 'r'
+)
 
 plt.show()
 """
@@ -4767,22 +5558,21 @@ valores_x = [1,2,3,4,5]
 valores_y = [10,15,12,18,20]
 
 plt.title('Valores de X vs. Valores de Y')
-plt.xlabel('Valores en X')
-plt.ylabel('Valores en Y')
+plt.xlabel('Valores de X')
+plt.ylabel('Valores de Y')
 
 plt.plot( 
-    valores_x,
-    valores_y,
-    'o--g',
-    linewidth = 3,
-    ms = 8,
-    mfc = 'b',
-    mec = 'r'
-    )
+valores_x,
+valores_y,
+'o--g',
+linewidth = 3,
+ms = 8,
+mfc = 'b',
+mec = 'r'
+)
 
 plt.show()
 """
-
 
 # --------------------------------
 # Incorporar Grilla => plt.grid()
@@ -4796,20 +5586,22 @@ valores_x = [1,2,3,4,5]
 valores_y = [10,15,12,18,20]
 
 plt.title('Valores de X vs. Valores de Y')
-plt.xlabel('Valores en X')
-plt.ylabel('Valores en Y')
+plt.xlabel('Valores de X')
+plt.ylabel('Valores de Y')
 
 plt.plot( 
-    valores_x,
-    valores_y,
-    'o--g',
-    linewidth = 3,
-    ms = 8,
-    mfc = 'b',
-    mec = 'r'
-    )
+valores_x,
+valores_y,
+'o--g',
+linewidth = 3,
+ms = 8,
+mfc = 'b',
+mec = 'r'
+)
 
-plt.grid()
+#plt.grid()
+#plt.grid(axis='x')
+plt.grid(axis='y')
 
 plt.show()
 """
@@ -4827,18 +5619,18 @@ valores_x = [1,2,3,4,5]
 valores_y = [10,15,12,18,20]
 
 plt.title('Valores de X vs. Valores de Y')
-plt.xlabel('Valores en X')
-plt.ylabel('Valores en Y')
+plt.xlabel('Valores de X')
+plt.ylabel('Valores de Y')
 
-plt.scatter(valores_x , valores_y)
-#plt.bar(valores_x , valores_y)
+#plt.scatter(valores_x, valores_y)
+plt.bar(valores_x, valores_y)
 
 plt.show()
 """
 
 # PASTEL
 """
-valores_y = [15, 20, 25, 30, 10] # sumados deben dar 100, 1 pastel = 100%
+valores_y = [15, 20, 25, 30, 10] # sumados deben dar 100 / 1 pastel = 100 %
 etiquetas = ['USA', 'ECU', 'DEU', 'JPN', 'ESP']
 #plt.pie(valores_y)
 plt.pie(valores_y , labels=etiquetas)
@@ -4847,17 +5639,18 @@ plt.show()
 
 
 
-
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # 64) Matplotlib + Numpy
 print('\n\n64) Matplotlib + Numpy\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 
+# => ojo recordar siempre la importación al inicio del script!!
+
 # ----------------------------
 # A) Función de valores de X
 # ----------------------------
 def funcion_x(x):
-    return x**2 -3/x + 15
+    return x**2 - 3/x + 15
 # end def
 
 # -------------------------------------------
@@ -4865,29 +5658,29 @@ def funcion_x(x):
 # -------------------------------------------
 valores_x = np.linspace(1.0, 100.0, num=50)
 valores_y = funcion_x(valores_x)
+
 #print(valores_x)
 #print(valores_y)
 
 
-# -----------------------
-# C) Ejecutar Matplotlib
-# -----------------------
-"""
-plt.title('y = x**2 -3/x + 15')
+# -------------------------------------
+# C) Configurar + Ejecutar Matplotlib
+# -------------------------------------
+
+plt.title('y = x**2 - 3/x + 15')
 plt.xlabel('Valores en X')
 plt.ylabel('Valores en Y')
 
-plt.plot( 
-    valores_x,
-    valores_y,
-    'o-r',
-    linewidth = 1,
-    ms = 1.5,
-    mfc = 'b',
-    mec = 'b'
-    )
+plt.plot(
+valores_x,
+valores_y,
+'o-r',
+linewidth = 1,
+ms = 1.5,
+mfc = 'b',
+mec = 'b'
+)
 
 plt.grid()
 
-plt.show()
-"""
+plt.show() # IMPORTANTE !!!
