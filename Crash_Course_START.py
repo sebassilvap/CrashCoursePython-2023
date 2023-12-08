@@ -490,11 +490,11 @@ print('\n\n\n15) Encadenamiento / Chaining - Funciones & Métodos\n')
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 16) Función Internal => eval()
-print('\n\n\n16) Función Internal => eval()\n')
+# 16) Función Interna => eval()
+print('\n\n\n16) Función Interna => eval()\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - evaluar una expresión matemática
-# - expresada a manera de string 
+# - expresada a manera de string
 
 
 
@@ -526,7 +526,7 @@ print('\n\n\n17) input => entrada de datos\n')
 # 18) Operadores de Comparación
 print('\n\n\n18) Operadores de Comparación\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# - al usarlos nos devuelve un valor booleano
+# - al usarlos nos devuelven un valor booleano
 
 # -----------------------------------
 # Tabla de Operadores de Comparación
@@ -699,6 +699,7 @@ print('\n\n\n23) Operador Ternario\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - una manera corta / sencilla de expresar una condición
 # - aconsejable usarla para algo sencillo
+# - siempre en 1 línea
 
 # --------------------
 # Con condicional IF
@@ -716,6 +717,7 @@ print('\n\n\n23) Operador Ternario\n')
 # 24) Bucle For
 print('\n\n\n24) Bucle For\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# elemento iterable => acceder a los índices []
 
 
 # --------------------
@@ -1304,9 +1306,10 @@ Métodos de Operaciones de Conjuntos
 # 38) Diccionarios
 print('\n\n38) Diccionarios\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# - es una también de las más importantes (después de LISTAS)
 # - estructura de clave y valor (key-value pair)
-# - python 3.6 < -- DESORDENADOS
-# - python 3.6 > -- ORDENADOS
+# - python 3.7 >=  -- ORDENADOS
+# - python 3.6 <=  -- DESORDENADOS
 
 # -------------------------------
 # Creación Básica de Diccionario
@@ -1543,7 +1546,7 @@ print('\n\n40) Funciones\n')
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # 41) Funciones Recursivas
-print('\n\n41) Funciones Recurvivas\n')
+print('\n\n41) Funciones Recursivas\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - función que se llama a sí misma
 # - cualquier cosa que se pueda hacer con una función recursiva
@@ -1841,7 +1844,7 @@ print('\n\n52) filter()\n')
 # - filter( funcion , elemento_iterable )
 # - la función debe retornar True / False => de acuerdo al criterio de filtrado
 # - la función puede ser normal / lambda
-# - filter => retorna un objeto de tipo dilter
+# - filter => retorna un objeto de tipo filter
 
 # ----------------------------------
 # Ejemplo Básico con Función Normal
@@ -1970,8 +1973,8 @@ print('\n\n56) Función Interna - zip\n')
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 57) Librería Time
-print('\n\n57) Librería Time\n')
+# 57) Librería time
+print('\n\n57) Librería time\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - una opción para trabajar fecha y hora en Python => PERO no la más recomendable
 # - crea fechas en función de la hora cero (EPOCH)
@@ -2213,7 +2216,7 @@ print('\n\n62) Breve Introducción a numpy\n')
 # ==> importando la librería numpy
 # - instalar primero: pip install numpy
 # - verificar si está instalado: pip list + buscar numpy
-# - Replit ya tiene instalado por defecto
+# - Replit, tenemos que instalarlo en el shell
 
 
 # ==> averiguando versión en terminal
@@ -2270,7 +2273,7 @@ python -m pip install -U pip
 python -m pip install -U matplotlib
 """
 # - verificar si está instalado: pip list + buscar matplotlib
-# - Replit ya tiene instalado por defecto
+# - Replit permite instalarlo con el SHELL
 
 
 # -------------------------------

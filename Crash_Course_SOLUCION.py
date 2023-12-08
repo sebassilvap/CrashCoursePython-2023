@@ -1083,7 +1083,7 @@ print('El próximo año 2024, usted tendrá', edad+1, 'años')
 # 18) Operadores de Comparación
 print('\n\n\n18) Operadores de Comparación\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# - al usarlos nos devuelve un valor booleano
+# - al usarlos nos devuelven un valor booleano
 
 # -----------------------------------
 # Tabla de Operadores de Comparación
@@ -3746,7 +3746,7 @@ ingredientes_pasta('spagethi', 'pesto', condimento='pimienta', carne='bolitas de
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # 41) Funciones Recursivas
-print('\n\n41) Funciones Recurvivas\n')
+print('\n\n41) Funciones Recursivas\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - función que se llama a sí misma
 # - cualquier cosa que se pueda hacer con una función recursiva
@@ -4737,8 +4737,8 @@ print(resultado_final)
 
 
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-# 57) Librería Time
-print('\n\n57) Librería Time\n')
+# 57) Librería time
+print('\n\n57) Librería time\n')
 # ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 # - una opción para trabajar fecha y hora en Python => PERO no la más recomendable
 # - crea fechas en función de la hora cero (EPOCH)
